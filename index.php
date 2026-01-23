@@ -144,7 +144,9 @@ Hero Area
             <div class="slider-pagination"></div>
         </div>
     </div>
-    <!--======== / Hero Section ========--><!--==============================
+    <!--======== / Hero Section ========-->
+    
+    <!--==============================
 Category Area  
 ==============================-->
     <section class="categorySlide-area position-relative overflow-hidden">
@@ -275,9 +277,11 @@ Category Area
                 </button>
             </div>
         </div>
-    </section><!--==============================
+    </section>
+    <!--==============================
 Cta Area  
 ==============================-->
+
     <section class="space overflow-hidden">
         <div class="container th-container">
             <div class="cta-sec1">
@@ -306,9 +310,12 @@ Cta Area
                 </div>
             </div>
         </div>
-    </section><!--==============================
+    </section>
+    
+    <!--==============================
 Product Area
 ==============================-->
+
     <div class="product-sec space-bottom overflow-hidden">
         <div class="container th-container">
             <div class="row justify-content-xl-between justify-content-center">
