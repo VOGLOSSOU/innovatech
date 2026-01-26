@@ -120,6 +120,7 @@
                     <li><a href="index.php">Home</a></li>
                     <li><a href="shop-grid.php">Shop</a></li>
                     <li><a href="about.php">About Us</a></li>
+                    <li><a href="maintenance.php">Maintenance</a></li>
                     <li><a href="contact.php">Contact Us</a></li>
                 </ul>
             </div>
@@ -246,8 +247,9 @@
                                     <li class="menu-item-has-children">
                                         <a href="index.php">Home</a>
                                     </li>
-                                    <li><a href="shop.php">Shop</a></li>
+                                    <li><a href="shop-grid.php">Shop</a></li>
                                     <li><a href="about.php">About Us</a></li>
+                                    <li><a href="maintenance.php">Maintenance</a></li>
                                     <li><a href="contact.php">Contact Us</a></li>
                                 </ul>
                             </nav>
