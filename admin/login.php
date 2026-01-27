@@ -69,12 +69,11 @@
 
             const submitBtn = document.getElementById('submitBtn');
             const spinner = submitBtn.querySelector('.spinner-border');
-            const btnText = submitBtn.querySelector('span:not(.spinner-border)');
 
             // Show loader
             spinner.classList.remove('d-none');
             submitBtn.disabled = true;
-            btnText.textContent = 'Connexion en cours...';
+            submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm" role="status"></span> Connexion en cours...';
 
             const data = {
                 email: document.getElementById('email').value,
@@ -102,9 +101,8 @@
                 document.getElementById('message').innerHTML = '<div class="alert alert-danger">Erreur de connexion</div>';
             } finally {
                 // Hide loader
-                spinner.classList.add('d-none');
                 submitBtn.disabled = false;
-                btnText.textContent = 'Se Connecter';
+                submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm d-none" role="status"></span> Se Connecter';
             }
         });
     </script>

@@ -73,12 +73,11 @@
 
             const submitBtn = document.getElementById('submitBtn');
             const spinner = submitBtn.querySelector('.spinner-border');
-            const btnText = submitBtn.querySelector('span:not(.spinner-border)');
 
             // Show loader
             spinner.classList.remove('d-none');
             submitBtn.disabled = true;
-            btnText.textContent = 'Inscription en cours...';
+            submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm" role="status"></span> Inscription en cours...';
 
             const data = {
                 nom_complet: document.getElementById('nom_complet').value,
@@ -106,9 +105,8 @@
                 document.getElementById('message').innerHTML = '<div class="alert alert-danger">Erreur de connexion</div>';
             } finally {
                 // Hide loader
-                spinner.classList.add('d-none');
                 submitBtn.disabled = false;
-                btnText.textContent = 'S\'inscrire';
+                submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm d-none" role="status"></span> S\'inscrire';
             }
         });
     </script>
