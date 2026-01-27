@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Erna - Multi-Purpose Modern & Minimal WooCommerce Template - Home Electronics Shop</title>
+    <title>Innovatech - ome Electronics Shop</title>
     <meta name="author" content="Erna">
     <meta name="description" content="Erna - Multi-Purpose Modern & Minimal WooCommerce Template">
     <meta name="keywords" content="Erna - Multi-Purpose Modern & Minimal WooCommerce Template">
@@ -58,96 +58,36 @@
 <body class="electronics-shop">
 
     <?php include 'include/header.php'; ?>
-    
+
     <!--==============================
 Hero Area
 ==============================-->
-    <div class="th-hero-wrapper hero-2 slider-area" id="hero" data-bg-src="assets/img/hero/hero_bg_2.png">
-        <div class="swiper th-slider" id="heroSlide2" data-slider-options='{"effect":"fade","autoHeight":true}'>
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="hero-inner">
-                        <div class="container th-container">
-                            <div class="row align-items-center">
-                                <div class="col-lg-6">
-                                    <div class="hero-style2">
-                                        <span class="sub-title" data-ani="slideinup" data-ani-delay="0.2s">Best Gadget with best price</span>
-                                        <h1 class="hero-title" data-ani="slideinup" data-ani-delay="0.4s">
-                                            Unbeatable Gadget Combos for Tech Lover </h1>
-                                        <p class="price" data-ani="slideinup" data-ani-delay="0.6s">
-                                            <span>From</span>$389.99
-                                        </p>
-                                        <div class="btn-group" data-ani="slideinup" data-ani-delay="0.7s"><a href="contact.html" class="th-btn btn-white style3">START BUYING</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="hero-img" data-ani="slideinrighthero" data-ani-delay="0.8s">
-                                        <img src="assets/img/hero/hero_1_3.jpg" alt="Image">
-                                    </div>
-                                </div>
-                            </div>
+    <div class="th-hero-wrapper hero-2" style="background-color: #f8f9fa; padding: 20px 0;">
+        <div class="container th-container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <h3 class="hero-text">
+                            Innovatech : des PC performants, pensés 
+                            pour vos besoins pros et perso, avec une expertise
+                             complète en maintenance et réparation de cartes mères.
+                        </h3>
+                        <div class="btn-group">
+                            <a href="shop.php" class="th-btn">Voir nos Produits</a>
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide">
-                    <div class="hero-inner">
-                        <div class="container th-container">
-                            <div class="row align-items-center">
-                                <div class="col-lg-6">
-                                    <div class="hero-style2">
-                                        <span class="sub-title" data-ani="slideinup" data-ani-delay="0.2s">FaVORABLE SMART WATCHES</span>
-                                        <h1 class="hero-title" data-ani="slideinup" data-ani-delay="0.4s">
-                                            Samsung Galaxy Watch6 Aluminum Smart Watch </h1>
-                                        <p class="price" data-ani="slideinup" data-ani-delay="0.6s">
-                                            <span>From</span>$289.99
-                                        </p>
-                                        <div class="btn-group" data-ani="slideinup" data-ani-delay="0.7s"><a href="contact.html" class="th-btn btn-white style3">START BUYING</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="hero-img" data-ani="slideinrighthero" data-ani-delay="0.8s">
-                                        <img src="assets/img/hero/hero_1_1.jpg" alt="Image">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="hero-inner">
-                        <div class="container th-container">
-                            <div class="row align-items-center">
-                                <div class="col-lg-6">
-                                    <div class="hero-style2">
-                                        <span class="sub-title" data-ani="slideinup" data-ani-delay="0.2s">Beats Fit Pro</span>
-                                        <h1 class="hero-title" data-ani="slideinup" data-ani-delay="0.4s">
-                                            Beat True Wireless Noise Cancelling Earbuds </h1>
-                                        <p class="price" data-ani="slideinup" data-ani-delay="0.6s">
-                                            <span>From</span>$189.99
-                                        </p>
-                                        <div class="btn-group" data-ani="slideinup" data-ani-delay="0.7s"><a href="contact.html" class="th-btn btn-white style3">START BUYING</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="hero-img" data-ani="slideinrighthero" data-ani-delay="0.8s">
-                                        <img src="assets/img/hero/hero_1_2.jpg" alt="Image">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                <div class="col-lg-6">
+                    <div class="hero-img text-center">
+                        <img src="assets/img/descc.png" alt="Services Innovatech" style="max-width: 100%; height: auto;">
                     </div>
                 </div>
             </div>
-            <div class="slider-pagination"></div>
         </div>
     </div>
-    <!--======== / Hero Section ========-->
-    
+
     <!--==============================
-Category Area  
+Category Area
 ==============================-->
     <section class="categorySlide-area position-relative overflow-hidden">
         <div class="container th-container">
@@ -288,23 +228,20 @@ Cta Area
                 <div class="row justify-content-lg-between justify-content-center align-items-center">
                     <div class="col-lg-3 col-xl-4">
                         <div class="cta-wrapp" data-bg-src="assets/img/shape/cta-shape1.png">
-                            <div class="cta-img1 tilt-active">
-                                <img src="assets/img/normal/cta_1.png" alt="CTA">
-                            </div>
                             <h4 class="box-title">Special <span>Gift Voucher</span></h4>
                         </div>
                     </div>
                     <div class="col-lg-6 col-xl-6">
                         <div class="cta-content" data-bg-src="assets/img/shape/cta-shape2.png">
-                            <p class="sec-text text-white"><span class="text-theme">ONLINE SHOPPING SALE:</span> Mobile,
-                                Tablets, Camera & accessories
-                                at
-                                huge discount</p>
+                            <p class="sec-text text-white"><span class="text-theme">ONLINE SHOPPING SALE:</span> 
+                                Ordinateurs,
+                                Tablettes, Camera & accessoires
+                                chez Innovatech</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-xl-2">
                         <div class="cta-group">
-                            <a href="shop.html" class="th-btn style3">SHOP NOW</a>
+                            <a href="shop.html" class="th-btn style3">ACHETER</a>
                         </div>
                     </div>
                 </div>
