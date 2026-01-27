@@ -1,0 +1,39 @@
+# Test des routes backend Innovatech
+
+### Inscription Admin
+POST https://yourdomain.com/backend/routes/admin/register.php
+Content-Type: application/json
+
+{
+  "nom_complet": "Admin Test",
+  "email": "admin@test.com",
+  "mot_de_passe": "password123"
+}
+
+### Connexion Admin
+POST https://yourdomain.com/backend/routes/admin/login.php
+Content-Type: application/json
+
+{
+  "email": "admin@test.com",
+  "mot_de_passe": "password123"
+}
+
+### Dashboard Admin (remplacer TOKEN par session si nécessaire)
+GET https://yourdomain.com/backend/routes/admin/dashboard.php
+
+### Créer Catégorie
+POST https://yourdomain.com/backend/routes/category/create.php
+Content-Type: application/json
+
+{
+  "nom": "Ordinateurs Portables",
+  "description": "Catégorie pour les laptops"
+}
+
+### Lire Catégories
+GET https://yourdomain.com/backend/routes/category/read.php
+
+### Créer Produit (avec image - utiliser form-data)
+POST https://yourdomain.com/backend/routes/product/create.php
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary
