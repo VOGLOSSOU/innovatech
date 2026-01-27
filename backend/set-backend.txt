@@ -1,0 +1,55 @@
+modélisation :
+
+admin : id, nom complet, email, mot de passe (hashé avec password_hash), created_at (auto)
+
+category : id, nom, description, created_at
+
+product : id, uuid (uniqid), category_id, nom, description, prix, image, quantity, created_at, updated_at, available
+
+user-review : id, name, email (optionnel), message, rating, product_id, created_at
+
+On va créer un backend complet en PHP.
+
+Ordre de développement :
+1. Admin : inscription avec nom complet, email, mot de passe. ID auto-incrémenté.
+2. Category : CRUD par admin connecté.
+3. Product : CRUD complet avec gestion d'upload d'images.
+4. User-review : soumission publique avec validation.
+
+Architecture proposée (mise à jour) :
+
+config/
+  database.php (connexion PDO)
+lib/
+  Model.php (classe de base pour CRUD)
+models/
+  Admin.php
+  Category.php
+  Product.php
+  UserReview.php
+auth/
+  session.php (gestion des sessions)
+routes/
+  admin/
+     register.php
+     login.php
+     logout.php
+     dashboard.php
+  category/
+     create.php
+     read.php
+     update.php
+     delete.php
+  product/
+     create.php
+     read.php
+     update.php
+     delete.php
+  user_review/
+     create.php
+     read.php
+migrations/
+  setup.sql (script pour créer les tables)
+
+
+
