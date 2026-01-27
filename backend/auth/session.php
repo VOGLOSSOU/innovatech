@@ -7,7 +7,8 @@ function isLoggedIn() {
 
 function requireLogin() {
     if (!isLoggedIn()) {
-        header('Location: /backend/routes/admin/login.php');
+        http_response_code(401);
+        echo json_encode(['error' => 'Unauthorized']);
         exit;
     }
 }
@@ -19,7 +20,7 @@ function login($adminId, $adminName) {
 
 function logout() {
     session_destroy();
-    header('Location: /backend/routes/admin/login.php');
+    header('Location: /admin/login.php');
     exit;
 }
 

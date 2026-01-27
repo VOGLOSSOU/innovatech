@@ -12,19 +12,11 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     exit;
 }
 
-$input = json_decode(file_get_contents('php://input'), true);
-
-if (!$input) {
-    http_response_code(400);
-    echo json_encode(['error' => 'Invalid JSON']);
-    exit;
-}
-
-$categoryId = (int)($input['category_id'] ?? 0);
-$nom = trim($input['nom'] ?? '');
-$description = trim($input['description'] ?? '');
-$prix = (float)($input['prix'] ?? 0);
-$quantity = (int)($input['quantity'] ?? 0);
+$categoryId = (int)($_POST['category_id'] ?? 0);
+$nom = trim($_POST['nom'] ?? '');
+$description = trim($_POST['description'] ?? '');
+$prix = (float)($_POST['prix'] ?? 0);
+$quantity = (int)($_POST['quantity'] ?? 0);
 
 if (empty($nom) || $prix <= 0 || $quantity < 0) {
     http_response_code(400);
@@ -33,16 +25,47 @@ if (empty($nom) || $prix <= 0 || $quantity < 0) {
 }
 
 $image = '';
-if (isset($_FILES['image'])) {
-    $uploadDir = __DIR__ . '/../../../assets/img/products/';
-    if (!is_dir($uploadDir)) {
-        mkdir($uploadDir, 0755, true);
-    }
-    $fileName = uniqid() . '_' . basename($_FILES['image']['name']);
-    $targetFile = $uploadDir . $fileName;
-    if (move_uploaded_file($_FILES['image']['tmp_name'], $targetFile)) {
-        $image = 'assets/img/products/' . $fileName;
-    }
+$allowedExtensions = ['jpg', 'jpeg', 'png', 'gif', 'webp', 'bmp', 'tiff', 'svg'];
+$maxSize = 10 * 1024 * 1024; // 10MB
+
+if (!isset($_FILES['image']) || $_FILES['image']['error'] !== UPLOAD_ERR_OK) {
+    http_response_code(400);
+    echo json_encode(['error' => 'Image is required']);
+    exit;
+}
+
+$fileTmpPath = $_FILES['image']['tmp_name'];
+$fileName = $_FILES['image']['name'];
+$fileSize = $_FILES['image']['size'];
+$fileType = $_FILES['image']['type'];
+
+$extension = strtolower(pathinfo($fileName, PATHINFO_EXTENSION));
+
+if (!in_array($extension, $allowedExtensions)) {
+    http_response_code(400);
+    echo json_encode(['error' => 'Invalid image format. Allowed: ' . implode(', ', $allowedExtensions)]);
+    exit;
+}
+
+if ($fileSize > $maxSize) {
+    http_response_code(400);
+    echo json_encode(['error' => 'Image size too large. Max 10MB']);
+    exit;
+}
+
+$uploadDir = $_SERVER['DOCUMENT_ROOT'] . '/products_images/';
+if (!is_dir($uploadDir)) {
+    mkdir($uploadDir, 0755, true);
+}
+$newFileName = uniqid() . '_' . basename($fileName);
+$targetFile = $uploadDir . $newFileName;
+
+if (move_uploaded_file($fileTmpPath, $targetFile)) {
+    $image = 'products_images/' . $newFileName;
+} else {
+    http_response_code(500);
+    echo json_encode(['error' => 'Failed to save image']);
+    exit;
 }
 
 $product = new Product();
