@@ -121,7 +121,7 @@
                     const html = data.products.map(prod => `
                         <div class="row align-items-center border-bottom py-3">
                             <div class="col-md-2">
-                                <img src="${prod.image || '../assets/img/placeholder.jpg'}" alt="${prod.nom}" class="product-img">
+                                <img src="/${prod.image || 'assets/img/placeholder.jpg'}" alt="${prod.nom}" class="product-img">
                             </div>
                             <div class="col-md-3">
                                 <h5>${prod.nom}</h5>
