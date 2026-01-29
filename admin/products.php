@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestion Produits - Admin Innovatech</title>
-    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         body { background: linear-gradient(135deg, #ff6b35, #f7931e); min-height: 100vh; }
         .admin-container { max-width: 1400px; margin: 0 auto; padding: 20px; }
         .admin-card { background: white; border-radius: 15px; padding: 20px; margin-bottom: 20px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
         .btn-admin { background-color: #ff6b35; border-color: #ff6b35; color: white; }
         .btn-admin:hover { background-color: #e55a2b; border-color: #e55a2b; }
-        .product-img { width: 50px; height: 50px; object-fit: cover; border-radius: 5px; }
+        .product-img { width: 80px; height: 80px; object-fit: cover; border-radius: 5px; }
+        .table-responsive { overflow-x: auto; }
+        .table th, .table td { vertical-align: middle; white-space: nowrap; }
+        .description-cell { max-width: 200px; overflow: hidden; text-overflow: ellipsis; }
     </style>
 </head>
 <body>
@@ -48,8 +51,23 @@
 
         <div class="admin-card">
             <h3>Liste des Produits</h3>
-            <div id="productsList">
-                <!-- Products will be loaded here -->
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Image</th>
+                            <th>Nom</th>
+                            <th>Description</th>
+                            <th>Prix</th>
+                            <th>Quantité</th>
+                            <th>Statut</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="productsList">
+                        <!-- Products will be loaded here -->
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
@@ -84,8 +102,8 @@
         </div>
     </div>
 
-    <script src="../assets/js/vendor/jquery-3.6.0.min.js"></script>
-    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         let categories = [];
 
@@ -119,22 +137,21 @@
                 const data = await response.json();
                 if (data.success) {
                     const html = data.products.map(prod => `
-                        <div class="row align-items-center border-bottom py-3">
-                            <div class="col-md-2">
-                                <img src="/${prod.image || 'assets/img/placeholder.jpg'}" alt="${prod.nom}" class="product-img">
-                            </div>
-                            <div class="col-md-3">
-                                <h5>${prod.nom}</h5>
+                        <tr>
+                            <td><img src="/${prod.image || 'assets/img/placeholder.jpg'}" alt="${prod.nom}" class="product-img"></td>
+                            <td>
+                                <strong>${prod.nom}</strong><br>
                                 <small class="text-muted">${prod.category_name}</small>
-                            </div>
-                            <div class="col-md-2">${prod.prix}€</div>
-                            <div class="col-md-1">${prod.quantity}</div>
-                            <div class="col-md-2">${prod.available ? 'Disponible' : 'Indisponible'}</div>
-                            <div class="col-md-2">
+                            </td>
+                            <td class="description-cell" title="${prod.description || 'Pas de description'}">${prod.description || 'Pas de description'}</td>
+                            <td>${prod.prix}€</td>
+                            <td>${prod.quantity}</td>
+                            <td>${prod.available ? 'Disponible' : 'Indisponible'}</td>
+                            <td>
                                 <button class="btn btn-sm btn-outline-primary me-2" onclick="editProduct(${prod.id})">Modifier</button>
                                 <button class="btn btn-sm btn-outline-danger" onclick="deleteProduct(${prod.id})">Supprimer</button>
-                            </div>
-                        </div>
+                            </td>
+                        </tr>
                     `).join('');
                     document.getElementById('productsList').innerHTML = html;
                 }
