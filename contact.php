@@ -53,6 +53,20 @@
     <!-- Theme Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 
+    <style>
+        /* WhatsApp Button Hover Effect */
+        .whatsapp-contact-box a.th-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3) !important;
+        }
+        
+        .whatsapp-section {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 80px 0;
+            border-radius: 20px;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -69,7 +83,15 @@ Contact Area
                     <div class="col-xl-9">
                         <div class="">
                             <div class="contact-map style3">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3644.7310056272386!2d89.2286059153658!3d24.00527418490799!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fe9b97badc6151%3A0x30b048c9fb2129bc!2sAngfuztheme!5e0!3m2!1sen!2sbd!4v1651028958211!5m2!1sen!2sbd" allowfullscreen="" loading="lazy"></iframe>
+                                <iframe
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15766.02973373383!2d2.2689756!3d6.3954818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1024a9020c6b91e1%3A0x1ecdfca314de6d4a!2sBiblioth%C3%A8que%20BENIN%20EXCELLENCE!5e0!3m2!1sfr!2bjg!4v1700000000000!5m2!1sfr!2bjg"
+  width="100%"
+  height="350"
+  style="border:0;"
+  allowfullscreen=""
+  loading="lazy">
+</iframe>
+
                                 <div class="contact-icon">
                                     <i class="fa-solid fa-location-dot"></i>
                                 </div>
@@ -82,7 +104,7 @@ Contact Area
                                 <div class="contact-item_icon"><i class=""><img src="assets/img/icon/address.svg" alt=""></i>
                                 </div>
                                 <div class="media-body">
-                                    <span class="contact-item_title">Address</span><span class="contact-item_text">15 Maniel Lane, Front Line Berlin</span>
+                                    <span class="contact-item_title">Address</span><span class="contact-item_text">Abomey - Calavi, Benin BJ</span>
                                 </div>
                             </div>
                             <div class="contact-item">
@@ -90,26 +112,15 @@ Contact Area
                                 </div>
                                 <div class="media-body">
                                     <span class="contact-item_title">Phone</span>
-                                    <span class="contact-item_text"><a href="tel:+58125253158">+163 6547 9658</a></span>
-                                    <span class="contact-item_text"><a href="tel:+16336983478">+163 3698 3478</a></span>
-                                </div>
-                            </div>
-                            <div class="contact-item">
-                                <div class="contact-item_icon"><i class=""><img src="assets/img/icon/message.svg" alt=""></i>
-                                </div>
-                                <div class="media-body">
-                                    <span class="contact-item_title">Email</span>
-                                    <span class="contact-item_text"><a href="mailto:info@sassa.com">info@erna.com</a></span>
-                                    <span class="contact-item_text"><a href="mailto:help.info@erna.com">help.info@erna.com</a></span>
+                                    <span class="contact-item_text"><a href="tel:+2290157400640">+229 01 57 40 06 40</a></span>
                                 </div>
                             </div>
                             <div class="contact-item">
                                 <div class="contact-item_icon"><i class=""><img src="assets/img/icon/fax.svg" alt=""></i>
                                 </div>
                                 <div class="media-body">
-                                    <span class="contact-item_title">Fax</span>
-                                    <span class="contact-item_text"><a href="tel:+145278963">+145278963</a></span>
-                                    <span class="contact-item_text"><a href="tel:+236587954">+236587954</a></span>
+                                    <span class="contact-item_title">WhatsApp</span>
+                                    <span class="contact-item_text"><a href="https://wa.me/2290157400640">+229 01 57 40 06 40</a></span>
                                 </div>
                             </div>
                         </div>
@@ -117,47 +128,108 @@ Contact Area
                 </div>
             </div>
         </div>
-    </div><!--==============================
-Contact Area   
+    </div>
+
+    <!--==============================
+WhatsApp Contact Section   
 ==============================-->
-    <div class="space-bottom">
+    <div class="space-bottom whatsapp-section">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-12 text-center text-xl-start">
-                    <form action="mail.php" method="POST" class="contact-form2 ajax-contact">
-                        <h2 class="sec-title">Get In Touch</h2>
-                        <p class="mb-20">We’d love to hear from you about our entire service. Your comments and suggestions will be highly appreciated. Please complete the form below.</p>
-                        <div class="row">
-                            <div class="form-group col-md-6">
-                                <input type="text" class="form-control" name="name" id="name" placeholder="Your Name">
-                            </div>
-                            <div class="form-group col-md-6">
-                                <input type="email" class="form-control" name="email" id="email" placeholder="Email Address">
-                            </div>
-                            <div class="form-group col-md-6">
-                                <input type="tel" class="form-control" name="number" id="number" placeholder="Phone Number">
-                            </div>
-                            <div class="form-group col-md-6">
-                                <select name="subject" id="subject" class="form-select">
-                                    <option value="" disabled selected hidden>Subject</option>
-                                    <option value="General Query">General Query</option>
-                                    <option value="Help Support">Help Support</option>
-                                    <option value="Sales Support">Sales Support</option>
-                                </select>
-                            </div>
-                            <div class="form-group col-12">
-                                <textarea name="message" id="message" cols="30" rows="3" class="form-control" placeholder="Type Your Message"></textarea>
-                            </div>
-                            <div class="form-btn col-12">
-                                <button class="th-btn">Submit Now</button>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="text-center mb-40">
+                        <h2 class="sec-title">Contactez-Nous Maintenant</h2>
+                        <p class="mb-0" style="font-size: 16px; color: #666;">Nous serions ravis de vous entendre. Contactez-nous directement sur WhatsApp pour une réponse rapide et personnalisée à toutes vos questions.</p>
+                    </div>
+                    
+                    <div class="whatsapp-contact-box" style="background: linear-gradient(135deg, #25D366 0%, #128C7E 100%); padding: 60px 50px; border-radius: 25px; text-align: center; box-shadow: 0 15px 50px rgba(37, 211, 102, 0.4);">
+                        <!-- WhatsApp Icon -->
+                        <div style="background: white; width: 120px; height: 120px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.15);">
+                            <svg width="70" height="70" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" fill="#25D366"/>
+                            </svg>
+                        </div>
+                        
+                        <!-- Heading -->
+                        <h3 style="color: white; font-size: 32px; margin-bottom: 18px; font-weight: 800;">Discutons sur WhatsApp !</h3>
+                        
+                        <!-- Description -->
+                        <p style="color: rgba(255,255,255,0.95); font-size: 17px; margin-bottom: 35px; line-height: 1.7; max-width: 550px; margin-left: auto; margin-right: auto;">
+                            Obtenez une assistance immédiate et personnalisée. Notre équipe est prête à répondre à toutes vos questions et demandes de service.
+                        </p>
+                        
+                        <!-- WhatsApp Button -->
+                        <a href="https://wa.me/2290157400640?text=Bonjour,%20j'aimerais%20obtenir%20plus%20d'informations%20sur%20vos%20services." 
+                           target="_blank" 
+                           class="th-btn" 
+                           style="background: white; color: #25D366; font-size: 19px; font-weight: 800; padding: 20px 50px; border-radius: 50px; display: inline-flex; align-items: center; gap: 14px; box-shadow: 0 6px 25px rgba(0,0,0,0.25); transition: all 0.3s ease; text-decoration: none; border: none;">
+                            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" fill="currentColor"/>
+                            </svg>
+                            Ouvrir WhatsApp
+                        </a>
+                        
+                        <!-- Bottom Info -->
+                        <div style="margin-top: 30px; padding-top: 25px; border-top: 1px solid rgba(255,255,255,0.3);">
+                            <p style="color: rgba(255,255,255,0.9); font-size: 15px; margin-bottom: 0; display: flex; align-items: center; justify-content: center; gap: 8px;">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink: 0;">
+                                    <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12 6V12L16 14" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span style="font-weight: 600;">Disponible Lun-Sam: 8h-18h</span>
+                                <span style="margin: 0 10px;">•</span>
+                                <span style="font-weight: 600;">Réponse rapide garantie ✓</span>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Additional Info Cards -->
+                    <div class="row mt-5 g-4">
+                        <div class="col-md-4">
+                            <div style="background: white; padding: 25px; border-radius: 15px; text-align: center; box-shadow: 0 5px 20px rgba(0,0,0,0.08); height: 100%;">
+                                <div style="width: 60px; height: 60px; background: #e8f5e9; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px;">
+                                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#25D366" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M12 16V12" stroke="#25D366" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M12 8H12.01" stroke="#25D366" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <h5 style="color: #333; font-size: 16px; font-weight: 700; margin-bottom: 8px;">Support Instantané</h5>
+                                <p style="color: #666; font-size: 14px; margin: 0; line-height: 1.6;">Obtenez des réponses à vos questions en temps réel</p>
                             </div>
                         </div>
-                        <p class="form-messages mb-0 mt-3"></p>
-                    </form>
+                        <div class="col-md-4">
+                            <div style="background: white; padding: 25px; border-radius: 15px; text-align: center; box-shadow: 0 5px 20px rgba(0,0,0,0.08); height: 100%;">
+                                <div style="width: 60px; height: 60px; background: #e8f5e9; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px;">
+                                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9 11L12 14L22 4" stroke="#25D366" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M21 12V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H16" stroke="#25D366" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <h5 style="color: #333; font-size: 16px; font-weight: 700; margin-bottom: 8px;">Devis Gratuit</h5>
+                                <p style="color: #666; font-size: 14px; margin: 0; line-height: 1.6;">Recevez une estimation gratuite pour vos besoins</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div style="background: white; padding: 25px; border-radius: 15px; text-align: center; box-shadow: 0 5px 20px rgba(0,0,0,0.08); height: 100%;">
+                                <div style="width: 60px; height: 60px; background: #e8f5e9; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px;">
+                                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21" stroke="#25D366" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M9 11C11.2091 11 13 9.20914 13 7C13 4.79086 11.2091 3 9 3C6.79086 3 5 4.79086 5 7C5 9.20914 6.79086 11 9 11Z" stroke="#25D366" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M23 21V19C22.9993 18.1137 22.7044 17.2528 22.1614 16.5523C21.6184 15.8519 20.8581 15.3516 20 15.13" stroke="#25D366" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M16 3.13C16.8604 3.35031 17.623 3.85071 18.1676 4.55232C18.7122 5.25392 19.0078 6.11683 19.0078 7.005C19.0078 7.89318 18.7122 8.75608 18.1676 9.45769C17.623 10.1593 16.8604 10.6597 16 10.88" stroke="#25D366" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <h5 style="color: #333; font-size: 16px; font-weight: 700; margin-bottom: 8px;">Service Personnalisé</h5>
+                                <p style="color: #666; font-size: 14px; margin: 0; line-height: 1.6;">Une équipe dédiée à votre satisfaction</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
     <!--==============================
 	Footer Area
 ==============================-->
