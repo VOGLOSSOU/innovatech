@@ -8,11 +8,11 @@
                     <div class="col-md-6 col-xl-3">
                         <div class="widget footer-widget">
                             <div class="th-widget-about">
-                                <div class="about-logo2 mb-40">
-                                    <a href="index.php"><img src="assets/img/logo-innova-orange.png" width="120px" height="120px" alt="Innovatech"></a>
+                                <div class="about-logo2 mb-3">
+                                    <a href="index.php"><img src="assets/img/logo-innova-orange.png" width="100px" height="100px" alt="Innovatech"></a>
                                 </div>
-                                <p class="about-text">Innovatech : des PC performants, pensés pour vos besoins pros et perso, avec une expertise complète en maintenance et réparation de cartes mères.</p>
-                                <div class="info-box style2">
+                                <p class="about-text mb-3">Innovatech : des PC performants, pensés pour vos besoins pros et perso, avec une expertise complète en maintenance et réparation de cartes mères.</p>
+                                <div class="info-box style2 mb-2">
                                     <div class="box-icon">
                                         <img src="assets/img/icon/phone2.svg" alt="">
                                     </div>
