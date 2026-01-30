@@ -4,10 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Erna - Multi-Purpose Modern & Minimal WooCommerce Template - About Us 1</title>
-    <meta name="author" content="Erna">
-    <meta name="description" content="Erna - Multi-Purpose Modern & Minimal WooCommerce Template">
-    <meta name="keywords" content="Erna - Multi-Purpose Modern & Minimal WooCommerce Template">
+    <title>Innovatech - des PC performants, pensés pour vos besoins pros et perso, avec une expertise complète en maintenance et réparation de cartes mères. - About Us 1</title>
+    <meta name="author" content="Nathan VOGLOSSOU , Innovatech">
+    <meta name="description" content="Innovatech - des PC performants, pensés pour vos besoins pros et perso, avec une expertise complète en maintenance et réparation de cartes mères.">
+    <meta name="keywords" content="innovatech, innovatech bénin, innovatech about us, pc performant, maintenance pc, réparation carte mère, solutions informatiques, matériel informatique, équipements informatiques, technologie informatique, cotonou, calavi, electronique">
     <meta name="robots" content="INDEX,FOLLOW">
 
     <!-- Mobile Specific Metas -->
@@ -67,38 +67,27 @@ About Area
             <div class="row align-items-center">
                 <div class="col-xl-6 text-xl-start">
                     <div class="title-area mb-37">
-                        <h2 class="sec-title style1">About Our Erna Story</h2>
-                        <p class="">We have crafted thousands of manufacturing processes, strategy that allows us to
-                            understand our customers like never before. We are present up to this point due to the trust and
-                            appreciation of our customers.</p>
+                        <h2 class="sec-title style1">À propos de l’histoire d’Innovatech</h2>
+                        <p class="">Chez Innovatech, nous concevons et sélectionnons des solutions informatiques
+                             de pointe pour répondre aux exigences d’un monde numérique en constante évolution.
+                          Au fil des années, nous avons affiné notre expertise afin de comprendre en profondeur les besoins de nos clients, qu’ils 
+                                 soient professionnels, créateurs ou passionnés de technologie..</p>
                     </div>
                 </div>
                 <div class="col-xl-6">
                     <div class="checklist mb-45 ps-xl-5">
                         <ul>
-                            <li class="text-title"><i class="fa-regular fa-check"></i>Find the ideal location for your
-                                franchise.</li>
-                            <li class="text-title"><i class="fa-regular fa-check"></i>Everything necessary to be a
-                                franchisee.</li>
-                            <li class="text-title"><i class="fa-regular fa-check"></i>Send us your application.</li>
+                            <li class="text-title"><i class="fa-regular fa-check"></i>Trouvez le produit electronique dont vous avez bésoin.</li>
+                            <li class="text-title"><i class="fa-regular fa-check"></i>Tout ce qui est nécéssaire pour booster votre productivité.</li>
+                            <li class="text-title"><i class="fa-regular fa-check"></i>N' hésitez pas à nous contacter.</li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="about-image">
-                    <img src="assets/img/normal/about_3_1.png" alt="">
-                    <div class="discount-wrapp style2">
-                        <a href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="play-btn popup-video">
-                            <i class="fa-thin fa-play"></i></a>
-                        <div class="discount-tag">
-                            <span class="discount-anime">watch video. watch video.</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
-    </div><!--==============================
+    </div>
+    
+    <!--==============================
 Counter Area  
 ==============================-->
     <div class="pt-60">
@@ -106,89 +95,94 @@ Counter Area
             <div class="counter-card-wrap">
                 <div class="counter-card">
                     <div class="media-body">
-                        <h2 class="box-number"><span class="counter-number">1</span>k+</h2>
-                        <p class="box-text">Quality full Products</p>
+                        <h2 class="box-number"><span class="counter-number">80</span>+</h2>
+                        <p class="box-text">Produits de qualité</p>
                     </div>
                 </div>
                 <div class="counter-card">
                     <div class="media-body">
-                        <h2 class="box-number"><span class="counter-number">2</span>k+</h2>
-                        <p class="box-text">Satisfied Customer</p>
+                        <h2 class="box-number"><span class="counter-number">200</span>+</h2>
+                        <p class="box-text">Clients Satisfaits</p>
                     </div>
                 </div>
                 <div class="counter-card">
                     <div class="media-body">
-                        <h2 class="box-number"><span class="counter-number">223</span>+</h2>
-                        <p class="box-text">Product Categories</p>
+                        <h2 class="box-number"><span class="counter-number">17</span>+</h2>
+                        <p class="box-text">Categories de Produits</p>
                     </div>
                 </div>
                 <div class="counter-card">
                     <div class="media-body">
-                        <h2 class="box-number"><span class="counter-number">5</span>k+</h2>
-                        <p class="box-text">Product Collections</p>
+                        <h2 class="box-number"><span class="counter-number">50</span>+</h2>
+                        <p class="box-text">Collections de produits</p>
                     </div>
                 </div>
             </div>
         </div>
-    </div><!--==============================
+    </div>
+    
+    <!--==============================
 About Area  
 ==============================-->
     <div class="overflow-hidden bg-white space">
         <div class="container">
             <div class="row gy-4 align-items-center">
                 <div class="col-xl-6">
-                    <div class="img-box4">
-                        <div class="img1">
-                            <img src="assets/img/normal/about_4_1.jpg" alt="">
+                    <div class="title-area mb-37">
+                            <h2 class="sec-title style1">Pourquoi choisr Innovatech ?</h2>
+                            <p class="">
+
+                            Chez Innovatech, chaque choix est pensé pour élever l’expérience technologique à un niveau supérieur.
+Nos solutions sont conçues avec rigueur, élégance et exigence, afin d’offrir des performances durables et fiables.
+
+Nous sélectionnons des équipements informatiques qui allient puissance, sobriété et innovation, répondant aussi bien aux besoins professionnels qu’aux usages créatifs et ludiques.
+Ici, la simplicité n’est pas une limite, mais une force : une technologie accessible, maîtrisée et intelligemment conçue.
+
+Innovatech, c’est la rencontre entre performance moderne et confiance durable, pour celles et ceux qui exigent plus de leur matériel informatique.
+                            </p>
                         </div>
-                        <div class="img2">
-                            <img src="assets/img/normal/about_4_2.jpg" alt="">
-                        </div>
-                        <div class="img3">
-                            <img src="assets/img/normal/about_4_3.jpg" alt="">
-                        </div>
-                        <div class="img4">
-                            <img src="assets/img/normal/about_4_4.jpg" alt="">
-                        </div>
-                    </div>
                 </div>
                 <div class="col-xl-6 text-xl-start">
                     <div class="ps-xl-5">
-                        <div class="title-area mb-37">
-                            <h2 class="sec-title style1">Why Choose Us</h2>
-                            <p class="">Do so written as raising parlors spirits mr elderly. Made late in of high hold.
-                                Carried
-                                females of up highest calling. Limits marked led silent dining her she far. Sir but elegance
-                                marriage dwelling likewise position old pleasure men dissimilar themselves. Simplicity no of
-                                casted as great day hours men. Stuff front to do allow to asked he. Is allowance instantly
-                                strangers applauded discourse. Dissimilar themselves simplicity no of contrasted as.</p>
-                        </div>
                         <div class="row gy-4 justify-content-center">
                             <div class="col-xl-6">
-                                <h4 class="box-title">Our Mission</h4>
-                                <p>Ignorant saw her her drawings marriage laughter. Case oh an that or away sigh do here
-                                    upon. Acuteness you exquisite ourselves now end forfeited. Enquire ye without it is
-                                    garrets up himself. Interest our nor received followed was.</p>
+                                <h4 class="box-title">Notre Mission</h4>
+                                <p>
+                                   Chez Innovatech, notre mission est de rendre la technologie informatique puissante, accessible et inspirante.
+Nous concevons et proposons des solutions informatiques qui accompagnent aussi bien le travail quotidien que la création et le divertissement.
+Chaque produit est choisi avec exigence afin d’offrir performance, fiabilité et innovation durable à nos clients. 
+                                .</p>
                             </div>
                             <div class="col-xl-6">
-                                <h4 class="box-title">Our Principles</h4>
-                                <p>Ignorant saw her her drawings marriage laughter. Case oh an that or away sigh do here
-                                    upon.
-                                    Acuteness you exquisite ourselves now end forfeited. Enquire ye without it is garrets up
-                                    himself. Interest our nor received followed was.</p>
+                                <h4 class="box-title">Nos principes</h4>
+                                <p>
+                                    Chez Innovatech, nos principes guident chacune de nos décisions :
+
+Exigence de qualité : des produits fiables et performants, sans compromis
+
+Innovation constante : rester à l’avant-garde des technologies informatiques
+
+Simplicité et clarté : des solutions compréhensibles et efficaces
+
+Orientation client : vos besoins sont au cœur de notre démarche
+
+Confiance et transparence : une relation durable avec nos clients
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div><!--==============================
+    </div>
+    
+    <!--==============================
 Testimonial Area  
 ==============================-->
     <section class="overflow-hidden position-relative bg-white space" id="testi-sec" data-bg-src="assets/img/bg/testi_bg_6.jpg">
         <div class="container th-container5">
             <div class="title-area text-center mb-30">
-                <h2 class="sec-title sec-title2 style1">Customers Latest Reviews</h2>
+                <h2 class="sec-title sec-title2 style1">Quelques témoignages Clients</h2>
             </div>
         </div>
         <div class="container th-container5">
@@ -206,14 +200,11 @@ Testimonial Area
                                     </div>
                                 </div>
 
-                                <p class="box-text">I just got this high fashion for Beckam and couldn’t be happier with it. It gets amazing reviews and made a total believe out of me. I love the minimal, clean look.</p>
+                                <p class="box-text">J’ai acheté mon PC chez Innovatech et l’expérience a été irréprochable du début à la fin. La machine est rapide, silencieuse et parfaitement adaptée à mon travail quotidien. On sent tout de suite le sérieux et la qualité derrière chaque produit.</p>
                                 <div class="box-profile">
-                                    <div class="box-avater">
-                                        <img src="assets/img/testimonial/testi_2_1.jpg" alt="Avater">
-                                    </div>
                                     <div class="media-body">
-                                        <h3 class="box-title">Michel Smith</h3>
-                                        <p class="box-desig">CEO Of Company</p>
+                                        <h3 class="box-title">Michel</h3>
+                                        <p class="box-desig"></p>
                                     </div>
                                 </div>
                             </div>
@@ -229,14 +220,11 @@ Testimonial Area
                                     </div>
                                 </div>
 
-                                <p class="box-text">I just got this high fashion for Beckam and couldn’t be happier with it. It gets amazing reviews and made a total believe out of me. I love the minimal, clean look.</p>
+                                <p class="box-text">Innovatech m’a vraiment surpris par le niveau de performance de leurs équipements. Le rapport qualité-prix est excellent et le service client est à l’écoute. Je recommande sans hésiter à tous ceux qui recherchent du matériel fiable.</p>
                                 <div class="box-profile">
-                                    <div class="box-avater">
-                                        <img src="assets/img/testimonial/testi_2_2.jpg" alt="Avater">
-                                    </div>
                                     <div class="media-body">
-                                        <h3 class="box-title">Abraham Khalil</h3>
-                                        <p class="box-desig">Managing Director</p>
+                                        <h3 class="box-title">Abraham</h3>
+                                        <p class="box-desig"></p>
                                     </div>
                                 </div>
                             </div>
@@ -252,14 +240,11 @@ Testimonial Area
                                     </div>
                                 </div>
 
-                                <p class="box-text">I just got this high fashion for Beckam and couldn’t be happier with it. It gets amazing reviews and made a total believe out of me. I love the minimal, clean look.</p>
+                                <p class="box-text">Je cherchais un ordinateur capable de gérer à la fois le travail et la création de contenu, et Innovatech a répondu exactement à mes attentes. Design soigné, puissance au rendez-vous et une vraie attention aux détails.</p>
                                 <div class="box-profile">
-                                    <div class="box-avater">
-                                        <img src="assets/img/testimonial/testi_2_3.jpg" alt="Avater">
-                                    </div>
                                     <div class="media-body">
-                                        <h3 class="box-title">Jenny Wilson</h3>
-                                        <p class="box-desig">CEO Of Company</p>
+                                        <h3 class="box-title">Jenny</h3>
+                                        <p class="box-desig"></p>
                                     </div>
                                 </div>
                             </div>
@@ -275,14 +260,11 @@ Testimonial Area
                                     </div>
                                 </div>
 
-                                <p class="box-text">I just got this high fashion for Beckam and couldn’t be happier with it. It gets amazing reviews and made a total believe out of me. I love the minimal, clean look.</p>
+                                <p class="box-text">Très satisfaite de mon achat chez Innovatech. Le PC est fluide, rapide et parfaitement optimisé. On sent que les produits sont pensés pour durer et accompagner les utilisateurs sur le long terme.</p>
                                 <div class="box-profile">
-                                    <div class="box-avater">
-                                        <img src="assets/img/testimonial/testi_2_4.jpg" alt="Avater">
-                                    </div>
                                     <div class="media-body">
-                                        <h3 class="box-title">Jackline Techie</h3>
-                                        <p class="box-desig">Managing Director</p>
+                                        <h3 class="box-title">Jackline</h3>
+                                        <p class="box-desig"></p>
                                     </div>
                                 </div>
                             </div>
@@ -298,14 +280,11 @@ Testimonial Area
                                     </div>
                                 </div>
 
-                                <p class="box-text">I just got this high fashion for Beckam and couldn’t be happier with it. It gets amazing reviews and made a total believe out of me. I love the minimal, clean look.</p>
+                                <p class="box-text">Innovatech est devenu mon premier choix pour l’équipement informatique. La qualité des produits et la confiance que l’on ressent dès le premier contact font toute la différence.</p>
                                 <div class="box-profile">
-                                    <div class="box-avater">
-                                        <img src="assets/img/testimonial/testi_2_5.jpg" alt="Avater">
-                                    </div>
                                     <div class="media-body">
-                                        <h3 class="box-title">Michel Smith</h3>
-                                        <p class="box-desig">CEO Of Company</p>
+                                        <h3 class="box-title">Michel</h3>
+                                        <p class="box-desig"></p>
                                     </div>
                                 </div>
                             </div>
