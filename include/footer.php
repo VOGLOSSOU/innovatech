@@ -9,30 +9,22 @@
                         <div class="widget footer-widget">
                             <div class="th-widget-about">
                                 <div class="about-logo2 mb-40">
-                                    <a href="index.html"><img src="assets/img/logo-orange.svg" alt="Erna"></a>
+                                    <a href="index.php"><img src="assets/img/logo-innova-orange.png" width="120px" height="120px" alt="Innovatech"></a>
                                 </div>
-                                <p class="about-text">Provide information about the customer support options available to users documentation.</p>
+                                <p class="about-text">Innovatech : des PC performants, pensés pour vos besoins pros et perso, avec une expertise complète en maintenance et réparation de cartes mères.</p>
                                 <div class="info-box style2">
                                     <div class="box-icon">
                                         <img src="assets/img/icon/phone2.svg" alt="">
                                     </div>
                                     <p class="box-text">
-                                        <a href="tel:+00123456789" class="box-link">+00 123 456 789</a>
-                                    </p>
-                                </div>
-                                <div class="info-box style2">
-                                    <div class="box-icon">
-                                        <i class="fa-sharp fa-solid fa-envelope"></i>
-                                    </div>
-                                    <p class="box-text">
-                                        <a href="mailto:support24@examplemail.com" class="box-link">support24@examplemail.com</a>
+                                        <a href="tel:+2290157400640" class="box-link">+2290157400640</a>
                                     </p>
                                 </div>
                                 <div class="info-box style2">
                                     <div class="box-icon">
                                         <i class="fa-solid fa-location-dot"></i>
                                     </div>
-                                    <p class="box-text">789 Inner Lane, California, USA</p>
+                                    <p class="box-text">Abomey - Calavi, Bénin</p>
                                 </div>
                             </div>
                         </div>
@@ -42,92 +34,11 @@
                             <h3 class="widget_title">Customer Services</h3>
                             <div class="menu-all-pages-container">
                                 <ul class="menu">
-                                    <li><a href="contact.html">Help Center</a></li>
-                                    <li><a href="faq.html">FAQ’s</a></li>
-                                    <li><a href="contact.html">Accessibility</a></li>
-                                    <li><a href="https://www.facebook.com/">Feeback</a></li>
-                                    <li><a href="contact.html">Payment Methods</a></li>
-                                    <li><a href="about.html">About Us</a></li>
-                                    <li><a href="contact.html">Gift Card</a></li>
-                                    <li><a href="contact.html">Contact Us</a></li>
+                                    <li><a href="https://wa.me/2290157400640">Centre d' aides</a></li>
+                                    <li><a href="contact.php">Accessibilité</a></li>
+                                    <li><a href="about.php">A Propos de Nous</a></li>
+                                    <li><a href="contact.php">Contactez Nous</a></li>
                                 </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-xl-auto">
-                        <div class="widget widget_nav_menu footer-widget">
-                            <h3 class="widget_title">About us</h3>
-                            <div class="menu-all-pages-container">
-                                <ul class="menu">
-                                    <li><a href="contact.html">Company Profile</a></li>
-                                    <li><a href="contact.html">All Retail Store</a></li>
-                                    <li><a href="contact.html">Merchant Center</a></li>
-                                    <li><a href="contact.html">Affiliate</a></li>
-                                    <li><a href="contact.html">Contact Us</a></li>
-                                    <li><a href="contact.html">Feedback</a></li>
-                                    <li><a href="contact.html">Huawei Group</a></li>
-                                    <li><a href="contact.html">Rules & Policy</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-xl-auto">
-                        <div class="widget widget_nav_menu footer-widget">
-                            <h3 class="widget_title">My Account</h3>
-                            <div class="menu-all-pages-container">
-                                <ul class="menu">
-                                    <li><a href="contact.html">My Account</a></li>
-                                    <li><a href="contact.html">Order History</a></li>
-                                    <li><a href="course.html">Shoping Cart</a></li>
-                                    <li><a href="course.html">Compare</a></li>
-                                    <li><a href="contact.html">Help Ticket</a></li>
-                                    <li><a href="contact.html">Wishlist</a></li>
-                                    <li><a href="contact.html">Order History</a></li>
-                                    <li><a href="contact.html">Product Support</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-xl-auto">
-                        <div class="widget widget_nav_menu footer-widget">
-                            <h3 class="widget_title">Information</h3>
-                            <div class="menu-all-pages-container">
-                                <ul class="menu">
-                                    <li><a href="contact.html">Become a Vendor</a></li>
-                                    <li><a href="contact.html">Affiliate Program</a></li>
-                                    <li><a href="course.html">Privacy Policy</a></li>
-                                    <li><a href="course.html">Our Suppliers</a></li>
-                                    <li><a href="contact.html">Extended Plan</a></li>
-                                    <li><a href="contact.html">Extended Plan</a></li>
-                                    <li><a href="contact.html">Community</a></li>
-                                    <li><a href="contact.html">Locality</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-xl-auto">
-                        <div class="widget footer-widget">
-                            <h3 class="widget_title">Shop on The Go</h3>
-                            <div class="widget-content">
-                                <p class="title mb-20">Erna App is available. Get it now</p>
-                            </div>
-                            <div class="download-btn-wrap">
-                                <div class="mb-10">
-                                    <a target="_blank" href="https://www.apple.com/store" class="download-btn">
-                                        <img src="assets/img/normal/app.png" alt="">
-                                    </a>
-                                </div>
-                                <div>
-                                    <a target="_blank" href="https://play.google.com/" class="download-btn">
-                                        <img src="assets/img/normal/play.png" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="th-social style2 mt-40">
-                                <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
-                                <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
-                                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-                                <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
                             </div>
                         </div>
                     </div>
@@ -138,11 +49,11 @@
             <div class="container th-container2">
                 <div class="row gy-2 align-items-center">
                     <div class="col-lg-6">
-                        <p class="copyright-text">ERNA eCommerce <i class="fal fa-copyright"></i> 2025 <a href="index.html">Erna</a>. All Rights Reserved.</p>
+                        <p class="copyright-text">Innovatech <i class="fal fa-copyright"></i> 2026 <a href="index.php">Innovatech</a>. Tout droits réservés.</p>
                     </div>
                     <div class="col-lg-6 text-center text-lg-end">
                         <div class="footer-card">
-                            <span class="footer-title">We Are Acepting</span>
+                            <span class="footer-title">Nous acceptons</span>
                             <img src="assets/img/shape/cards.png" alt="">
                         </div>
                     </div>

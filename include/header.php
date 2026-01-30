@@ -42,7 +42,7 @@
         <div class="th-menu-area text-center">
             <button class="th-menu-toggle"><i class="fal fa-times"></i></button>
             <div class="mobile-logo">
-                
+                <img src="assets/img/logo-innova-orange.png" width="120px" height="120px" alt="Innovatech">
             </div>
             <div class="th-mobile-menu">
                 <ul>
@@ -110,6 +110,9 @@
                        
                         <div class="col-auto me-xl-auto">
                             <nav class="main-menu d-none d-lg-inline-block">
+                                 <div class="mobile-logo">
+                                        <img src="assets/img/logo-innova-orange.png" width="80px" height="80px" alt="Innovatech">
+                                 </div>
                                 <ul>
                                     <li>
                                         <a href="index.php">Home</a>
