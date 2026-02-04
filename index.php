@@ -1095,7 +1095,7 @@ Testimonial Area
             <div class="row justify-content-lg-between justify-content-center align-items-center">
                 <div class="col-auto">
                     <div class="title-area mb-10 text-xl-start text-center">
-                        <h2 class="sec-title style2">Customers Latest Reviews</h2>
+                        <h2 class="sec-title style2">Avis de Nos Clients</h2>
                     </div>
                 </div>
                 <div class="col-lg-3">
@@ -1120,15 +1120,14 @@ Testimonial Area
                                         <i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i>
                                     </div>
                                 </div>
-
-                                <p class="box-text">I just got this high fashion for Beckam and couldn’t be happier with it. It gets amazing reviews and made a total believe out of me. I love the minimal, clean look.</p>
+                                <p class="box-text">J'ai commandé mon PC gamer chez Innovatech et je suis absolument satisfait ! Configuration puissante, prix imbattable au Bénin et livraison rapide. Le service après-vente est au top. Je recommande à 100% !</p>
                                 <div class="box-profile">
                                     <div class="box-avater">
                                         <img src="assets/img/testimonial/testi_2_1.jpg" alt="Avater">
                                     </div>
                                     <div class="media-body">
-                                        <h3 class="box-title">Michel Smith</h3>
-                                        <p class="box-desig">CEO Of Company</p>
+                                        <h3 class="box-title">Thomas Mensah</h3>
+                                        <p class="box-desig">Développeur Web</p>
                                     </div>
                                 </div>
                             </div>
@@ -1143,15 +1142,14 @@ Testimonial Area
                                         <i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i>
                                     </div>
                                 </div>
-
-                                <p class="box-text">I just got this high fashion for Beckam and couldn’t be happier with it. It gets amazing reviews and made a total believe out of me. I love the minimal, clean look.</p>
+                                <p class="box-text">Problème de carte mère résolu en 24h ! Équipe professionnelle et compétente. Mon ordinateur fonctionne parfaitement maintenant. Merci Innovatech pour votre expertise et votre patience.</p>
                                 <div class="box-profile">
                                     <div class="box-avater">
                                         <img src="assets/img/testimonial/testi_2_2.jpg" alt="Avater">
                                     </div>
                                     <div class="media-body">
-                                        <h3 class="box-title">Abraham Khalil</h3>
-                                        <p class="box-desig">Managing Director</p>
+                                        <h3 class="box-title">Aminata Diallo</h3>
+                                        <p class="box-desig">Comptable</p>
                                     </div>
                                 </div>
                             </div>
@@ -1166,15 +1164,14 @@ Testimonial Area
                                         <i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i>
                                     </div>
                                 </div>
-
-                                <p class="box-text">I just got this high fashion for Beckam and couldn’t be happier with it. It gets amazing reviews and made a total believe out of me. I love the minimal, clean look.</p>
+                                <p class="box-text">Excellent rapport qualité-prix pour mon poste de travail. L'équipe m'a guidé dans le choix de ma configuration selon mes besoins. Service impeccable et personnel très accueillant.</p>
                                 <div class="box-profile">
                                     <div class="box-avater">
                                         <img src="assets/img/testimonial/testi_2_3.jpg" alt="Avater">
                                     </div>
                                     <div class="media-body">
-                                        <h3 class="box-title">Jenny Wilson</h3>
-                                        <p class="box-desig">CEO Of Company</p>
+                                        <h3 class="box-title">Pierre Nkoghe</h3>
+                                        <p class="box-desig">Designer Graphique</p>
                                     </div>
                                 </div>
                             </div>
@@ -1189,15 +1186,14 @@ Testimonial Area
                                         <i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i>
                                     </div>
                                 </div>
-
-                                <p class="box-text">I just got this high fashion for Beckam and couldn’t be happier with it. It gets amazing reviews and made a total believe out of me. I love the minimal, clean look.</p>
+                                <p class="box-text">Récupération de données réussie après un crash de disque dur ! Équipe réactive et professionnelle. Ils ont sauvé des années de souvenirs professionnels. Un grand merci !</p>
                                 <div class="box-profile">
                                     <div class="box-avater">
                                         <img src="assets/img/testimonial/testi_2_4.jpg" alt="Avater">
                                     </div>
                                     <div class="media-body">
-                                        <h3 class="box-title">Jackline Techie</h3>
-                                        <p class="box-desig">Managing Director</p>
+                                        <h3 class="box-title">Fatou Kouma</h3>
+                                        <p class="box-desig">Entrepreneur</p>
                                     </div>
                                 </div>
                             </div>
@@ -1212,20 +1208,18 @@ Testimonial Area
                                         <i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i>
                                     </div>
                                 </div>
-
-                                <p class="box-text">I just got this high fashion for Beckam and couldn’t be happier with it. It gets amazing reviews and made a total believe out of me. I love the minimal, clean look.</p>
+                                <p class="box-text">Maintenance préventive de mon parc informatique faite rapidement. Équipe ponctuelle, professionnelle et tarifs transparents. Innovatech est devenu notre partenaire informatique privilégié.</p>
                                 <div class="box-profile">
                                     <div class="box-avater">
                                         <img src="assets/img/testimonial/testi_2_5.jpg" alt="Avater">
                                     </div>
                                     <div class="media-body">
-                                        <h3 class="box-title">Michel Smith</h3>
-                                        <p class="box-desig">CEO Of Company</p>
+                                        <h3 class="box-title">Jean-Baptiste Lokossou</h3>
+                                        <p class="box-desig">Directeur Commercial</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
                     </div>
                     <div class="slider-pagination"></div>
                 </div>
