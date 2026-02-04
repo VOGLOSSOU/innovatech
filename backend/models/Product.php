@@ -49,6 +49,16 @@ class Product extends Model {
         return $stmt->fetchAll();
     }
 
+    public function getRecentProducts($limit = 6) {
+        $stmt = $this->pdo->query("SELECT p.*, c.nom as category_name 
+            FROM {$this->table} p 
+            LEFT JOIN category c ON p.category_id = c.id 
+            WHERE p.available = 1
+            ORDER BY p.created_at DESC 
+            LIMIT {$limit}");
+        return $stmt->fetchAll();
+    }
+
     public function deleteProduct($id) {
         return $this->delete($id);
     }
