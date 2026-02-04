@@ -99,7 +99,7 @@ Category Area
                                 <div class="box-img mega-hover">
                                     <img src="assets/img/category/category_1_1.png" alt="categories-item">
                                 </div>
-                                <h3 class="box-title"><a href="shop-details.html">Bluetooth Speaker</a></h3>
+                                <h3 class="box-title"><a href="shop-details.php">Bluetooth Speaker</a></h3>
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -107,7 +107,7 @@ Category Area
                                 <div class="box-img mega-hover">
                                     <img src="assets/img/category/category_1_2.png" alt="categories-item">
                                 </div>
-                                <h3 class="box-title"><a href="shop-details.html">Headphone</a></h3>
+                                <h3 class="box-title"><a href="shop-details.php">Headphone</a></h3>
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -115,7 +115,7 @@ Category Area
                                 <div class="box-img mega-hover">
                                     <img src="assets/img/category/category_1_3.png" alt="categories-item">
                                 </div>
-                                <h3 class="box-title"><a href="shop-details.html">Laptops</a></h3>
+                                <h3 class="box-title"><a href="shop-details.php">Laptops</a></h3>
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -123,7 +123,7 @@ Category Area
                                 <div class="box-img mega-hover">
                                     <img src="assets/img/category/category_1_4.png" alt="categories-item">
                                 </div>
-                                <h3 class="box-title"><a href="shop-details.html">Smart TV</a></h3>
+                                <h3 class="box-title"><a href="shop-details.php">Smart TV</a></h3>
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -131,7 +131,7 @@ Category Area
                                 <div class="box-img mega-hover">
                                     <img src="assets/img/category/category_1_5.png" alt="categories-item">
                                 </div>
-                                <h3 class="box-title"><a href="shop-details.html">Camera</a></h3>
+                                <h3 class="box-title"><a href="shop-details.php">Camera</a></h3>
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -139,7 +139,7 @@ Category Area
                                 <div class="box-img mega-hover">
                                     <img src="assets/img/category/category_1_6.png" alt="categories-item">
                                 </div>
-                                <h3 class="box-title"><a href="shop-details.html">Smart Phone</a></h3>
+                                <h3 class="box-title"><a href="shop-details.php">Smart Phone</a></h3>
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -147,7 +147,7 @@ Category Area
                                 <div class="box-img mega-hover">
                                     <img src="assets/img/category/category_1_7.png" alt="categories-item">
                                 </div>
-                                <h3 class="box-title"><a href="shop-details.html">Smart Watches</a></h3>
+                                <h3 class="box-title"><a href="shop-details.php">Smart Watches</a></h3>
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -155,7 +155,7 @@ Category Area
                                 <div class="box-img mega-hover">
                                     <img src="assets/img/category/category_1_8.png" alt="categories-item">
                                 </div>
-                                <h3 class="box-title"><a href="shop-details.html">Accessories</a></h3>
+                                <h3 class="box-title"><a href="shop-details.php">Accessories</a></h3>
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -163,7 +163,7 @@ Category Area
                                 <div class="box-img mega-hover">
                                     <img src="assets/img/category/category_1_1.png" alt="categories-item">
                                 </div>
-                                <h3 class="box-title"><a href="shop-details.html">Bluetooth Speaker</a></h3>
+                                <h3 class="box-title"><a href="shop-details.php">Bluetooth Speaker</a></h3>
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -171,7 +171,7 @@ Category Area
                                 <div class="box-img mega-hover">
                                     <img src="assets/img/category/category_1_2.png" alt="categories-item">
                                 </div>
-                                <h3 class="box-title"><a href="shop-details.html">Headphone</a></h3>
+                                <h3 class="box-title"><a href="shop-details.php">Headphone</a></h3>
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -179,7 +179,7 @@ Category Area
                                 <div class="box-img mega-hover">
                                     <img src="assets/img/category/category_1_3.png" alt="categories-item">
                                 </div>
-                                <h3 class="box-title"><a href="shop-details.html">Laptops</a></h3>
+                                <h3 class="box-title"><a href="shop-details.php">Laptops</a></h3>
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -187,7 +187,7 @@ Category Area
                                 <div class="box-img mega-hover">
                                     <img src="assets/img/category/category_1_4.png" alt="categories-item">
                                 </div>
-                                <h3 class="box-title"><a href="shop-details.html">Smart TV</a></h3>
+                                <h3 class="box-title"><a href="shop-details.php">Smart TV</a></h3>
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -195,7 +195,7 @@ Category Area
                                 <div class="box-img mega-hover">
                                     <img src="assets/img/category/category_1_5.png" alt="categories-item">
                                 </div>
-                                <h3 class="box-title"><a href="shop-details.html">Camera</a></h3>
+                                <h3 class="box-title"><a href="shop-details.php">Camera</a></h3>
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -203,7 +203,7 @@ Category Area
                                 <div class="box-img mega-hover">
                                     <img src="assets/img/category/category_1_6.png" alt="categories-item">
                                 </div>
-                                <h3 class="box-title"><a href="shop-details.html">Smart Phone</a></h3>
+                                <h3 class="box-title"><a href="shop-details.php">Smart Phone</a></h3>
                             </div>
                         </div>
 
@@ -241,7 +241,7 @@ Cta Area
                     </div>
                     <div class="col-lg-3 col-xl-2">
                         <div class="cta-group">
-                            <a href="shop.html" class="th-btn style3">ACHETER</a>
+                            <a href="shop.php" class="th-btn style3">ACHETER</a>
                         </div>
                     </div>
                 </div>
@@ -284,7 +284,7 @@ Product Area
                                 <span class="count-name">Secs</span>
                             </li>
                         </ul>
-                        <a href="contact.html" class="line-btn style2">Explore All</a>
+                        <a href="contact.php" class="line-btn style2">Explore All</a>
                     </div>
                 </div>
             </div>
@@ -298,14 +298,14 @@ Product Area
                                     <img src="assets/img/product/product_2_1.png" alt="menu Image">
                                     <span class="product-tag">-10%</span>
                                     <div class="product-action">
-                                        <a href="wishlist.html"><span class="action-text">Add To Wishlist</span><span class="icon"><i class="fa-regular fa-heart"></i></span></a>
-                                        <a href="cart.html"><span class="action-text">Compare</span><span class="icon"><i class="fa-light fa-arrow-right-arrow-left"></i></span></a>
+                                        <a href="wishlist.php"><span class="action-text">Add To Wishlist</span><span class="icon"><i class="fa-regular fa-heart"></i></span></a>
+                                        <a href="cart.php"><span class="action-text">Compare</span><span class="icon"><i class="fa-light fa-arrow-right-arrow-left"></i></span></a>
 
                                         <a class="popup-content" href="#QuickView"><span class="action-text">Quick View</span><span class="icon"><i class="fa-light fa-eye"></i></span></a>
                                     </div>
                                 </div>
                                 <div class="product-grid-content">
-                                    <h3 class="box-title"><a href="shop-details.html">Apple iPad Air 4 10.9-inch Wi-Fi 256GB</a></h3>
+                                    <h3 class="box-title"><a href="shop-details.php">Apple iPad Air 4 10.9-inch Wi-Fi 256GB</a></h3>
                                     <div class="woocommerce-product-rating">
                                         <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
                                             <span>Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span>
@@ -316,7 +316,7 @@ Product Area
                                     <span class="box-price">$985.00 <del> $1259.00</del></span>
                                     <span class="product-text"><i class="fa-light fa-check"></i><span class="stock">In Stock</span>65
                                         Products</span>
-                                    <a href="cart.html" class="th-btn2 btn-fw">
+                                    <a href="cart.php" class="th-btn2 btn-fw">
                                         <span class="link-effect">
                                             <span class="effect-1">Add To Cart</span>
                                             <span class="effect-1 style2">Add To Cart</span>
@@ -332,14 +332,14 @@ Product Area
                                 <div class="box-img">
                                     <img src="assets/img/product/product_2_2.png" alt="menu Image">
                                     <div class="product-action">
-                                        <a href="wishlist.html"><span class="action-text">Add To Wishlist</span><span class="icon"><i class="fa-regular fa-heart"></i></span></a>
-                                        <a href="cart.html"><span class="action-text">Compare</span><span class="icon"><i class="fa-light fa-arrow-right-arrow-left"></i></span></a>
+                                        <a href="wishlist.php"><span class="action-text">Add To Wishlist</span><span class="icon"><i class="fa-regular fa-heart"></i></span></a>
+                                        <a href="cart.php"><span class="action-text">Compare</span><span class="icon"><i class="fa-light fa-arrow-right-arrow-left"></i></span></a>
 
                                         <a class="popup-content" href="#QuickView"><span class="action-text">Quick View</span><span class="icon"><i class="fa-light fa-eye"></i></span></a>
                                     </div>
                                 </div>
                                 <div class="product-grid-content">
-                                    <h3 class="box-title"><a href="shop-details.html">Apple iPhone 14 Pro Max 6.7inch 48MP</a></h3>
+                                    <h3 class="box-title"><a href="shop-details.php">Apple iPhone 14 Pro Max 6.7inch 48MP</a></h3>
                                     <div class="woocommerce-product-rating">
                                         <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
                                             <span>Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span>
@@ -350,7 +350,7 @@ Product Area
                                     <span class="box-price">$990.00 <del>$1269.00</del></span>
                                     <span class="product-text"><i class="fa-light fa-check"></i><span class="stock">In Stock</span>65
                                         Products</span>
-                                    <a href="cart.html" class="th-btn2 btn-fw">
+                                    <a href="cart.php" class="th-btn2 btn-fw">
                                         <span class="link-effect">
                                             <span class="effect-1">Add To Cart</span>
                                             <span class="effect-1 style2">Add To Cart</span>
@@ -366,14 +366,14 @@ Product Area
                                 <div class="box-img">
                                     <img src="assets/img/product/product_2_3.png" alt="menu Image">
                                     <div class="product-action">
-                                        <a href="wishlist.html"><span class="action-text">Add To Wishlist</span><span class="icon"><i class="fa-regular fa-heart"></i></span></a>
-                                        <a href="cart.html"><span class="action-text">Compare</span><span class="icon"><i class="fa-light fa-arrow-right-arrow-left"></i></span></a>
+                                        <a href="wishlist.php"><span class="action-text">Add To Wishlist</span><span class="icon"><i class="fa-regular fa-heart"></i></span></a>
+                                        <a href="cart.php"><span class="action-text">Compare</span><span class="icon"><i class="fa-light fa-arrow-right-arrow-left"></i></span></a>
 
                                         <a class="popup-content" href="#QuickView"><span class="action-text">Quick View</span><span class="icon"><i class="fa-light fa-eye"></i></span></a>
                                     </div>
                                 </div>
                                 <div class="product-grid-content">
-                                    <h3 class="box-title"><a href="shop-details.html">Apple MacBook Air 15 inch M3 Chip, 8</a></h3>
+                                    <h3 class="box-title"><a href="shop-details.php">Apple MacBook Air 15 inch M3 Chip, 8</a></h3>
                                     <div class="woocommerce-product-rating">
                                         <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
                                             <span>Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span>
@@ -384,7 +384,7 @@ Product Area
                                     <span class="box-price">$988.00 <del>$1260.00</del></span>
                                     <span class="product-text"><i class="fa-light fa-check"></i><span class="stock">In Stock</span>65
                                         Products</span>
-                                    <a href="cart.html" class="th-btn2 btn-fw">
+                                    <a href="cart.php" class="th-btn2 btn-fw">
                                         <span class="link-effect">
                                             <span class="effect-1">Add To Cart</span>
                                             <span class="effect-1 style2">Add To Cart</span>
@@ -401,14 +401,14 @@ Product Area
                                     <img src="assets/img/product/product_2_4.png" alt="menu Image">
                                     <span class="product-tag">-15%</span>
                                     <div class="product-action">
-                                        <a href="wishlist.html"><span class="action-text">Add To Wishlist</span><span class="icon"><i class="fa-regular fa-heart"></i></span></a>
-                                        <a href="cart.html"><span class="action-text">Compare</span><span class="icon"><i class="fa-light fa-arrow-right-arrow-left"></i></span></a>
+                                        <a href="wishlist.php"><span class="action-text">Add To Wishlist</span><span class="icon"><i class="fa-regular fa-heart"></i></span></a>
+                                        <a href="cart.php"><span class="action-text">Compare</span><span class="icon"><i class="fa-light fa-arrow-right-arrow-left"></i></span></a>
 
                                         <a class="popup-content" href="#QuickView"><span class="action-text">Quick View</span><span class="icon"><i class="fa-light fa-eye"></i></span></a>
                                     </div>
                                 </div>
                                 <div class="product-grid-content">
-                                    <h3 class="box-title"><a href="shop-details.html">Apple MacBook Air 15 inch M3 Chip, 8</a></h3>
+                                    <h3 class="box-title"><a href="shop-details.php">Apple MacBook Air 15 inch M3 Chip, 8</a></h3>
                                     <div class="woocommerce-product-rating">
                                         <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
                                             <span>Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span>
@@ -419,7 +419,7 @@ Product Area
                                     <span class="box-price">$995.00 <del>$1269.00</del></span>
                                     <span class="product-text"><i class="fa-light fa-check"></i><span class="stock">In Stock</span>65
                                         Products</span>
-                                    <a href="cart.html" class="th-btn2 btn-fw">
+                                    <a href="cart.php" class="th-btn2 btn-fw">
                                         <span class="link-effect">
                                             <span class="effect-1">Add To Cart</span>
                                             <span class="effect-1 style2">Add To Cart</span>
@@ -435,14 +435,14 @@ Product Area
                                 <div class="box-img">
                                     <img src="assets/img/product/product_2_5.png" alt="menu Image">
                                     <div class="product-action">
-                                        <a href="wishlist.html"><span class="action-text">Add To Wishlist</span><span class="icon"><i class="fa-regular fa-heart"></i></span></a>
-                                        <a href="cart.html"><span class="action-text">Compare</span><span class="icon"><i class="fa-light fa-arrow-right-arrow-left"></i></span></a>
+                                        <a href="wishlist.php"><span class="action-text">Add To Wishlist</span><span class="icon"><i class="fa-regular fa-heart"></i></span></a>
+                                        <a href="cart.php"><span class="action-text">Compare</span><span class="icon"><i class="fa-light fa-arrow-right-arrow-left"></i></span></a>
 
                                         <a class="popup-content" href="#QuickView"><span class="action-text">Quick View</span><span class="icon"><i class="fa-light fa-eye"></i></span></a>
                                     </div>
                                 </div>
                                 <div class="product-grid-content">
-                                    <h3 class="box-title"><a href="shop-details.html">Apple iPad Air 4 1.9inch Wi-Fi 256GB</a></h3>
+                                    <h3 class="box-title"><a href="shop-details.php">Apple iPad Air 4 1.9inch Wi-Fi 256GB</a></h3>
                                     <div class="woocommerce-product-rating">
                                         <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
                                             <span>Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span>
@@ -453,7 +453,7 @@ Product Area
                                     <span class="box-price">$993.00 <del> $1264.00</del></span>
                                     <span class="product-text"><i class="fa-light fa-check"></i><span class="stock">In Stock</span>65
                                         Products</span>
-                                    <a href="cart.html" class="th-btn2 btn-fw">
+                                    <a href="cart.php" class="th-btn2 btn-fw">
                                         <span class="link-effect">
                                             <span class="effect-1">Add To Cart</span>
                                             <span class="effect-1 style2">Add To Cart</span>
@@ -469,14 +469,14 @@ Product Area
                                 <div class="box-img">
                                     <img src="assets/img/product/product_2_6.png" alt="menu Image">
                                     <div class="product-action">
-                                        <a href="wishlist.html"><span class="action-text">Add To Wishlist</span><span class="icon"><i class="fa-regular fa-heart"></i></span></a>
-                                        <a href="cart.html"><span class="action-text">Compare</span><span class="icon"><i class="fa-light fa-arrow-right-arrow-left"></i></span></a>
+                                        <a href="wishlist.php"><span class="action-text">Add To Wishlist</span><span class="icon"><i class="fa-regular fa-heart"></i></span></a>
+                                        <a href="cart.php"><span class="action-text">Compare</span><span class="icon"><i class="fa-light fa-arrow-right-arrow-left"></i></span></a>
 
                                         <a class="popup-content" href="#QuickView"><span class="action-text">Quick View</span><span class="icon"><i class="fa-light fa-eye"></i></span></a>
                                     </div>
                                 </div>
                                 <div class="product-grid-content">
-                                    <h3 class="box-title"><a href="shop-details.html">Samsung Galaxy Watch7 Aluminum Smartwatch</a></h3>
+                                    <h3 class="box-title"><a href="shop-details.php">Samsung Galaxy Watch7 Aluminum Smartwatch</a></h3>
                                     <div class="woocommerce-product-rating">
                                         <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
                                             <span>Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span>
@@ -487,7 +487,7 @@ Product Area
                                     <span class="box-price">$989.00 <del>$1279.00</del></span>
                                     <span class="product-text"><i class="fa-light fa-check"></i><span class="stock">In Stock</span>65
                                         Products</span>
-                                    <a href="cart.html" class="th-btn2 btn-fw">
+                                    <a href="cart.php" class="th-btn2 btn-fw">
                                         <span class="link-effect">
                                             <span class="effect-1">Add To Cart</span>
                                             <span class="effect-1 style2">Add To Cart</span>
@@ -503,14 +503,14 @@ Product Area
                                 <div class="box-img">
                                     <img src="assets/img/product/product_2_6.png" alt="menu Image">
                                     <div class="product-action">
-                                        <a href="wishlist.html"><span class="action-text">Add To Wishlist</span><span class="icon"><i class="fa-regular fa-heart"></i></span></a>
-                                        <a href="cart.html"><span class="action-text">Compare</span><span class="icon"><i class="fa-light fa-arrow-right-arrow-left"></i></span></a>
+                                        <a href="wishlist.php"><span class="action-text">Add To Wishlist</span><span class="icon"><i class="fa-regular fa-heart"></i></span></a>
+                                        <a href="cart.php"><span class="action-text">Compare</span><span class="icon"><i class="fa-light fa-arrow-right-arrow-left"></i></span></a>
 
                                         <a class="popup-content" href="#QuickView"><span class="action-text">Quick View</span><span class="icon"><i class="fa-light fa-eye"></i></span></a>
                                     </div>
                                 </div>
                                 <div class="product-grid-content">
-                                    <h3 class="box-title"><a href="shop-details.html">Samsung Galaxy Watch7 Aluminum Smartwatch</a></h3>
+                                    <h3 class="box-title"><a href="shop-details.php">Samsung Galaxy Watch7 Aluminum Smartwatch</a></h3>
                                     <div class="woocommerce-product-rating">
                                         <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
                                             <span>Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span>
@@ -521,7 +521,7 @@ Product Area
                                     <span class="box-price">$985.00 <del> $1259.00</del></span>
                                     <span class="product-text"><i class="fa-light fa-check"></i><span class="stock">In Stock</span>65
                                         Products</span>
-                                    <a href="cart.html" class="th-btn2 btn-fw">
+                                    <a href="cart.php" class="th-btn2 btn-fw">
                                         <span class="link-effect">
                                             <span class="effect-1">Add To Cart</span>
                                             <span class="effect-1 style2">Add To Cart</span>
@@ -537,14 +537,14 @@ Product Area
                                 <div class="box-img">
                                     <img src="assets/img/product/product_2_7.png" alt="menu Image">
                                     <div class="product-action">
-                                        <a href="wishlist.html"><span class="action-text">Add To Wishlist</span><span class="icon"><i class="fa-regular fa-heart"></i></span></a>
-                                        <a href="cart.html"><span class="action-text">Compare</span><span class="icon"><i class="fa-light fa-arrow-right-arrow-left"></i></span></a>
+                                        <a href="wishlist.php"><span class="action-text">Add To Wishlist</span><span class="icon"><i class="fa-regular fa-heart"></i></span></a>
+                                        <a href="cart.php"><span class="action-text">Compare</span><span class="icon"><i class="fa-light fa-arrow-right-arrow-left"></i></span></a>
 
                                         <a class="popup-content" href="#QuickView"><span class="action-text">Quick View</span><span class="icon"><i class="fa-light fa-eye"></i></span></a>
                                     </div>
                                 </div>
                                 <div class="product-grid-content">
-                                    <h3 class="box-title"><a href="shop-details.html">Fujifilm Instax Mini 12 Instant Print</a></h3>
+                                    <h3 class="box-title"><a href="shop-details.php">Fujifilm Instax Mini 12 Instant Print</a></h3>
                                     <div class="woocommerce-product-rating">
                                         <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
                                             <span>Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span>
@@ -555,7 +555,7 @@ Product Area
                                     <span class="box-price">$990.00 <del>$1269.00</del></span>
                                     <span class="product-text"><i class="fa-light fa-check"></i><span class="stock">In Stock</span>65
                                         Products</span>
-                                    <a href="cart.html" class="th-btn2 btn-fw">
+                                    <a href="cart.php" class="th-btn2 btn-fw">
                                         <span class="link-effect">
                                             <span class="effect-1">Add To Cart</span>
                                             <span class="effect-1 style2">Add To Cart</span>
@@ -583,7 +583,7 @@ Cta Area
                                 <h4 class="box-title fw-medium text-white mb-20">Huawei Tablets</h4>
                                 <h3 class="sec-title style1 text-white fw-medium">UP TO 70% OFF</h3>
                             </div>
-                            <a href="shop.html" class="th-btn style3 btn-white">SHOP NOW</a>
+                            <a href="shop.php" class="th-btn style3 btn-white">SHOP NOW</a>
                         </div>
                         <div class="cta-img tilt-active">
                             <img src="assets/img/normal/cta_2_1.png" alt="">
@@ -598,7 +598,7 @@ Cta Area
                                 <h4 class="box-title fw-medium text-white mb-20">Smart Watches</h4>
                                 <h3 class="sec-title style1 text-white fw-medium">Big sale 45% off</h3>
                             </div>
-                            <a href="shop.html" class="th-btn style3 btn-white">SHOP NOW</a>
+                            <a href="shop.php" class="th-btn style3 btn-white">SHOP NOW</a>
                         </div>
                         <div class="cta-img tilt-active">
                             <img src="assets/img/normal/cta_2_2.png" alt="">
@@ -620,7 +620,7 @@ Product Area
                 </div>
                 <div class="col-lg-3">
                     <div class="product-btn pb-10 text-end">
-                        <a href="contact.html" class="line-btn style2">Explore All</a>
+                        <a href="contact.php" class="line-btn style2">Explore All</a>
                     </div>
                 </div>
             </div>
@@ -635,14 +635,14 @@ Product Area
                                     <img src="assets/img/product/product_2_1.png" alt="menu Image">
                                     <span class="product-tag">-10%</span>
                                     <div class="product-action">
-                                        <a href="wishlist.html"><span class="action-text">Add To Wishlist</span><span class="icon"><i class="fa-regular fa-heart"></i></span></a>
-                                        <a href="cart.html"><span class="action-text">Compare</span><span class="icon"><i class="fa-light fa-arrow-right-arrow-left"></i></span></a>
+                                        <a href="wishlist.php"><span class="action-text">Add To Wishlist</span><span class="icon"><i class="fa-regular fa-heart"></i></span></a>
+                                        <a href="cart.php"><span class="action-text">Compare</span><span class="icon"><i class="fa-light fa-arrow-right-arrow-left"></i></span></a>
 
                                         <a class="popup-content" href="#QuickView"><span class="action-text">Quick View</span><span class="icon"><i class="fa-light fa-eye"></i></span></a>
                                     </div>
                                 </div>
                                 <div class="product-grid-content">
-                                    <h3 class="box-title"><a href="shop-details.html">Apple iPad Air 4 10.9-inch Wi-Fi 256GB</a></h3>
+                                    <h3 class="box-title"><a href="shop-details.php">Apple iPad Air 4 10.9-inch Wi-Fi 256GB</a></h3>
                                     <div class="woocommerce-product-rating">
                                         <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
                                             <span>Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span>
@@ -651,9 +651,9 @@ Product Area
                                         <del class="count">(14)</del>
                                     </div>
                                     <span class="box-price">$985.00 <del> $1259.00</del></span>
-                                    <span class="product-text"><i class="fa-light fa-check"></i><a href="shop.html" class="stock">In Stock</a>65
+                                    <span class="product-text"><i class="fa-light fa-check"></i><a href="shop.php" class="stock">In Stock</a>65
                                         Products</span>
-                                    <a href="cart.html" class="th-btn2 btn-fw">
+                                    <a href="cart.php" class="th-btn2 btn-fw">
                                         <span class="link-effect">
                                             <span class="effect-1">Add To Cart</span>
                                             <span class="effect-1 style2">Add To Cart</span>
@@ -669,14 +669,14 @@ Product Area
                                 <div class="box-img">
                                     <img src="assets/img/product/product_2_2.png" alt="menu Image">
                                     <div class="product-action">
-                                        <a href="wishlist.html"><span class="action-text">Add To Wishlist</span><span class="icon"><i class="fa-regular fa-heart"></i></span></a>
-                                        <a href="cart.html"><span class="action-text">Compare</span><span class="icon"><i class="fa-light fa-arrow-right-arrow-left"></i></span></a>
+                                        <a href="wishlist.php"><span class="action-text">Add To Wishlist</span><span class="icon"><i class="fa-regular fa-heart"></i></span></a>
+                                        <a href="cart.php"><span class="action-text">Compare</span><span class="icon"><i class="fa-light fa-arrow-right-arrow-left"></i></span></a>
 
                                         <a class="popup-content" href="#QuickView"><span class="action-text">Quick View</span><span class="icon"><i class="fa-light fa-eye"></i></span></a>
                                     </div>
                                 </div>
                                 <div class="product-grid-content">
-                                    <h3 class="box-title"><a href="shop-details.html">Apple iPhone 14 Pro Max 6.7inch 48MP</a></h3>
+                                    <h3 class="box-title"><a href="shop-details.php">Apple iPhone 14 Pro Max 6.7inch 48MP</a></h3>
                                     <div class="woocommerce-product-rating">
                                         <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
                                             <span>Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span>
@@ -685,9 +685,9 @@ Product Area
                                         <del class="count">(14)</del>
                                     </div>
                                     <span class="box-price">$990.00 <del>$1269.00</del></span>
-                                    <span class="product-text"><i class="fa-light fa-check"></i><a href="shop.html" class="stock">In Stock</a>65
+                                    <span class="product-text"><i class="fa-light fa-check"></i><a href="shop.php" class="stock">In Stock</a>65
                                         Products</span>
-                                    <a href="cart.html" class="th-btn2 btn-fw">
+                                    <a href="cart.php" class="th-btn2 btn-fw">
                                         <span class="link-effect">
                                             <span class="effect-1">Add To Cart</span>
                                             <span class="effect-1 style2">Add To Cart</span>
@@ -703,14 +703,14 @@ Product Area
                                 <div class="box-img">
                                     <img src="assets/img/product/product_2_3.png" alt="menu Image">
                                     <div class="product-action">
-                                        <a href="wishlist.html"><span class="action-text">Add To Wishlist</span><span class="icon"><i class="fa-regular fa-heart"></i></span></a>
-                                        <a href="cart.html"><span class="action-text">Compare</span><span class="icon"><i class="fa-light fa-arrow-right-arrow-left"></i></span></a>
+                                        <a href="wishlist.php"><span class="action-text">Add To Wishlist</span><span class="icon"><i class="fa-regular fa-heart"></i></span></a>
+                                        <a href="cart.php"><span class="action-text">Compare</span><span class="icon"><i class="fa-light fa-arrow-right-arrow-left"></i></span></a>
 
                                         <a class="popup-content" href="#QuickView"><span class="action-text">Quick View</span><span class="icon"><i class="fa-light fa-eye"></i></span></a>
                                     </div>
                                 </div>
                                 <div class="product-grid-content">
-                                    <h3 class="box-title"><a href="shop-details.html">Apple MacBook Air 15 inch M3 Chip, 8</a></h3>
+                                    <h3 class="box-title"><a href="shop-details.php">Apple MacBook Air 15 inch M3 Chip, 8</a></h3>
                                     <div class="woocommerce-product-rating">
                                         <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
                                             <span>Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span>
@@ -719,9 +719,9 @@ Product Area
                                         <del class="count">(14)</del>
                                     </div>
                                     <span class="box-price">$988.00 <del>$1260.00</del></span>
-                                    <span class="product-text"><i class="fa-light fa-check"></i><a href="shop.html" class="stock">In Stock</a>65
+                                    <span class="product-text"><i class="fa-light fa-check"></i><a href="shop.php" class="stock">In Stock</a>65
                                         Products</span>
-                                    <a href="cart.html" class="th-btn2 btn-fw">
+                                    <a href="cart.php" class="th-btn2 btn-fw">
                                         <span class="link-effect">
                                             <span class="effect-1">Add To Cart</span>
                                             <span class="effect-1 style2">Add To Cart</span>
@@ -738,14 +738,14 @@ Product Area
                                     <img src="assets/img/product/product_2_4.png" alt="menu Image">
                                     <span class="product-tag">-15%</span>
                                     <div class="product-action">
-                                        <a href="wishlist.html"><span class="action-text">Add To Wishlist</span><span class="icon"><i class="fa-regular fa-heart"></i></span></a>
-                                        <a href="cart.html"><span class="action-text">Compare</span><span class="icon"><i class="fa-light fa-arrow-right-arrow-left"></i></span></a>
+                                        <a href="wishlist.php"><span class="action-text">Add To Wishlist</span><span class="icon"><i class="fa-regular fa-heart"></i></span></a>
+                                        <a href="cart.php"><span class="action-text">Compare</span><span class="icon"><i class="fa-light fa-arrow-right-arrow-left"></i></span></a>
 
                                         <a class="popup-content" href="#QuickView"><span class="action-text">Quick View</span><span class="icon"><i class="fa-light fa-eye"></i></span></a>
                                     </div>
                                 </div>
                                 <div class="product-grid-content">
-                                    <h3 class="box-title"><a href="shop-details.html">Apple MacBook Air 15 inch M3 Chip, 8</a></h3>
+                                    <h3 class="box-title"><a href="shop-details.php">Apple MacBook Air 15 inch M3 Chip, 8</a></h3>
                                     <div class="woocommerce-product-rating">
                                         <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
                                             <span>Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span>
@@ -754,9 +754,9 @@ Product Area
                                         <del class="count">(14)</del>
                                     </div>
                                     <span class="box-price">$995.00 <del>$1269.00</del></span>
-                                    <span class="product-text"><i class="fa-light fa-check"></i><a href="shop.html" class="stock">In Stock</a>65
+                                    <span class="product-text"><i class="fa-light fa-check"></i><a href="shop.php" class="stock">In Stock</a>65
                                         Products</span>
-                                    <a href="cart.html" class="th-btn2 btn-fw">
+                                    <a href="cart.php" class="th-btn2 btn-fw">
                                         <span class="link-effect">
                                             <span class="effect-1">Add To Cart</span>
                                             <span class="effect-1 style2">Add To Cart</span>
@@ -772,14 +772,14 @@ Product Area
                                 <div class="box-img">
                                     <img src="assets/img/product/product_2_5.png" alt="menu Image">
                                     <div class="product-action">
-                                        <a href="wishlist.html"><span class="action-text">Add To Wishlist</span><span class="icon"><i class="fa-regular fa-heart"></i></span></a>
-                                        <a href="cart.html"><span class="action-text">Compare</span><span class="icon"><i class="fa-light fa-arrow-right-arrow-left"></i></span></a>
+                                        <a href="wishlist.php"><span class="action-text">Add To Wishlist</span><span class="icon"><i class="fa-regular fa-heart"></i></span></a>
+                                        <a href="cart.php"><span class="action-text">Compare</span><span class="icon"><i class="fa-light fa-arrow-right-arrow-left"></i></span></a>
 
                                         <a class="popup-content" href="#QuickView"><span class="action-text">Quick View</span><span class="icon"><i class="fa-light fa-eye"></i></span></a>
                                     </div>
                                 </div>
                                 <div class="product-grid-content">
-                                    <h3 class="box-title"><a href="shop-details.html">Apple iPad Air 4 1.9inch Wi-Fi 256GB</a></h3>
+                                    <h3 class="box-title"><a href="shop-details.php">Apple iPad Air 4 1.9inch Wi-Fi 256GB</a></h3>
                                     <div class="woocommerce-product-rating">
                                         <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
                                             <span>Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span>
@@ -788,9 +788,9 @@ Product Area
                                         <del class="count">(14)</del>
                                     </div>
                                     <span class="box-price">$993.00 <del> $1264.00</del></span>
-                                    <span class="product-text"><i class="fa-light fa-check"></i><a href="shop.html" class="stock">In Stock</a>65
+                                    <span class="product-text"><i class="fa-light fa-check"></i><a href="shop.php" class="stock">In Stock</a>65
                                         Products</span>
-                                    <a href="cart.html" class="th-btn2 btn-fw">
+                                    <a href="cart.php" class="th-btn2 btn-fw">
                                         <span class="link-effect">
                                             <span class="effect-1">Add To Cart</span>
                                             <span class="effect-1 style2">Add To Cart</span>
@@ -806,14 +806,14 @@ Product Area
                                 <div class="box-img">
                                     <img src="assets/img/product/product_2_6.png" alt="menu Image">
                                     <div class="product-action">
-                                        <a href="wishlist.html"><span class="action-text">Add To Wishlist</span><span class="icon"><i class="fa-regular fa-heart"></i></span></a>
-                                        <a href="cart.html"><span class="action-text">Compare</span><span class="icon"><i class="fa-light fa-arrow-right-arrow-left"></i></span></a>
+                                        <a href="wishlist.php"><span class="action-text">Add To Wishlist</span><span class="icon"><i class="fa-regular fa-heart"></i></span></a>
+                                        <a href="cart.php"><span class="action-text">Compare</span><span class="icon"><i class="fa-light fa-arrow-right-arrow-left"></i></span></a>
 
                                         <a class="popup-content" href="#QuickView"><span class="action-text">Quick View</span><span class="icon"><i class="fa-light fa-eye"></i></span></a>
                                     </div>
                                 </div>
                                 <div class="product-grid-content">
-                                    <h3 class="box-title"><a href="shop-details.html">Samsung Galaxy Watch7 Aluminum Smartwatch</a></h3>
+                                    <h3 class="box-title"><a href="shop-details.php">Samsung Galaxy Watch7 Aluminum Smartwatch</a></h3>
                                     <div class="woocommerce-product-rating">
                                         <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
                                             <span>Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span>
@@ -822,9 +822,9 @@ Product Area
                                         <del class="count">(14)</del>
                                     </div>
                                     <span class="box-price">$989.00 <del>$1279.00</del></span>
-                                    <span class="product-text"><i class="fa-light fa-check"></i><a href="shop.html" class="stock">In Stock</a>65
+                                    <span class="product-text"><i class="fa-light fa-check"></i><a href="shop.php" class="stock">In Stock</a>65
                                         Products</span>
-                                    <a href="cart.html" class="th-btn2 btn-fw">
+                                    <a href="cart.php" class="th-btn2 btn-fw">
                                         <span class="link-effect">
                                             <span class="effect-1">Add To Cart</span>
                                             <span class="effect-1 style2">Add To Cart</span>
@@ -840,14 +840,14 @@ Product Area
                                 <div class="box-img">
                                     <img src="assets/img/product/product_2_7.png" alt="menu Image">
                                     <div class="product-action">
-                                        <a href="wishlist.html"><span class="action-text">Add To Wishlist</span><span class="icon"><i class="fa-regular fa-heart"></i></span></a>
-                                        <a href="cart.html"><span class="action-text">Compare</span><span class="icon"><i class="fa-light fa-arrow-right-arrow-left"></i></span></a>
+                                        <a href="wishlist.php"><span class="action-text">Add To Wishlist</span><span class="icon"><i class="fa-regular fa-heart"></i></span></a>
+                                        <a href="cart.php"><span class="action-text">Compare</span><span class="icon"><i class="fa-light fa-arrow-right-arrow-left"></i></span></a>
 
                                         <a class="popup-content" href="#QuickView"><span class="action-text">Quick View</span><span class="icon"><i class="fa-light fa-eye"></i></span></a>
                                     </div>
                                 </div>
                                 <div class="product-grid-content">
-                                    <h3 class="box-title"><a href="shop-details.html">Samsung Galaxy Watch7 Aluminum Smartwatch</a></h3>
+                                    <h3 class="box-title"><a href="shop-details.php">Samsung Galaxy Watch7 Aluminum Smartwatch</a></h3>
                                     <div class="woocommerce-product-rating">
                                         <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
                                             <span>Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span>
@@ -856,9 +856,9 @@ Product Area
                                         <del class="count">(14)</del>
                                     </div>
                                     <span class="box-price">$985.00 <del> $1259.00</del></span>
-                                    <span class="product-text"><i class="fa-light fa-check"></i><a href="shop.html" class="stock">In Stock</a>65
+                                    <span class="product-text"><i class="fa-light fa-check"></i><a href="shop.php" class="stock">In Stock</a>65
                                         Products</span>
-                                    <a href="cart.html" class="th-btn2 btn-fw">
+                                    <a href="cart.php" class="th-btn2 btn-fw">
                                         <span class="link-effect">
                                             <span class="effect-1">Add To Cart</span>
                                             <span class="effect-1 style2">Add To Cart</span>
@@ -874,14 +874,14 @@ Product Area
                                 <div class="box-img">
                                     <img src="assets/img/product/product_2_8.png" alt="menu Image">
                                     <div class="product-action">
-                                        <a href="wishlist.html"><span class="action-text">Add To Wishlist</span><span class="icon"><i class="fa-regular fa-heart"></i></span></a>
-                                        <a href="cart.html"><span class="action-text">Compare</span><span class="icon"><i class="fa-light fa-arrow-right-arrow-left"></i></span></a>
+                                        <a href="wishlist.php"><span class="action-text">Add To Wishlist</span><span class="icon"><i class="fa-regular fa-heart"></i></span></a>
+                                        <a href="cart.php"><span class="action-text">Compare</span><span class="icon"><i class="fa-light fa-arrow-right-arrow-left"></i></span></a>
 
                                         <a class="popup-content" href="#QuickView"><span class="action-text">Quick View</span><span class="icon"><i class="fa-light fa-eye"></i></span></a>
                                     </div>
                                 </div>
                                 <div class="product-grid-content">
-                                    <h3 class="box-title"><a href="shop-details.html">Fujifilm Instax Mini 12 Instant Print</a></h3>
+                                    <h3 class="box-title"><a href="shop-details.php">Fujifilm Instax Mini 12 Instant Print</a></h3>
                                     <div class="woocommerce-product-rating">
                                         <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
                                             <span>Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span>
@@ -890,9 +890,9 @@ Product Area
                                         <del class="count">(14)</del>
                                     </div>
                                     <span class="box-price">$990.00 <del>$1269.00</del></span>
-                                    <span class="product-text"><i class="fa-light fa-check"></i><a href="shop.html" class="stock">In Stock</a>65
+                                    <span class="product-text"><i class="fa-light fa-check"></i><a href="shop.php" class="stock">In Stock</a>65
                                         Products</span>
-                                    <a href="cart.html" class="th-btn2 btn-fw">
+                                    <a href="cart.php" class="th-btn2 btn-fw">
                                         <span class="link-effect">
                                             <span class="effect-1">Add To Cart</span>
                                             <span class="effect-1 style2">Add To Cart</span>
@@ -945,7 +945,7 @@ Product Area
                                     <img src="assets/img/product/product_2_11.png" alt="Image">
                                 </div>
                                 <div class="product-grid-content">
-                                    <h3 class="box-title"><a href="shop-details.html">Xiaomi Redmi Note 12 Pro 5G 128 GB, 6 GB RAM</a></h3>
+                                    <h3 class="box-title"><a href="shop-details.php">Xiaomi Redmi Note 12 Pro 5G 128 GB, 6 GB RAM</a></h3>
                                     <div class="woocommerce-product-rating">
                                         <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
                                             <span>Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span>
@@ -964,7 +964,7 @@ Product Area
                                     <img src="assets/img/product/product_2_12.png" alt="Image">
                                 </div>
                                 <div class="product-grid-content">
-                                    <h3 class="box-title"><a href="shop-details.html">iphone x cell phone 12 Pro 5G 128 GB, 6 GB RAM</a></h3>
+                                    <h3 class="box-title"><a href="shop-details.php">iphone x cell phone 12 Pro 5G 128 GB, 6 GB RAM</a></h3>
                                     <div class="woocommerce-product-rating">
                                         <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
                                             <span>Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span>
@@ -983,7 +983,7 @@ Product Area
                                     <img src="assets/img/product/product_2_13.png" alt="Image">
                                 </div>
                                 <div class="product-grid-content">
-                                    <h3 class="box-title"><a href="shop-details.html">samsung z fold6 12 Pro 5G 128 GB, 6 GB RAM</a></h3>
+                                    <h3 class="box-title"><a href="shop-details.php">samsung z fold6 12 Pro 5G 128 GB, 6 GB RAM</a></h3>
                                     <div class="woocommerce-product-rating">
                                         <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
                                             <span>Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span>
@@ -1002,7 +1002,7 @@ Product Area
                                     <img src="assets/img/product/product_2_14.png" alt="Image">
                                 </div>
                                 <div class="product-grid-content">
-                                    <h3 class="box-title"><a href="shop-details.html">Samsung Galaxy Watch6 Aluminum Smartwatch BT - Silver</a></h3>
+                                    <h3 class="box-title"><a href="shop-details.php">Samsung Galaxy Watch6 Aluminum Smartwatch BT - Silver</a></h3>
                                     <div class="woocommerce-product-rating">
                                         <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
                                             <span>Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span>
@@ -1021,7 +1021,7 @@ Product Area
                                     <img src="assets/img/product/product_2_15.png" alt="Image">
                                 </div>
                                 <div class="product-grid-content">
-                                    <h3 class="box-title"><a href="shop-details.html">Samsung Galaxy Z Fold6 12 Pro 5G 128 GB, 6 GB RAM</a></h3>
+                                    <h3 class="box-title"><a href="shop-details.php">Samsung Galaxy Z Fold6 12 Pro 5G 128 GB, 6 GB RAM</a></h3>
                                     <div class="woocommerce-product-rating">
                                         <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
                                             <span>Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span>
@@ -1040,7 +1040,7 @@ Product Area
                                     <img src="assets/img/product/product_2_16.png" alt="Image">
                                 </div>
                                 <div class="product-grid-content">
-                                    <h3 class="box-title"><a href="shop-details.html">J.P.Gold Wireless Stereo Earphones Headphonea</a></h3>
+                                    <h3 class="box-title"><a href="shop-details.php">J.P.Gold Wireless Stereo Earphones Headphonea</a></h3>
                                     <div class="woocommerce-product-rating">
                                         <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
                                             <span>Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span>
@@ -1064,7 +1064,7 @@ Product Area
                                     <img src="assets/img/product/product_2_13.png" alt="Image">
                                 </div>
                                 <div class="product-grid-content">
-                                    <h3 class="box-title"><a href="shop-details.html">samsung z fold6 12 Pro 5G 128 GB, 6 GB RAM</a></h3>
+                                    <h3 class="box-title"><a href="shop-details.php">samsung z fold6 12 Pro 5G 128 GB, 6 GB RAM</a></h3>
                                     <div class="woocommerce-product-rating">
                                         <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
                                             <span>Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span>
@@ -1083,7 +1083,7 @@ Product Area
                                     <img src="assets/img/product/product_2_14.png" alt="Image">
                                 </div>
                                 <div class="product-grid-content">
-                                    <h3 class="box-title"><a href="shop-details.html">Samsung Galaxy Watch6 Aluminum Smartwatch BT - Silver</a></h3>
+                                    <h3 class="box-title"><a href="shop-details.php">Samsung Galaxy Watch6 Aluminum Smartwatch BT - Silver</a></h3>
                                     <div class="woocommerce-product-rating">
                                         <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
                                             <span>Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span>
@@ -1102,7 +1102,7 @@ Product Area
                                     <img src="assets/img/product/product_2_15.png" alt="Image">
                                 </div>
                                 <div class="product-grid-content">
-                                    <h3 class="box-title"><a href="shop-details.html">Samsung Galaxy Z Fold6 12 Pro 5G 128 GB, 6 GB RAM</a></h3>
+                                    <h3 class="box-title"><a href="shop-details.php">Samsung Galaxy Z Fold6 12 Pro 5G 128 GB, 6 GB RAM</a></h3>
                                     <div class="woocommerce-product-rating">
                                         <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
                                             <span>Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span>
@@ -1121,7 +1121,7 @@ Product Area
                                     <img src="assets/img/product/product_2_11.png" alt="Image">
                                 </div>
                                 <div class="product-grid-content">
-                                    <h3 class="box-title"><a href="shop-details.html">Xiaomi Redmi Note 12 Pro 5G 128 GB, 6 GB RAM</a></h3>
+                                    <h3 class="box-title"><a href="shop-details.php">Xiaomi Redmi Note 12 Pro 5G 128 GB, 6 GB RAM</a></h3>
                                     <div class="woocommerce-product-rating">
                                         <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
                                             <span>Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span>
@@ -1140,7 +1140,7 @@ Product Area
                                     <img src="assets/img/product/product_2_12.png" alt="Image">
                                 </div>
                                 <div class="product-grid-content">
-                                    <h3 class="box-title"><a href="shop-details.html">iphone x cell phone 12 Pro 5G 128 GB, 6 GB RAM</a></h3>
+                                    <h3 class="box-title"><a href="shop-details.php">iphone x cell phone 12 Pro 5G 128 GB, 6 GB RAM</a></h3>
                                     <div class="woocommerce-product-rating">
                                         <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
                                             <span>Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span>
@@ -1159,7 +1159,7 @@ Product Area
                                     <img src="assets/img/product/product_2_16.png" alt="Image">
                                 </div>
                                 <div class="product-grid-content">
-                                    <h3 class="box-title"><a href="shop-details.html">J.P.Gold Wireless Stereo Earphones Headphonea</a></h3>
+                                    <h3 class="box-title"><a href="shop-details.php">J.P.Gold Wireless Stereo Earphones Headphonea</a></h3>
                                     <div class="woocommerce-product-rating">
                                         <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
                                             <span>Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span>
@@ -1183,7 +1183,7 @@ Product Area
                                     <img src="assets/img/product/product_2_11.png" alt="Image">
                                 </div>
                                 <div class="product-grid-content">
-                                    <h3 class="box-title"><a href="shop-details.html">Xiaomi Redmi Note 12 Pro 5G 128 GB, 6 GB RAM</a></h3>
+                                    <h3 class="box-title"><a href="shop-details.php">Xiaomi Redmi Note 12 Pro 5G 128 GB, 6 GB RAM</a></h3>
                                     <div class="woocommerce-product-rating">
                                         <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
                                             <span>Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span>
@@ -1202,7 +1202,7 @@ Product Area
                                     <img src="assets/img/product/product_2_12.png" alt="Image">
                                 </div>
                                 <div class="product-grid-content">
-                                    <h3 class="box-title"><a href="shop-details.html">iphone x cell phone 12 Pro 5G 128 GB, 6 GB RAM</a></h3>
+                                    <h3 class="box-title"><a href="shop-details.php">iphone x cell phone 12 Pro 5G 128 GB, 6 GB RAM</a></h3>
                                     <div class="woocommerce-product-rating">
                                         <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
                                             <span>Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span>
@@ -1221,7 +1221,7 @@ Product Area
                                     <img src="assets/img/product/product_2_13.png" alt="Image">
                                 </div>
                                 <div class="product-grid-content">
-                                    <h3 class="box-title"><a href="shop-details.html">samsung z fold6 12 Pro 5G 128 GB, 6 GB RAM</a></h3>
+                                    <h3 class="box-title"><a href="shop-details.php">samsung z fold6 12 Pro 5G 128 GB, 6 GB RAM</a></h3>
                                     <div class="woocommerce-product-rating">
                                         <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
                                             <span>Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span>
@@ -1240,7 +1240,7 @@ Product Area
                                     <img src="assets/img/product/product_2_14.png" alt="Image">
                                 </div>
                                 <div class="product-grid-content">
-                                    <h3 class="box-title"><a href="shop-details.html">Samsung Galaxy Watch6 Aluminum Smartwatch BT - Silver</a></h3>
+                                    <h3 class="box-title"><a href="shop-details.php">Samsung Galaxy Watch6 Aluminum Smartwatch BT - Silver</a></h3>
                                     <div class="woocommerce-product-rating">
                                         <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
                                             <span>Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span>
@@ -1259,7 +1259,7 @@ Product Area
                                     <img src="assets/img/product/product_2_15.png" alt="Image">
                                 </div>
                                 <div class="product-grid-content">
-                                    <h3 class="box-title"><a href="shop-details.html">Samsung Galaxy Z Fold6 12 Pro 5G 128 GB, 6 GB RAM</a></h3>
+                                    <h3 class="box-title"><a href="shop-details.php">Samsung Galaxy Z Fold6 12 Pro 5G 128 GB, 6 GB RAM</a></h3>
                                     <div class="woocommerce-product-rating">
                                         <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
                                             <span>Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span>
@@ -1278,7 +1278,7 @@ Product Area
                                     <img src="assets/img/product/product_2_16.png" alt="Image">
                                 </div>
                                 <div class="product-grid-content">
-                                    <h3 class="box-title"><a href="shop-details.html">J.P.Gold Wireless Stereo Earphones Headphonea</a></h3>
+                                    <h3 class="box-title"><a href="shop-details.php">J.P.Gold Wireless Stereo Earphones Headphonea</a></h3>
                                     <div class="woocommerce-product-rating">
                                         <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
                                             <span>Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span>
@@ -1302,7 +1302,7 @@ Product Area
                                     <img src="assets/img/product/product_2_13.png" alt="Image">
                                 </div>
                                 <div class="product-grid-content">
-                                    <h3 class="box-title"><a href="shop-details.html">samsung z fold6 12 Pro 5G 128 GB, 6 GB RAM</a></h3>
+                                    <h3 class="box-title"><a href="shop-details.php">samsung z fold6 12 Pro 5G 128 GB, 6 GB RAM</a></h3>
                                     <div class="woocommerce-product-rating">
                                         <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
                                             <span>Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span>
@@ -1321,7 +1321,7 @@ Product Area
                                     <img src="assets/img/product/product_2_11.png" alt="Image">
                                 </div>
                                 <div class="product-grid-content">
-                                    <h3 class="box-title"><a href="shop-details.html">Xiaomi Redmi Note 12 Pro 5G 128 GB, 6 GB RAM</a></h3>
+                                    <h3 class="box-title"><a href="shop-details.php">Xiaomi Redmi Note 12 Pro 5G 128 GB, 6 GB RAM</a></h3>
                                     <div class="woocommerce-product-rating">
                                         <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
                                             <span>Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span>
@@ -1340,7 +1340,7 @@ Product Area
                                     <img src="assets/img/product/product_2_12.png" alt="Image">
                                 </div>
                                 <div class="product-grid-content">
-                                    <h3 class="box-title"><a href="shop-details.html">iphone x cell phone 12 Pro 5G 128 GB, 6 GB RAM</a></h3>
+                                    <h3 class="box-title"><a href="shop-details.php">iphone x cell phone 12 Pro 5G 128 GB, 6 GB RAM</a></h3>
                                     <div class="woocommerce-product-rating">
                                         <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
                                             <span>Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span>
@@ -1359,7 +1359,7 @@ Product Area
                                     <img src="assets/img/product/product_2_16.png" alt="Image">
                                 </div>
                                 <div class="product-grid-content">
-                                    <h3 class="box-title"><a href="shop-details.html">J.P.Gold Wireless Stereo Earphones Headphonea</a></h3>
+                                    <h3 class="box-title"><a href="shop-details.php">J.P.Gold Wireless Stereo Earphones Headphonea</a></h3>
                                     <div class="woocommerce-product-rating">
                                         <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
                                             <span>Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span>
@@ -1378,7 +1378,7 @@ Product Area
                                     <img src="assets/img/product/product_2_14.png" alt="Image">
                                 </div>
                                 <div class="product-grid-content">
-                                    <h3 class="box-title"><a href="shop-details.html">Samsung Galaxy Watch6 Aluminum Smartwatch BT - Silver</a></h3>
+                                    <h3 class="box-title"><a href="shop-details.php">Samsung Galaxy Watch6 Aluminum Smartwatch BT - Silver</a></h3>
                                     <div class="woocommerce-product-rating">
                                         <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
                                             <span>Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span>
@@ -1397,7 +1397,7 @@ Product Area
                                     <img src="assets/img/product/product_2_15.png" alt="Image">
                                 </div>
                                 <div class="product-grid-content">
-                                    <h3 class="box-title"><a href="shop-details.html">Samsung Galaxy Z Fold6 12 Pro 5G 128 GB, 6 GB RAM</a></h3>
+                                    <h3 class="box-title"><a href="shop-details.php">Samsung Galaxy Z Fold6 12 Pro 5G 128 GB, 6 GB RAM</a></h3>
                                     <div class="woocommerce-product-rating">
                                         <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
                                             <span>Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span>
@@ -1421,7 +1421,7 @@ Product Area
                                     <img src="assets/img/product/product_2_13.png" alt="Image">
                                 </div>
                                 <div class="product-grid-content">
-                                    <h3 class="box-title"><a href="shop-details.html">samsung z fold6 12 Pro 5G 128 GB, 6 GB RAM</a></h3>
+                                    <h3 class="box-title"><a href="shop-details.php">samsung z fold6 12 Pro 5G 128 GB, 6 GB RAM</a></h3>
                                     <div class="woocommerce-product-rating">
                                         <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
                                             <span>Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span>
@@ -1440,7 +1440,7 @@ Product Area
                                     <img src="assets/img/product/product_2_14.png" alt="Image">
                                 </div>
                                 <div class="product-grid-content">
-                                    <h3 class="box-title"><a href="shop-details.html">Samsung Galaxy Watch6 Aluminum Smartwatch BT - Silver</a></h3>
+                                    <h3 class="box-title"><a href="shop-details.php">Samsung Galaxy Watch6 Aluminum Smartwatch BT - Silver</a></h3>
                                     <div class="woocommerce-product-rating">
                                         <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
                                             <span>Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span>
@@ -1459,7 +1459,7 @@ Product Area
                                     <img src="assets/img/product/product_2_15.png" alt="Image">
                                 </div>
                                 <div class="product-grid-content">
-                                    <h3 class="box-title"><a href="shop-details.html">Samsung Galaxy Z Fold6 12 Pro 5G 128 GB, 6 GB RAM</a></h3>
+                                    <h3 class="box-title"><a href="shop-details.php">Samsung Galaxy Z Fold6 12 Pro 5G 128 GB, 6 GB RAM</a></h3>
                                     <div class="woocommerce-product-rating">
                                         <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
                                             <span>Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span>
@@ -1478,7 +1478,7 @@ Product Area
                                     <img src="assets/img/product/product_2_11.png" alt="Image">
                                 </div>
                                 <div class="product-grid-content">
-                                    <h3 class="box-title"><a href="shop-details.html">Xiaomi Redmi Note 12 Pro 5G 128 GB, 6 GB RAM</a></h3>
+                                    <h3 class="box-title"><a href="shop-details.php">Xiaomi Redmi Note 12 Pro 5G 128 GB, 6 GB RAM</a></h3>
                                     <div class="woocommerce-product-rating">
                                         <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
                                             <span>Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span>
@@ -1497,7 +1497,7 @@ Product Area
                                     <img src="assets/img/product/product_2_12.png" alt="Image">
                                 </div>
                                 <div class="product-grid-content">
-                                    <h3 class="box-title"><a href="shop-details.html">iphone x cell phone 12 Pro 5G 128 GB, 6 GB RAM</a></h3>
+                                    <h3 class="box-title"><a href="shop-details.php">iphone x cell phone 12 Pro 5G 128 GB, 6 GB RAM</a></h3>
                                     <div class="woocommerce-product-rating">
                                         <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
                                             <span>Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span>
@@ -1516,7 +1516,7 @@ Product Area
                                     <img src="assets/img/product/product_2_16.png" alt="Image">
                                 </div>
                                 <div class="product-grid-content">
-                                    <h3 class="box-title"><a href="shop-details.html">J.P.Gold Wireless Stereo Earphones Headphonea</a></h3>
+                                    <h3 class="box-title"><a href="shop-details.php">J.P.Gold Wireless Stereo Earphones Headphonea</a></h3>
                                     <div class="woocommerce-product-rating">
                                         <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
                                             <span>Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span>
@@ -1540,7 +1540,7 @@ Product Area
                                     <img src="assets/img/product/product_2_11.png" alt="Image">
                                 </div>
                                 <div class="product-grid-content">
-                                    <h3 class="box-title"><a href="shop-details.html">Xiaomi Redmi Note 12 Pro 5G 128 GB, 6 GB RAM</a></h3>
+                                    <h3 class="box-title"><a href="shop-details.php">Xiaomi Redmi Note 12 Pro 5G 128 GB, 6 GB RAM</a></h3>
                                     <div class="woocommerce-product-rating">
                                         <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
                                             <span>Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span>
@@ -1559,7 +1559,7 @@ Product Area
                                     <img src="assets/img/product/product_2_12.png" alt="Image">
                                 </div>
                                 <div class="product-grid-content">
-                                    <h3 class="box-title"><a href="shop-details.html">iphone x cell phone 12 Pro 5G 128 GB, 6 GB RAM</a></h3>
+                                    <h3 class="box-title"><a href="shop-details.php">iphone x cell phone 12 Pro 5G 128 GB, 6 GB RAM</a></h3>
                                     <div class="woocommerce-product-rating">
                                         <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
                                             <span>Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span>
@@ -1578,7 +1578,7 @@ Product Area
                                     <img src="assets/img/product/product_2_13.png" alt="Image">
                                 </div>
                                 <div class="product-grid-content">
-                                    <h3 class="box-title"><a href="shop-details.html">samsung z fold6 12 Pro 5G 128 GB, 6 GB RAM</a></h3>
+                                    <h3 class="box-title"><a href="shop-details.php">samsung z fold6 12 Pro 5G 128 GB, 6 GB RAM</a></h3>
                                     <div class="woocommerce-product-rating">
                                         <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
                                             <span>Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span>
@@ -1597,7 +1597,7 @@ Product Area
                                     <img src="assets/img/product/product_2_14.png" alt="Image">
                                 </div>
                                 <div class="product-grid-content">
-                                    <h3 class="box-title"><a href="shop-details.html">Samsung Galaxy Watch6 Aluminum Smartwatch BT - Silver</a></h3>
+                                    <h3 class="box-title"><a href="shop-details.php">Samsung Galaxy Watch6 Aluminum Smartwatch BT - Silver</a></h3>
                                     <div class="woocommerce-product-rating">
                                         <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
                                             <span>Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span>
@@ -1616,7 +1616,7 @@ Product Area
                                     <img src="assets/img/product/product_2_15.png" alt="Image">
                                 </div>
                                 <div class="product-grid-content">
-                                    <h3 class="box-title"><a href="shop-details.html">Samsung Galaxy Z Fold6 12 Pro 5G 128 GB, 6 GB RAM</a></h3>
+                                    <h3 class="box-title"><a href="shop-details.php">Samsung Galaxy Z Fold6 12 Pro 5G 128 GB, 6 GB RAM</a></h3>
                                     <div class="woocommerce-product-rating">
                                         <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
                                             <span>Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span>
@@ -1635,7 +1635,7 @@ Product Area
                                     <img src="assets/img/product/product_2_16.png" alt="Image">
                                 </div>
                                 <div class="product-grid-content">
-                                    <h3 class="box-title"><a href="shop-details.html">J.P.Gold Wireless Stereo Earphones Headphonea</a></h3>
+                                    <h3 class="box-title"><a href="shop-details.php">J.P.Gold Wireless Stereo Earphones Headphonea</a></h3>
                                     <div class="woocommerce-product-rating">
                                         <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
                                             <span>Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span>
@@ -1666,7 +1666,7 @@ Testimonial Area
                 </div>
                 <div class="col-lg-3">
                     <div class="product-btn pb-10 text-end">
-                        <a href="contact.html" class="line-btn style2">Explore All</a>
+                        <a href="contact.php" class="line-btn style2">Explore All</a>
                     </div>
                 </div>
             </div>
