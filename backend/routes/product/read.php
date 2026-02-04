@@ -17,6 +17,10 @@ if (isset($_GET['id'])) {
         http_response_code(404);
         echo json_encode(['error' => 'Product not found']);
     }
+} elseif (isset($_GET['recent'])) {
+    $limit = (int)$_GET['recent'];
+    $products = $product->getRecentProducts($limit);
+    echo json_encode(['success' => true, 'products' => $products]);
 } elseif (isset($_GET['category_id'])) {
     $categoryId = (int)$_GET['category_id'];
     $products = $product->getProductsByCategory($categoryId);

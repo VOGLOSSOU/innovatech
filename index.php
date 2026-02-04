@@ -57,6 +57,14 @@
 
 <body class="electronics-shop">
 
+    <?php 
+    // Connexion à la base de données
+    require_once 'backend/config/database.php';
+    require_once 'backend/models/Product.php';
+    $productModel = new Product();
+    $recentProducts = $productModel->getRecentProducts(6);
+    ?>
+
     <?php include 'include/header.php'; ?>
 
     <!--==============================
@@ -292,278 +300,42 @@ Product Area
                 <div class="swiper th-slider has-shadow productSlider4" data-slider-options='{"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"2"},"768":{"slidesPerView":"2"},"992":{"slidesPerView":"3"},"1400":{"slidesPerView":"5"},"1600":{"slidesPerView":"6"}}}'>
                     <div class="swiper-wrapper">
 
+                        <?php if (!empty($recentProducts)): ?>
+                        <?php foreach ($recentProducts as $product): ?>
                         <div class="swiper-slide">
                             <div class="product-grid style2">
                                 <div class="box-img">
-                                    <img src="assets/img/product/product_2_1.png" alt="menu Image">
-                                    <span class="product-tag">-10%</span>
+                                    <img src="<?php echo '/' . htmlspecialchars($product['image'] ?: 'assets/img/placeholder.jpg'); ?>" alt="<?php echo htmlspecialchars($product['nom']); ?>">
+                                    <span class="product-tag">NEW</span>
                                     <div class="product-action">
                                         <a href="wishlist.php"><span class="action-text">Add To Wishlist</span><span class="icon"><i class="fa-regular fa-heart"></i></span></a>
                                         <a href="cart.php"><span class="action-text">Compare</span><span class="icon"><i class="fa-light fa-arrow-right-arrow-left"></i></span></a>
-
                                         <a class="popup-content" href="#QuickView"><span class="action-text">Quick View</span><span class="icon"><i class="fa-light fa-eye"></i></span></a>
                                     </div>
                                 </div>
                                 <div class="product-grid-content">
-                                    <h3 class="box-title"><a href="shop-details.php">Apple iPad Air 4 10.9-inch Wi-Fi 256GB</a></h3>
-                                    <div class="woocommerce-product-rating">
-                                        <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
-                                            <span>Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span>
-                                                customer rating</span>
-                                        </div>
-                                        <del class="count">(14)</del>
-                                    </div>
-                                    <span class="box-price">$985.00 <del> $1259.00</del></span>
-                                    <span class="product-text"><i class="fa-light fa-check"></i><span class="stock">In Stock</span>65
-                                        Products</span>
+                                    <h3 class="box-title"><a href="shop-details.php?id=<?php echo $product['id']; ?>"><?php echo htmlspecialchars($product['nom']); ?></a></h3>
+                                    <span class="box-price"><?php echo number_format($product['prix'], 2, ',', ' '); ?>€</span>
+                                    <span class="product-text"><i class="fa-light fa-check"></i><span class="stock">En stock</span><?php echo $product['quantity']; ?></span>
                                     <a href="cart.php" class="th-btn2 btn-fw">
                                         <span class="link-effect">
-                                            <span class="effect-1">Add To Cart</span>
-                                            <span class="effect-1 style2">Add To Cart</span>
+                                            <span class="effect-1">Ajouter au panier</span>
+                                            <span class="effect-1 style2">Ajouter au panier</span>
                                         </span>
                                     </a>
                                 </div>
                             </div>
                         </div>
-
-
+                        <?php endforeach; ?>
+                        <?php else: ?>
                         <div class="swiper-slide">
                             <div class="product-grid style2">
-                                <div class="box-img">
-                                    <img src="assets/img/product/product_2_2.png" alt="menu Image">
-                                    <div class="product-action">
-                                        <a href="wishlist.php"><span class="action-text">Add To Wishlist</span><span class="icon"><i class="fa-regular fa-heart"></i></span></a>
-                                        <a href="cart.php"><span class="action-text">Compare</span><span class="icon"><i class="fa-light fa-arrow-right-arrow-left"></i></span></a>
-
-                                        <a class="popup-content" href="#QuickView"><span class="action-text">Quick View</span><span class="icon"><i class="fa-light fa-eye"></i></span></a>
-                                    </div>
-                                </div>
-                                <div class="product-grid-content">
-                                    <h3 class="box-title"><a href="shop-details.php">Apple iPhone 14 Pro Max 6.7inch 48MP</a></h3>
-                                    <div class="woocommerce-product-rating">
-                                        <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
-                                            <span>Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span>
-                                                customer rating</span>
-                                        </div>
-                                        <del class="count">(14)</del>
-                                    </div>
-                                    <span class="box-price">$990.00 <del>$1269.00</del></span>
-                                    <span class="product-text"><i class="fa-light fa-check"></i><span class="stock">In Stock</span>65
-                                        Products</span>
-                                    <a href="cart.php" class="th-btn2 btn-fw">
-                                        <span class="link-effect">
-                                            <span class="effect-1">Add To Cart</span>
-                                            <span class="effect-1 style2">Add To Cart</span>
-                                        </span>
-                                    </a>
+                                <div class="box-content">
+                                    <p>Aucun produit disponible pour le moment.</p>
                                 </div>
                             </div>
                         </div>
-
-
-                        <div class="swiper-slide">
-                            <div class="product-grid style2">
-                                <div class="box-img">
-                                    <img src="assets/img/product/product_2_3.png" alt="menu Image">
-                                    <div class="product-action">
-                                        <a href="wishlist.php"><span class="action-text">Add To Wishlist</span><span class="icon"><i class="fa-regular fa-heart"></i></span></a>
-                                        <a href="cart.php"><span class="action-text">Compare</span><span class="icon"><i class="fa-light fa-arrow-right-arrow-left"></i></span></a>
-
-                                        <a class="popup-content" href="#QuickView"><span class="action-text">Quick View</span><span class="icon"><i class="fa-light fa-eye"></i></span></a>
-                                    </div>
-                                </div>
-                                <div class="product-grid-content">
-                                    <h3 class="box-title"><a href="shop-details.php">Apple MacBook Air 15 inch M3 Chip, 8</a></h3>
-                                    <div class="woocommerce-product-rating">
-                                        <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
-                                            <span>Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span>
-                                                customer rating</span>
-                                        </div>
-                                        <del class="count">(14)</del>
-                                    </div>
-                                    <span class="box-price">$988.00 <del>$1260.00</del></span>
-                                    <span class="product-text"><i class="fa-light fa-check"></i><span class="stock">In Stock</span>65
-                                        Products</span>
-                                    <a href="cart.php" class="th-btn2 btn-fw">
-                                        <span class="link-effect">
-                                            <span class="effect-1">Add To Cart</span>
-                                            <span class="effect-1 style2">Add To Cart</span>
-                                        </span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="swiper-slide">
-                            <div class="product-grid style2">
-                                <div class="box-img">
-                                    <img src="assets/img/product/product_2_4.png" alt="menu Image">
-                                    <span class="product-tag">-15%</span>
-                                    <div class="product-action">
-                                        <a href="wishlist.php"><span class="action-text">Add To Wishlist</span><span class="icon"><i class="fa-regular fa-heart"></i></span></a>
-                                        <a href="cart.php"><span class="action-text">Compare</span><span class="icon"><i class="fa-light fa-arrow-right-arrow-left"></i></span></a>
-
-                                        <a class="popup-content" href="#QuickView"><span class="action-text">Quick View</span><span class="icon"><i class="fa-light fa-eye"></i></span></a>
-                                    </div>
-                                </div>
-                                <div class="product-grid-content">
-                                    <h3 class="box-title"><a href="shop-details.php">Apple MacBook Air 15 inch M3 Chip, 8</a></h3>
-                                    <div class="woocommerce-product-rating">
-                                        <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
-                                            <span>Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span>
-                                                customer rating</span>
-                                        </div>
-                                        <del class="count">(14)</del>
-                                    </div>
-                                    <span class="box-price">$995.00 <del>$1269.00</del></span>
-                                    <span class="product-text"><i class="fa-light fa-check"></i><span class="stock">In Stock</span>65
-                                        Products</span>
-                                    <a href="cart.php" class="th-btn2 btn-fw">
-                                        <span class="link-effect">
-                                            <span class="effect-1">Add To Cart</span>
-                                            <span class="effect-1 style2">Add To Cart</span>
-                                        </span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="swiper-slide">
-                            <div class="product-grid style2">
-                                <div class="box-img">
-                                    <img src="assets/img/product/product_2_5.png" alt="menu Image">
-                                    <div class="product-action">
-                                        <a href="wishlist.php"><span class="action-text">Add To Wishlist</span><span class="icon"><i class="fa-regular fa-heart"></i></span></a>
-                                        <a href="cart.php"><span class="action-text">Compare</span><span class="icon"><i class="fa-light fa-arrow-right-arrow-left"></i></span></a>
-
-                                        <a class="popup-content" href="#QuickView"><span class="action-text">Quick View</span><span class="icon"><i class="fa-light fa-eye"></i></span></a>
-                                    </div>
-                                </div>
-                                <div class="product-grid-content">
-                                    <h3 class="box-title"><a href="shop-details.php">Apple iPad Air 4 1.9inch Wi-Fi 256GB</a></h3>
-                                    <div class="woocommerce-product-rating">
-                                        <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
-                                            <span>Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span>
-                                                customer rating</span>
-                                        </div>
-                                        <del class="count">(14)</del>
-                                    </div>
-                                    <span class="box-price">$993.00 <del> $1264.00</del></span>
-                                    <span class="product-text"><i class="fa-light fa-check"></i><span class="stock">In Stock</span>65
-                                        Products</span>
-                                    <a href="cart.php" class="th-btn2 btn-fw">
-                                        <span class="link-effect">
-                                            <span class="effect-1">Add To Cart</span>
-                                            <span class="effect-1 style2">Add To Cart</span>
-                                        </span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="swiper-slide">
-                            <div class="product-grid style2">
-                                <div class="box-img">
-                                    <img src="assets/img/product/product_2_6.png" alt="menu Image">
-                                    <div class="product-action">
-                                        <a href="wishlist.php"><span class="action-text">Add To Wishlist</span><span class="icon"><i class="fa-regular fa-heart"></i></span></a>
-                                        <a href="cart.php"><span class="action-text">Compare</span><span class="icon"><i class="fa-light fa-arrow-right-arrow-left"></i></span></a>
-
-                                        <a class="popup-content" href="#QuickView"><span class="action-text">Quick View</span><span class="icon"><i class="fa-light fa-eye"></i></span></a>
-                                    </div>
-                                </div>
-                                <div class="product-grid-content">
-                                    <h3 class="box-title"><a href="shop-details.php">Samsung Galaxy Watch7 Aluminum Smartwatch</a></h3>
-                                    <div class="woocommerce-product-rating">
-                                        <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
-                                            <span>Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span>
-                                                customer rating</span>
-                                        </div>
-                                        <del class="count">(14)</del>
-                                    </div>
-                                    <span class="box-price">$989.00 <del>$1279.00</del></span>
-                                    <span class="product-text"><i class="fa-light fa-check"></i><span class="stock">In Stock</span>65
-                                        Products</span>
-                                    <a href="cart.php" class="th-btn2 btn-fw">
-                                        <span class="link-effect">
-                                            <span class="effect-1">Add To Cart</span>
-                                            <span class="effect-1 style2">Add To Cart</span>
-                                        </span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="swiper-slide">
-                            <div class="product-grid style2">
-                                <div class="box-img">
-                                    <img src="assets/img/product/product_2_6.png" alt="menu Image">
-                                    <div class="product-action">
-                                        <a href="wishlist.php"><span class="action-text">Add To Wishlist</span><span class="icon"><i class="fa-regular fa-heart"></i></span></a>
-                                        <a href="cart.php"><span class="action-text">Compare</span><span class="icon"><i class="fa-light fa-arrow-right-arrow-left"></i></span></a>
-
-                                        <a class="popup-content" href="#QuickView"><span class="action-text">Quick View</span><span class="icon"><i class="fa-light fa-eye"></i></span></a>
-                                    </div>
-                                </div>
-                                <div class="product-grid-content">
-                                    <h3 class="box-title"><a href="shop-details.php">Samsung Galaxy Watch7 Aluminum Smartwatch</a></h3>
-                                    <div class="woocommerce-product-rating">
-                                        <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
-                                            <span>Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span>
-                                                customer rating</span>
-                                        </div>
-                                        <del class="count">(14)</del>
-                                    </div>
-                                    <span class="box-price">$985.00 <del> $1259.00</del></span>
-                                    <span class="product-text"><i class="fa-light fa-check"></i><span class="stock">In Stock</span>65
-                                        Products</span>
-                                    <a href="cart.php" class="th-btn2 btn-fw">
-                                        <span class="link-effect">
-                                            <span class="effect-1">Add To Cart</span>
-                                            <span class="effect-1 style2">Add To Cart</span>
-                                        </span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="swiper-slide">
-                            <div class="product-grid style2">
-                                <div class="box-img">
-                                    <img src="assets/img/product/product_2_7.png" alt="menu Image">
-                                    <div class="product-action">
-                                        <a href="wishlist.php"><span class="action-text">Add To Wishlist</span><span class="icon"><i class="fa-regular fa-heart"></i></span></a>
-                                        <a href="cart.php"><span class="action-text">Compare</span><span class="icon"><i class="fa-light fa-arrow-right-arrow-left"></i></span></a>
-
-                                        <a class="popup-content" href="#QuickView"><span class="action-text">Quick View</span><span class="icon"><i class="fa-light fa-eye"></i></span></a>
-                                    </div>
-                                </div>
-                                <div class="product-grid-content">
-                                    <h3 class="box-title"><a href="shop-details.php">Fujifilm Instax Mini 12 Instant Print</a></h3>
-                                    <div class="woocommerce-product-rating">
-                                        <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
-                                            <span>Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span>
-                                                customer rating</span>
-                                        </div>
-                                        <del class="count">(14)</del>
-                                    </div>
-                                    <span class="box-price">$990.00 <del>$1269.00</del></span>
-                                    <span class="product-text"><i class="fa-light fa-check"></i><span class="stock">In Stock</span>65
-                                        Products</span>
-                                    <a href="cart.php" class="th-btn2 btn-fw">
-                                        <span class="link-effect">
-                                            <span class="effect-1">Add To Cart</span>
-                                            <span class="effect-1 style2">Add To Cart</span>
-                                        </span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                        <?php endif; ?>
 
                     </div>
                 </div>
