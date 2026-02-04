@@ -351,7 +351,7 @@ Product Area
             <div class="row justify-content-lg-between justify-content-center align-items-center">
                 <div class="col-auto">
                     <div class="title-area text-center text-lg-start mb-30">
-                        <h2 class="sec-title style2">Best Sellerss</h2>
+                        <h2 class="sec-title style2">best sellers</h2>
                     </div>
                 </div>
                 <div class="col-lg-8">
