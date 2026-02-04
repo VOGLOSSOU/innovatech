@@ -307,20 +307,15 @@ Product Area
                                 <div class="box-img">
                                     <img src="<?php echo '/' . htmlspecialchars($product['image'] ?: 'assets/img/placeholder.jpg'); ?>" alt="<?php echo htmlspecialchars($product['nom']); ?>">
                                     <span class="product-tag">NEW</span>
-                                    <div class="product-action">
-                                        <a href="wishlist.php"><span class="action-text">Add To Wishlist</span><span class="icon"><i class="fa-regular fa-heart"></i></span></a>
-                                        <a href="cart.php"><span class="action-text">Compare</span><span class="icon"><i class="fa-light fa-arrow-right-arrow-left"></i></span></a>
-                                        <a class="popup-content" href="#QuickView"><span class="action-text">Quick View</span><span class="icon"><i class="fa-light fa-eye"></i></span></a>
-                                    </div>
                                 </div>
                                 <div class="product-grid-content">
                                     <h3 class="box-title"><a href="shop-details.php?id=<?php echo $product['id']; ?>"><?php echo htmlspecialchars($product['nom']); ?></a></h3>
                                     <span class="box-price"><?php echo number_format($product['prix'], 2, ',', ' '); ?>€</span>
                                     <span class="product-text"><i class="fa-light fa-check"></i><span class="stock">En stock</span><?php echo $product['quantity']; ?></span>
-                                    <a href="cart.php" class="th-btn2 btn-fw">
+                                    <a href="https://wa.me/2290157400640" target="_blank" class="th-btn2 btn-fw">
                                         <span class="link-effect">
-                                            <span class="effect-1">Ajouter au panier</span>
-                                            <span class="effect-1 style2">Ajouter au panier</span>
+                                            <span class="effect-1">Contacter le vendeur</span>
+                                            <span class="effect-1 style2">Contacter le vendeur</span>
                                         </span>
                                     </a>
                                 </div>
