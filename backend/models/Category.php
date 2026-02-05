@@ -31,5 +31,33 @@ class Category extends Model {
     public function deleteCategory($id) {
         return $this->delete($id);
     }
+
+    /**
+     * Récupère les catégories ayant le plus de produits
+     * Trié par nombre de produits (décroissant)
+     */
+    public function getCategoriesWithMostProducts($limit = 5) {
+        $stmt = $this->pdo->query("SELECT c.*, COUNT(p.id) as product_count 
+            FROM {$this->table} c 
+            LEFT JOIN product p ON c.id = p.category_id 
+            GROUP BY c.id 
+            HAVING product_count > 0
+            ORDER BY product_count DESC 
+            LIMIT {$limit}");
+        return $stmt->fetchAll();
+    }
+
+    /**
+     * Récupère toutes les catégories triées par nombre de produits
+     */
+    public function getAllCategoriesSortedByProducts($limit = 5) {
+        $stmt = $this->pdo->query("SELECT c.*, COUNT(p.id) as product_count 
+            FROM {$this->table} c 
+            LEFT JOIN product p ON c.id = p.category_id 
+            GROUP BY c.id 
+            ORDER BY product_count DESC 
+            LIMIT {$limit}");
+        return $stmt->fetchAll();
+    }
 }
 ?>
