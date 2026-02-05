@@ -2,6 +2,27 @@
 <html class="no-js" lang="zxx">
 
 <head>
+    <?php 
+    // Connexion à la base de données
+    require_once 'backend/config/database.php';
+    require_once 'backend/models/Product.php';
+    require_once 'backend/models/Category.php';
+    $productModel = new Product();
+    $categoryModel = new Category();
+    
+    // Récupérer la catégorie sélectionnée
+    $categoryId = $_GET['category'] ?? '';
+    
+    // Filtrer par catégorie si sélectionnée
+    if (!empty($categoryId)) {
+        $allProducts = $productModel->getAllProductsByCategory($categoryId);
+    } else {
+        $allProducts = $productModel->getAllProducts();
+    }
+    
+    $allCategories = $categoryModel->getAllCategories();
+    $totalProducts = count($allProducts);
+    ?>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Erna - Multi-Purpose Modern & Minimal WooCommerce Template - Shop</title>
@@ -69,474 +90,58 @@ Product Area
             <div class="th-sort-bar">
                 <div class="row justify-content-between align-items-center">
                     <div class="col-md">
-                        <p class="woocommerce-result-count">Showing 1–15 of 20 products</p>
+                        <p class="woocommerce-result-count">Showing 1–<?php echo min(15, $totalProducts); ?> of <?php echo $totalProducts; ?> products</p>
                     </div>
 
                     <div class="col-md-auto">
                         <form class="woocommerce-ordering" method="get">
-                            <select name="orderby" class="orderby" aria-label="Shop order">
-                                <option value="menu_order" selected="selected">Short By Latest</option>
-                                <option value="popularity">Sort by popularity</option>
-                                <option value="rating">Sort by average rating</option>
-                                <option value="date">Sort by latest</option>
-                                <option value="price">Sort by price: low to high</option>
-                                <option value="price-desc">Sort by price: high to low</option>
+                            <select name="category" class="orderby" aria-label="Filter by category" onchange="this.form.submit()">
+                                <option value="">Toutes les catégories</option>
+                                <?php foreach ($allCategories as $category): ?>
+                                <option value="<?php echo $category['id']; ?>" <?php echo ($categoryId ?? '') === (string)$category['id'] ? 'selected' : ''; ?>>
+                                    <?php echo htmlspecialchars($category['nom']); ?>
+                                </option>
+                                <?php endforeach; ?>
                             </select>
                         </form>
                     </div>
                 </div>
             </div>
-            <div class="row gy-40">
-
+                        <div class="row gy-40">
+                <?php if (!empty($allProducts)): ?>
+                <?php foreach ($allProducts as $product): ?>
                 <div class="col-xl-3 col-lg-4 col-sm-6">
                     <div class="product-grid style1">
                         <div class="box-img">
-                            <img src="assets/img/product/product_1_1.png" alt="menu Image">
-                            <span class="product-tag">On Sale</span>
-                            <div class="box-icon"><i class="fa-regular fa-heart"></i></div>
-                            <div class="product-action">
-                                <a href="wishlist.html"><span class="action-text">Add To Wishlist</span><span class="icon"><i class="fa-regular fa-heart"></i></span></a>
-                                <a href="cart.html"><span class="action-text">Add To cart</span><span class="icon"><i class="fa-light fa-bag-shopping"></i></span></a>
-                                <a href="cart.html"><span class="action-text">Compare</span><span class="icon"><i class="fa-sharp fa-light fa-shuffle"></i></span></a>
-
-                                <a class="popup-content" href="#QuickView"><span class="action-text">Quick View</span><span class="icon"><i class="fa-light fa-magnifying-glass"></i></span></a>
-                            </div>
-                            <div class="beige-color">
-                                <h4 class="beige-title">Select Color:</h4>
-                                <a href="shop-details.html"><span></span></a>
-                                <a href="shop-details.html"><span></span></a>
-                                <a href="shop-details.html"><span></span></a>
-                                <a href="shop-details.html"><span></span></a>
-                                <a href="shop-details.html"><span></span></a>
-                                <a href="shop-details.html"><span></span></a>
-                            </div>
+                            <img src="/<?php echo htmlspecialchars($product['image'] ?: 'assets/img/placeholder.jpg'); ?>" 
+                                 alt="<?php echo htmlspecialchars($product['nom']); ?>">
+                            <?php if ($product['quantity'] > 0): ?>
+                            <span class="product-tag">En Stock</span>
+                            <?php else: ?>
+                            <span class="product-tag" style="background: #666;">Rupture</span>
+                            <?php endif; ?>
                         </div>
                         <div class="product-grid-content">
-                            <div class="woocommerce-product-rating">
-                                <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
-                                    <span>Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span>
-                                        customer rating</span>
-                                </div>
-                                <span class="count">(2 reviews)</span>
-                            </div>
-                            <h3 class="box-title"><a href="shop-details.html">Women’s shoes & bag</a></h3>
-                            <span class="box-price"><del>$25.00 USD</del> $20.00 USD</span>
+                            <h3 class="box-title">
+                                <a href="shop-details.php?id=<?php echo $product['id']; ?>">
+                                    <?php echo htmlspecialchars($product['nom']); ?>
+                                </a>
+                            </h3>
+                            <span class="box-price"><?php echo number_format($product['prix'], 2, ',', ' '); ?>€</span>
+                            <a href="https://wa.me/2290157400640" target="_blank" class="th-btn2 btn-fw">
+                                Contacter le vendeur
+                            </a>
                         </div>
                     </div>
                 </div>
-
-
-                <div class="col-xl-3 col-lg-4 col-sm-6">
-                    <div class="product-grid style1">
-                        <div class="box-img">
-                            <img src="assets/img/product/product_1_2.png" alt="menu Image">
-                            <div class="box-icon"><i class="fa-regular fa-heart"></i></div>
-                            <div class="product-action">
-                                <a href="wishlist.html"><span class="action-text">Add To Wishlist</span><span class="icon"><i class="fa-regular fa-heart"></i></span></a>
-                                <a href="cart.html"><span class="action-text">Add To cart</span><span class="icon"><i class="fa-light fa-bag-shopping"></i></span></a>
-                                <a href="cart.html"><span class="action-text">Compare</span><span class="icon"><i class="fa-sharp fa-light fa-shuffle"></i></span></a>
-
-                                <a class="popup-content" href="#QuickView"><span class="action-text">Quick View</span><span class="icon"><i class="fa-light fa-magnifying-glass"></i></span></a>
-                            </div>
-                            <div class="beige-color">
-                                <h4 class="beige-title">Select Color:</h4>
-                                <a href="shop-details.html"><span></span></a>
-                                <a href="shop-details.html"><span></span></a>
-                                <a href="shop-details.html"><span></span></a>
-                                <a href="shop-details.html"><span></span></a>
-                                <a href="shop-details.html"><span></span></a>
-                                <a href="shop-details.html"><span></span></a>
-                            </div>
-                        </div>
-                        <div class="product-grid-content">
-                            <div class="woocommerce-product-rating">
-                                <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
-                                    <span>Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span>
-                                        customer rating</span>
-                                </div>
-                                <span class="count">(2 reviews)</span>
-                            </div>
-                            <h3 class="box-title"><a href="shop-details.html">Women’s fashion Bag</a></h3>
-                            <span class="box-price"><del>$29.00 USD</del> $15.00 USD</span>
-                        </div>
-                    </div>
+                <?php endforeach; ?>
+                <?php else: ?>
+                <div class="col-12">
+                    <p class="text-center">Aucun produit disponible pour le moment.</p>
                 </div>
-
-
-                <div class="col-xl-3 col-lg-4 col-sm-6">
-                    <div class="product-grid style1">
-                        <div class="box-img">
-                            <img src="assets/img/product/product_1_3.png" alt="menu Image">
-                            <div class="box-icon"><i class="fa-regular fa-heart"></i></div>
-                            <div class="product-action">
-                                <a href="wishlist.html"><span class="action-text">Add To Wishlist</span><span class="icon"><i class="fa-regular fa-heart"></i></span></a>
-                                <a href="cart.html"><span class="action-text">Add To cart</span><span class="icon"><i class="fa-light fa-bag-shopping"></i></span></a>
-                                <a href="cart.html"><span class="action-text">Compare</span><span class="icon"><i class="fa-sharp fa-light fa-shuffle"></i></span></a>
-
-                                <a class="popup-content" href="#QuickView"><span class="action-text">Quick View</span><span class="icon"><i class="fa-light fa-magnifying-glass"></i></span></a>
-                            </div>
-                            <div class="beige-color">
-                                <h4 class="beige-title">Select Color:</h4>
-                                <a href="shop-details.html"><span></span></a>
-                                <a href="shop-details.html"><span></span></a>
-                                <a href="shop-details.html"><span></span></a>
-                                <a href="shop-details.html"><span></span></a>
-                                <a href="shop-details.html"><span></span></a>
-                                <a href="shop-details.html"><span></span></a>
-                            </div>
-                        </div>
-                        <div class="product-grid-content">
-                            <div class="woocommerce-product-rating">
-                                <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
-                                    <span>Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span>
-                                        customer rating</span>
-                                </div>
-                                <span class="count">(2 reviews)</span>
-                            </div>
-                            <h3 class="box-title"><a href="shop-details.html">Women’s shoes</a></h3>
-                            <span class="box-price"><del>$30.00 USD</del> $25.00 USD</span>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-xl-3 col-lg-4 col-sm-6">
-                    <div class="product-grid style1">
-                        <div class="box-img">
-                            <img src="assets/img/product/product_1_4.png" alt="menu Image">
-                            <span class="product-tag">15%</span>
-                            <div class="box-icon"><i class="fa-regular fa-heart"></i></div>
-                            <div class="product-action">
-                                <a href="wishlist.html"><span class="action-text">Add To Wishlist</span><span class="icon"><i class="fa-regular fa-heart"></i></span></a>
-                                <a href="cart.html"><span class="action-text">Add To cart</span><span class="icon"><i class="fa-light fa-bag-shopping"></i></span></a>
-                                <a href="cart.html"><span class="action-text">Compare</span><span class="icon"><i class="fa-sharp fa-light fa-shuffle"></i></span></a>
-
-                                <a class="popup-content" href="#QuickView"><span class="action-text">Quick View</span><span class="icon"><i class="fa-light fa-magnifying-glass"></i></span></a>
-                            </div>
-                            <div class="beige-color">
-                                <h4 class="beige-title">Select Color:</h4>
-                                <a href="shop-details.html"><span></span></a>
-                                <a href="shop-details.html"><span></span></a>
-                                <a href="shop-details.html"><span></span></a>
-                                <a href="shop-details.html"><span></span></a>
-                                <a href="shop-details.html"><span></span></a>
-                                <a href="shop-details.html"><span></span></a>
-                            </div>
-                        </div>
-                        <div class="product-grid-content">
-                            <div class="woocommerce-product-rating">
-                                <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
-                                    <span>Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span>
-                                        customer rating</span>
-                                </div>
-                                <span class="count">(2 reviews)</span>
-                            </div>
-                            <h3 class="box-title"><a href="shop-details.html">Women’s fashion Bag</a></h3>
-                            <span class="box-price"><del>$35.00 USD</del> $29.00 USD</span>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-xl-3 col-lg-4 col-sm-6">
-                    <div class="product-grid style1">
-                        <div class="box-img">
-                            <img src="assets/img/product/product_1_5.png" alt="menu Image">
-                            <div class="box-icon"><i class="fa-regular fa-heart"></i></div>
-                            <div class="product-action">
-                                <a href="wishlist.html"><span class="action-text">Add To Wishlist</span><span class="icon"><i class="fa-regular fa-heart"></i></span></a>
-                                <a href="cart.html"><span class="action-text">Add To cart</span><span class="icon"><i class="fa-light fa-bag-shopping"></i></span></a>
-                                <a href="cart.html"><span class="action-text">Compare</span><span class="icon"><i class="fa-sharp fa-light fa-shuffle"></i></span></a>
-
-                                <a class="popup-content" href="#QuickView"><span class="action-text">Quick View</span><span class="icon"><i class="fa-light fa-magnifying-glass"></i></span></a>
-                            </div>
-                            <div class="beige-color">
-                                <h4 class="beige-title">Select Color:</h4>
-                                <a href="shop-details.html"><span></span></a>
-                                <a href="shop-details.html"><span></span></a>
-                                <a href="shop-details.html"><span></span></a>
-                                <a href="shop-details.html"><span></span></a>
-                                <a href="shop-details.html"><span></span></a>
-                                <a href="shop-details.html"><span></span></a>
-                            </div>
-                        </div>
-                        <div class="product-grid-content">
-                            <div class="woocommerce-product-rating">
-                                <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
-                                    <span>Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span>
-                                        customer rating</span>
-                                </div>
-                                <span class="count">(2 reviews)</span>
-                            </div>
-                            <h3 class="box-title"><a href="shop-details.html">Women’s shoes</a></h3>
-                            <span class="box-price"><del>$36.00 USD</del> $30.00 USD</span>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-xl-3 col-lg-4 col-sm-6">
-                    <div class="product-grid style1">
-                        <div class="box-img">
-                            <img src="assets/img/product/product_1_6.png" alt="menu Image">
-                            <div class="box-icon"><i class="fa-regular fa-heart"></i></div>
-                            <div class="product-action">
-                                <a href="wishlist.html"><span class="action-text">Add To Wishlist</span><span class="icon"><i class="fa-regular fa-heart"></i></span></a>
-                                <a href="cart.html"><span class="action-text">Add To cart</span><span class="icon"><i class="fa-light fa-bag-shopping"></i></span></a>
-                                <a href="cart.html"><span class="action-text">Compare</span><span class="icon"><i class="fa-sharp fa-light fa-shuffle"></i></span></a>
-
-                                <a class="popup-content" href="#QuickView"><span class="action-text">Quick View</span><span class="icon"><i class="fa-light fa-magnifying-glass"></i></span></a>
-                            </div>
-                            <div class="beige-color">
-                                <h4 class="beige-title">Select Color:</h4>
-                                <a href="shop-details.html"><span></span></a>
-                                <a href="shop-details.html"><span></span></a>
-                                <a href="shop-details.html"><span></span></a>
-                                <a href="shop-details.html"><span></span></a>
-                                <a href="shop-details.html"><span></span></a>
-                                <a href="shop-details.html"><span></span></a>
-                            </div>
-                        </div>
-                        <div class="product-grid-content">
-                            <div class="woocommerce-product-rating">
-                                <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
-                                    <span>Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span>
-                                        customer rating</span>
-                                </div>
-                                <span class="count">(2 reviews)</span>
-                            </div>
-                            <h3 class="box-title"><a href="shop-details.html">women's clothing</a></h3>
-                            <span class="box-price"><del>$38.00 USD</del> $33.00 USD</span>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-xl-3 col-lg-4 col-sm-6">
-                    <div class="product-grid style1">
-                        <div class="box-img">
-                            <img src="assets/img/product/product_1_7.png" alt="menu Image">
-                            <div class="box-icon"><i class="fa-regular fa-heart"></i></div>
-                            <div class="product-action">
-                                <a href="wishlist.html"><span class="action-text">Add To Wishlist</span><span class="icon"><i class="fa-regular fa-heart"></i></span></a>
-                                <a href="cart.html"><span class="action-text">Add To cart</span><span class="icon"><i class="fa-light fa-bag-shopping"></i></span></a>
-                                <a href="cart.html"><span class="action-text">Compare</span><span class="icon"><i class="fa-sharp fa-light fa-shuffle"></i></span></a>
-
-                                <a class="popup-content" href="#QuickView"><span class="action-text">Quick View</span><span class="icon"><i class="fa-light fa-magnifying-glass"></i></span></a>
-                            </div>
-                            <div class="beige-color">
-                                <h4 class="beige-title">Select Color:</h4>
-                                <a href="shop-details.html"><span></span></a>
-                                <a href="shop-details.html"><span></span></a>
-                                <a href="shop-details.html"><span></span></a>
-                                <a href="shop-details.html"><span></span></a>
-                                <a href="shop-details.html"><span></span></a>
-                                <a href="shop-details.html"><span></span></a>
-                            </div>
-                        </div>
-                        <div class="product-grid-content">
-                            <div class="woocommerce-product-rating">
-                                <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
-                                    <span>Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span>
-                                        customer rating</span>
-                                </div>
-                                <span class="count">(2 reviews)</span>
-                            </div>
-                            <h3 class="box-title"><a href="shop-details.html">Women’s fashion Bag</a></h3>
-                            <span class="box-price"><del>$40.00 USD</del> $35.00 USD</span>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-xl-3 col-lg-4 col-sm-6">
-                    <div class="product-grid style1">
-                        <div class="box-img">
-                            <img src="assets/img/product/product_1_8.png" alt="menu Image">
-                            <div class="box-icon"><i class="fa-regular fa-heart"></i></div>
-                            <div class="product-action">
-                                <a href="wishlist.html"><span class="action-text">Add To Wishlist</span><span class="icon"><i class="fa-regular fa-heart"></i></span></a>
-                                <a href="cart.html"><span class="action-text">Add To cart</span><span class="icon"><i class="fa-light fa-bag-shopping"></i></span></a>
-                                <a href="cart.html"><span class="action-text">Compare</span><span class="icon"><i class="fa-sharp fa-light fa-shuffle"></i></span></a>
-
-                                <a class="popup-content" href="#QuickView"><span class="action-text">Quick View</span><span class="icon"><i class="fa-light fa-magnifying-glass"></i></span></a>
-                            </div>
-                            <div class="beige-color">
-                                <h4 class="beige-title">Select Color:</h4>
-                                <a href="shop-details.html"><span></span></a>
-                                <a href="shop-details.html"><span></span></a>
-                                <a href="shop-details.html"><span></span></a>
-                                <a href="shop-details.html"><span></span></a>
-                                <a href="shop-details.html"><span></span></a>
-                                <a href="shop-details.html"><span></span></a>
-                            </div>
-                        </div>
-                        <div class="product-grid-content">
-                            <div class="woocommerce-product-rating">
-                                <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
-                                    <span>Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span>
-                                        customer rating</span>
-                                </div>
-                                <span class="count">(2 reviews)</span>
-                            </div>
-                            <h3 class="box-title"><a href="shop-details.html">Women’s shoes</a></h3>
-                            <span class="box-price"><del>$25.00 USD</del> $20.00 USD</span>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-xl-3 col-lg-4 col-sm-6">
-                    <div class="product-grid style1">
-                        <div class="box-img">
-                            <img src="assets/img/product/product_1_9.png" alt="menu Image">
-                            <div class="box-icon"><i class="fa-regular fa-heart"></i></div>
-                            <div class="product-action">
-                                <a href="wishlist.html"><span class="action-text">Add To Wishlist</span><span class="icon"><i class="fa-regular fa-heart"></i></span></a>
-                                <a href="cart.html"><span class="action-text">Add To cart</span><span class="icon"><i class="fa-light fa-bag-shopping"></i></span></a>
-                                <a href="cart.html"><span class="action-text">Compare</span><span class="icon"><i class="fa-sharp fa-light fa-shuffle"></i></span></a>
-
-                                <a class="popup-content" href="#QuickView"><span class="action-text">Quick View</span><span class="icon"><i class="fa-light fa-magnifying-glass"></i></span></a>
-                            </div>
-                            <div class="beige-color">
-                                <h4 class="beige-title">Select Color:</h4>
-                                <a href="shop-details.html"><span></span></a>
-                                <a href="shop-details.html"><span></span></a>
-                                <a href="shop-details.html"><span></span></a>
-                                <a href="shop-details.html"><span></span></a>
-                                <a href="shop-details.html"><span></span></a>
-                                <a href="shop-details.html"><span></span></a>
-                            </div>
-                        </div>
-                        <div class="product-grid-content">
-                            <div class="woocommerce-product-rating">
-                                <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
-                                    <span>Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span>
-                                        customer rating</span>
-                                </div>
-                                <span class="count">(2 reviews)</span>
-                            </div>
-                            <h3 class="box-title"><a href="shop-details.html">Crossbody Bag </a></h3>
-                            <span class="box-price"><del>$29.00 USD</del> $25.00 USD</span>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-xl-3 col-lg-4 col-sm-6">
-                    <div class="product-grid style1">
-                        <div class="box-img">
-                            <img src="assets/img/product/product_1_10.png" alt="menu Image">
-                            <span class="product-tag">On Sale</span>
-                            <div class="box-icon"><i class="fa-regular fa-heart"></i></div>
-                            <div class="product-action">
-                                <a href="wishlist.html"><span class="action-text">Add To Wishlist</span><span class="icon"><i class="fa-regular fa-heart"></i></span></a>
-                                <a href="cart.html"><span class="action-text">Add To cart</span><span class="icon"><i class="fa-light fa-bag-shopping"></i></span></a>
-                                <a href="cart.html"><span class="action-text">Compare</span><span class="icon"><i class="fa-sharp fa-light fa-shuffle"></i></span></a>
-
-                                <a class="popup-content" href="#QuickView"><span class="action-text">Quick View</span><span class="icon"><i class="fa-light fa-magnifying-glass"></i></span></a>
-                            </div>
-                            <div class="beige-color">
-                                <h4 class="beige-title">Select Color:</h4>
-                                <a href="shop-details.html"><span></span></a>
-                                <a href="shop-details.html"><span></span></a>
-                                <a href="shop-details.html"><span></span></a>
-                                <a href="shop-details.html"><span></span></a>
-                                <a href="shop-details.html"><span></span></a>
-                                <a href="shop-details.html"><span></span></a>
-                            </div>
-                        </div>
-                        <div class="product-grid-content">
-                            <div class="woocommerce-product-rating">
-                                <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
-                                    <span>Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span>
-                                        customer rating</span>
-                                </div>
-                                <span class="count">(2 reviews)</span>
-                            </div>
-                            <h3 class="box-title"><a href="shop-details.html">hat beach bag</a></h3>
-                            <span class="box-price"><del>$25.00 USD</del> $20.00 USD</span>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-xl-3 col-lg-4 col-sm-6">
-                    <div class="product-grid style1">
-                        <div class="box-img">
-                            <img src="assets/img/product/product_1_11.png" alt="menu Image">
-                            <div class="box-icon"><i class="fa-regular fa-heart"></i></div>
-                            <div class="product-action">
-                                <a href="wishlist.html"><span class="action-text">Add To Wishlist</span><span class="icon"><i class="fa-regular fa-heart"></i></span></a>
-                                <a href="cart.html"><span class="action-text">Add To cart</span><span class="icon"><i class="fa-light fa-bag-shopping"></i></span></a>
-                                <a href="cart.html"><span class="action-text">Compare</span><span class="icon"><i class="fa-sharp fa-light fa-shuffle"></i></span></a>
-
-                                <a class="popup-content" href="#QuickView"><span class="action-text">Quick View</span><span class="icon"><i class="fa-light fa-magnifying-glass"></i></span></a>
-                            </div>
-                            <div class="beige-color">
-                                <h4 class="beige-title">Select Color:</h4>
-                                <a href="shop-details.html"><span></span></a>
-                                <a href="shop-details.html"><span></span></a>
-                                <a href="shop-details.html"><span></span></a>
-                                <a href="shop-details.html"><span></span></a>
-                                <a href="shop-details.html"><span></span></a>
-                                <a href="shop-details.html"><span></span></a>
-                            </div>
-                        </div>
-                        <div class="product-grid-content">
-                            <div class="woocommerce-product-rating">
-                                <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
-                                    <span>Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span>
-                                        customer rating</span>
-                                </div>
-                                <span class="count">(2 reviews)</span>
-                            </div>
-                            <h3 class="box-title"><a href="shop-details.html">Women’s Skirt</a></h3>
-                            <span class="box-price"><del>$29.00 USD</del> $15.00 USD</span>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-xl-3 col-lg-4 col-sm-6">
-                    <div class="product-grid style1">
-                        <div class="box-img">
-                            <img src="assets/img/product/product_1_12.png" alt="menu Image">
-                            <span class="product-tag">15%</span>
-                            <div class="box-icon"><i class="fa-regular fa-heart"></i></div>
-                            <div class="product-action">
-                                <a href="wishlist.html"><span class="action-text">Add To Wishlist</span><span class="icon"><i class="fa-regular fa-heart"></i></span></a>
-                                <a href="cart.html"><span class="action-text">Add To cart</span><span class="icon"><i class="fa-light fa-bag-shopping"></i></span></a>
-                                <a href="cart.html"><span class="action-text">Compare</span><span class="icon"><i class="fa-sharp fa-light fa-shuffle"></i></span></a>
-
-                                <a class="popup-content" href="#QuickView"><span class="action-text">Quick View</span><span class="icon"><i class="fa-light fa-magnifying-glass"></i></span></a>
-                            </div>
-                            <div class="beige-color">
-                                <h4 class="beige-title">Select Color:</h4>
-                                <a href="shop-details.html"><span></span></a>
-                                <a href="shop-details.html"><span></span></a>
-                                <a href="shop-details.html"><span></span></a>
-                                <a href="shop-details.html"><span></span></a>
-                                <a href="shop-details.html"><span></span></a>
-                                <a href="shop-details.html"><span></span></a>
-                            </div>
-                        </div>
-                        <div class="product-grid-content">
-                            <div class="woocommerce-product-rating">
-                                <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
-                                    <span>Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span>
-                                        customer rating</span>
-                                </div>
-                                <span class="count">(2 reviews)</span>
-                            </div>
-                            <h3 class="box-title"><a href="shop-details.html">brown tshirt</a></h3>
-                            <span class="box-price"><del>$30.00 USD</del> $25.00 USD</span>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="th-pagination text-center pt-50">
+                <?php endif; ?>
+            </div></div>
+            <!-- <div class="th-pagination text-center pt-50">
                 <ul>
                     <li><a href="blog.html"><i class="fa-regular fa-angle-left"></i></a></li>
                     <li><a href="blog.html">1</a></li>
@@ -544,7 +149,7 @@ Product Area
                     <li><a href="blog.html">3</a></li>
                     <li><a href="blog.html"><i class="fa-regular fa-angle-right"></i></a></li>
                 </ul>
-            </div>
+            </div> -->
         </div>
     </section>
     <!--==============================

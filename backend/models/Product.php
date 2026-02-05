@@ -73,9 +73,43 @@ class Product extends Model {
         $stmt->execute([$categoryId]);
         return $stmt->fetchAll();
     }
+    
+    public function getAllProductsByCategory($categoryId) {
+        $stmt = $this->pdo->prepare("SELECT p.*, c.nom as category_name 
+            FROM {$this->table} p 
+            LEFT JOIN category c ON p.category_id = c.id 
+            WHERE p.category_id = ?
+            ORDER BY p.created_at DESC");
+        $stmt->execute([$categoryId]);
+        return $stmt->fetchAll();
+    }
 
     public function deleteProduct($id) {
         return $this->delete($id);
+    }
+
+    /**
+     * Récupère tous les produits triés
+     * @param string $orderBy - Type de tri: date, popularity, rating, price, price-desc
+     */
+    public function getAllProductsSorted($orderBy = 'date') {
+        switch ($orderBy) {
+            case 'popularity':
+                $order = 'ORDER BY p.quantity DESC';
+                break;
+            case 'price':
+                $order = 'ORDER BY p.prix ASC';
+                break;
+            case 'price-desc':
+                $order = 'ORDER BY p.prix DESC';
+                break;
+            case 'date':
+            default:
+                $order = 'ORDER BY p.created_at DESC';
+                break;
+        }
+        $stmt = $this->pdo->query("SELECT p.*, c.nom as category_name FROM {$this->table} p LEFT JOIN category c ON p.category_id = c.id {$order}");
+        return $stmt->fetchAll();
     }
 }
 ?>
