@@ -2,6 +2,31 @@
 <html class="no-js" lang="zxx">
 
 <head>
+    <?php
+    // Connexion à la base de données
+    require_once 'backend/config/database.php';
+    require_once 'backend/models/Product.php';
+    require_once 'backend/models/Category.php';
+    
+    $productModel = new Product();
+    $categoryModel = new Category();
+    
+    // Récupérer l'ID du produit depuis l'URL
+    $productId = $_GET['id'] ?? 0;
+    
+    // Charger le produit
+    if ($productId) {
+        $product = $productModel->getProductById($productId);
+    } else {
+        $product = null;
+    }
+    
+    // Si pas de produit, rediriger ou afficher erreur
+    if (!$product) {
+        header('Location: error.php');
+        exit;
+    }
+    ?>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Erna - Multi-Purpose Modern & Minimal WooCommerce Template - Shop Details</title>
@@ -67,7 +92,7 @@
             <div class="row gx-60">
                 <div class="col-xl-6">
                     <div class="product-big-img">
-                        <div class="img"><img src="assets/img/product/product_1_1.png" alt="Product Image"></div>
+                        <div class="img"><img src="/<?php echo htmlspecialchars($product['image'] ?: 'assets/img/placeholder.jpg'); ?>" alt="<?php echo htmlspecialchars($product['nom']); ?>"></div>
                     </div>
                 </div>
                 <div class="col-xl-6 align-self-center">
@@ -77,61 +102,34 @@
                             <a href="shop-details.html" class="woocommerce-review-link">(<span class="count">2</span>
                                 reviews)</a>
                         </div>
-                        <h2 class="product-title">Women’s fashion Bag</h2>
-                        <p class="price"><del>$35.00 USD</del>$25.00 USD</p>
+                        <h2 class="product-title"><?php echo htmlspecialchars($product['nom']); ?></h2>’s                         <h2 class="product-title"><?php echo htmlspecialchars($product['nom']); ?></h2>
+                        <p class="price"><?php echo number_format($product['prix'], 2, ',', ' '); ?> €</p>
 
-                        <p class="text">Fashion is heavily influenced by cultural movements, social changes, and historical
-                            events. For example, the 1960s saw the rise of the hippie movement, which brought bohemian
-                            styles to the forefront. Public figures and social media influencers have a significant impact
-                            on fashion trends. Collaborations between celebrities.</p>
+                                                 <p class="text"><?php echo nl2br(htmlspecialchars($product['description'] ?: 'Aucune description disponible.')); ?></p></p>
                         <div>
                         </div>
-                        <div class="actions">
-                            <div class="quantity">
-                                <input type="number" class="qty-input" step="1" min="1" max="100" name="quantity" value="1" title="Qty">
-                                <button class="quantity-plus qty-btn"><i class="far fa-chevron-up"></i></button>
-                                <button class="quantity-minus qty-btn"><i class="far fa-chevron-down"></i></button>
-                            </div>
-                            <button class="th-btn">Add to Cart</button>
-                            <a href="wishlist.html" class="icon-btn d-none d-xl-block"> <img src="assets/img/icon/shuffle.svg" alt=""></a>
-                            <a href="wishlist.html" class="icon-btn"><i class="far fa-heart"></i></a>
-                        </div>
+                       
                         <div class="checklist">
                             <ul>
-                                <li><i class="fa-regular fa-ship fa-fw"></i>Estimate delivery times: 12-26 days (International), 3-6 days (United States).</li>
-                                <li><i class="fa-solid fa-rotate-left"></i>Return within 7 days of purchase. Duties & taxes are non-refundable.</li>
+                                <li><i class="fa-regular fa-ship fa-fw"></i>Estimation des délais de livraison : 3 à 12 jours (international), 2 à 4 jours (Bénin).</li>
+                                <li><i class="fa-solid fa-rotate-left"></i>Retour possible dans les 7 jours suivant l’achat. Les droits et taxes ne sont pas remboursables.</li>
                             </ul>
                         </div>
                         <div class="product_meta">
-                            <span class="sku_wrapper">SKU: <span class="sku">Fashion-1254</span></span>
-                            <span class="posted_in">Categories: <a href="shop.html">Bag, Fashion Hand Bag, Uncategorized.</a></span>
-                            <span>Availability: <a href="shop.html">26 <span class="stock">In Stock</span></a></span>
+                            <span class="posted_in">Catégorie: <a href="shop.php?category=<?php echo $product['category_id']; ?>"><?php echo htmlspecialchars($product['category_name'] ?? 'Non catégorisé'); ?></a></span>
+                            <span>Disponibilité: <a href="shop.php"><?php echo $product['quantity']; ?> <span class="stock"><?php echo $product['quantity'] > 0 ? 'En Stock' : 'Rupture'; ?></span></a></span>
                         </div>
                     </div>
                 </div>
             </div>
             <ul class="nav product-tab-style1" id="productTab" role="tablist">
-                <li class="nav-item" role="presentation">
-                    <a class="nav-link th-btn" id="description-tab" data-bs-toggle="tab" href="#description" role="tab" aria-controls="description" aria-selected="false">Description</a>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <a class="nav-link th-btn" id="additional-tab" data-bs-toggle="tab" href="#additional" role="tab" aria-controls="additional" aria-selected="false">Additional Information</a>
-                </li>
+            
                 <li class="nav-item" role="presentation">
                     <a class="nav-link th-btn active" id="reviews-tab" data-bs-toggle="tab" href="#reviews" role="tab" aria-controls="reviews" aria-selected="true">Review (3)</a>
                 </li>
             </ul>
             <div class="tab-content" id="productTabContent">
-                <div class="tab-pane fade" id="description" role="tabpanel" aria-labelledby="description-tab">
-                    <h3 class="box-title">Description</h3>
-                    <p>The fashion industry saw rapid changes, influenced by cultural movements, technological advancements, and global events. Iconic designers like Coco Chanel, Christian Dior, and Yves Saint Laurent left lasting impacts. Today, fashion is a global industry with designers and brands from all over the world contributing to a diverse and dynamic marketplace. Fashion is a multifaceted industry that encompasses a wide range of styles, trends, and cultural influences. It involves the creation and marketing of clothing, footwear, accessories, and other wearable items. Here are some key details about the fashion industry </p>
-                    <p>Fashion is heavily influenced by cultural movements, social changes, and historical events. For example, the 1960s saw the rise of the hippie movement, which brought bohemian styles to the forefront. InJunations like 3D printing, smart textiles, and virtual fitting rooms are transforming how fashion is designed, produced, and sold.</p>
-                </div>
-                <div class="tab-pane fade" id="additional" role="tabpanel" aria-labelledby="additional-tab">
-                    <h3 class="box-title">Additional</h3>
-                    <p>The fashion industry saw rapid changes, influenced by cultural movements, technological advancements, and global events. Iconic designers like Coco Chanel, Christian Dior, and Yves Saint Laurent left lasting impacts. Today, fashion is a global industry with designers and brands from all over the world contributing to a diverse and dynamic marketplace. Fashion is a multifaceted industry that encompasses a wide range of styles, trends, and cultural influences. It involves the creation and marketing of clothing, footwear, accessories, and other wearable items. Here are some key details about the fashion industry</p>
-                    <p>Fashion is heavily influenced by cultural movements, social changes, and historical events. For example, the 1960s saw the rise of the hippie movement, which brought bohemian styles to the forefront. InJunations like 3D printing, smart textiles, and virtual fitting rooms are transforming how fashion is designed, produced, and sold.</p>
-                </div>
+             
                 <div class="tab-pane fade show active" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
                     <div class="woocommerce-Reviews">
                         <div class="th-comments-wrap ">
@@ -143,7 +141,70 @@
                                         </div>
                                         <div class="comment-content">
                                             <h4 class="name">
-                                                Mariya Dsuza</h4>
+                                                                         <div class="th-comments-wrap ">
+                             <ul class="comment-list">
+                                 <li class="review th-comment-item">
+                                     <div class="th-post-comment">
+                                         <div class="comment-avater">
+                                             <img src="assets/img/blog/comment-author-1.jpg" alt="Comment Author">
+                                         </div>
+                                         <div class="comment-content">
+                                             <h4 class="name">Marie Dupont</h4>
+                                             <span class="commented-on"><i class="far fa-clock"></i>15 décembre 2025</span>
+                                             <div class="star-rating" role="img" aria-label="Noté 5.00 sur 5">
+                                                 <span style="width:100%">Noté <strong class="rating">5.00</strong> sur 5</span>
+                                             </div>
+                                             <p class="text">Excellent produit ! La qualité est au rendez-vous et le service client est très réactif. Je recommande vivement Innovatech pour vos achats technologiques.</p>
+                                         </div>
+                                     </div>
+                                 </li>
+                                 <li class="review th-comment-item">
+                                     <div class="th-post-comment">
+                                         <div class="comment-avater">
+                                             <img src="assets/img/blog/comment-author-2.jpg" alt="Comment Author">
+                                         </div>
+                                         <div class="comment-content">
+                                             <h4 class="name">Michel Martin</h4>
+                                             <span class="commented-on"><i class="far fa-clock"></i>28 novembre 2025</span>
+                                             <div class="star-rating" role="img" aria-label="Noté 5.00 sur 5">
+                                                 <span style="width:100%">Noté <strong class="rating">5.00</strong> sur 5</span>
+                                             </div>
+                                             <p class="text">Très satisfait de mon achat. Le produit correspond parfaitement à la description et la livraison a été rapide. Merci Innovatech !</p>
+                                         </div>
+                                     </div>
+                                 </li>
+                                 <li class="review th-comment-item">
+                                     <div class="th-post-comment">
+                                         <div class="comment-avater">
+                                             <img src="assets/img/blog/comment-author-3.jpg" alt="Comment Author">
+                                         </div>
+                                         <div class="comment-content">
+                                             <h4 class="name">Thomas Bernard</h4>
+                                             <span class="commented-on"><i class="far fa-clock"></i>10 octobre 2025</span>
+                                             <div class="star-rating" role="img" aria-label="Noté 4.00 sur 5">
+                                                 <span style="width:80%">Noté <strong class="rating">4.00</strong> sur 5</span>
+                                             </div>
+                                             <p class="text">Bon rapport qualité-prix. Le produit fonctionne très bien et le service après-vente est disponible. Je referai confiance à Innovatech sans hésiter.</p>
+                                         </div>
+                                     </div>
+                                 </li>
+                                 <li class="review th-comment-item">
+                                     <div class="th-post-comment">
+                                         <div class="comment-avater">
+                                             <img src="assets/img/blog/comment-author-4.jpg" alt="Comment Author">
+                                         </div>
+                                         <div class="comment-content">
+                                             <h4 class="name">Julien Petit</h4>
+                                             <span class="commented-on"><i class="far fa-clock"></i>22 septembre 2025</span>
+                                             <div class="star-rating" role="img" aria-label="Noté 5.00 sur 5">
+                                                 <span style="width:100%">Noté <strong class="rating">5.00</strong> sur 5</span>
+                                             </div>
+                                             <p class="text">Une équipe professionnelle et des produits de qualité. L'expérience d'achat a été fluide du début à la fin. Merci pour tout Innovatech !</p>
+                                         </div>
+                                     </div>
+                                 </li>
+                             </ul>
+                         </div>
                                             <span class="commented-on"><i class="far fa-clock"></i>22 october, 2025</span>
                                             <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
                                                 <span style="width:100%">Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span> customer rating</span>
@@ -201,11 +262,11 @@
                         </div> <!-- Comment Form -->
                         <div class="th-comment-form ">
                             <div class="form-title">
-                                <h3 class="blog-inner-title ">Add a review</h3>
+                                <h3 class="blog-inner-title ">                                 <h3 class="blog-inner-title ">Ajouter un avis</h3>
                             </div>
                             <div class="row">
                                 <div class="form-group rating-select d-flex align-items-center">
-                                    <label>Your Rating</label>
+                                    <label>                                     <label>Votre note</label>
                                     <p class="stars">
                                         <span>
                                             <a class="star-1" href="#">1</a>
@@ -270,22 +331,6 @@
                                     <img src="assets/img/product/product_1_1.png" alt="menu Image">
                                     <span class="product-tag">On Sale</span>
                                     <div class="box-icon"><i class="fa-regular fa-heart"></i></div>
-                                    <div class="product-action">
-                                        <a href="wishlist.html"><span class="action-text">Add To Wishlist</span><span class="icon"><i class="fa-regular fa-heart"></i></span></a>
-                                        <a href="cart.html"><span class="action-text">Add To cart</span><span class="icon"><i class="fa-light fa-bag-shopping"></i></span></a>
-                                        <a href="cart.html"><span class="action-text">Compare</span><span class="icon"><i class="fa-sharp fa-light fa-shuffle"></i></span></a>
-
-                                        <a class="popup-content" href="#QuickView"><span class="action-text">Quick View</span><span class="icon"><i class="fa-light fa-magnifying-glass"></i></span></a>
-                                    </div>
-                                    <div class="beige-color">
-                                        <h4 class="beige-title">Select Color:</h4>
-                                        <a href="shop-details.html"><span></span></a>
-                                        <a href="shop-details.html"><span></span></a>
-                                        <a href="shop-details.html"><span></span></a>
-                                        <a href="shop-details.html"><span></span></a>
-                                        <a href="shop-details.html"><span></span></a>
-                                        <a href="shop-details.html"><span></span></a>
-                                    </div>
                                 </div>
                                 <div class="product-grid-content">
                                     <div class="woocommerce-product-rating">
@@ -307,22 +352,7 @@
                                 <div class="box-img">
                                     <img src="assets/img/product/product_1_2.png" alt="menu Image">
                                     <div class="box-icon"><i class="fa-regular fa-heart"></i></div>
-                                    <div class="product-action">
-                                        <a href="wishlist.html"><span class="action-text">Add To Wishlist</span><span class="icon"><i class="fa-regular fa-heart"></i></span></a>
-                                        <a href="cart.html"><span class="action-text">Add To cart</span><span class="icon"><i class="fa-light fa-bag-shopping"></i></span></a>
-                                        <a href="cart.html"><span class="action-text">Compare</span><span class="icon"><i class="fa-sharp fa-light fa-shuffle"></i></span></a>
-
-                                        <a class="popup-content" href="#QuickView"><span class="action-text">Quick View</span><span class="icon"><i class="fa-light fa-magnifying-glass"></i></span></a>
-                                    </div>
-                                    <div class="beige-color">
-                                        <h4 class="beige-title">Select Color:</h4>
-                                        <a href="shop-details.html"><span></span></a>
-                                        <a href="shop-details.html"><span></span></a>
-                                        <a href="shop-details.html"><span></span></a>
-                                        <a href="shop-details.html"><span></span></a>
-                                        <a href="shop-details.html"><span></span></a>
-                                        <a href="shop-details.html"><span></span></a>
-                                    </div>
+                           
                                 </div>
                                 <div class="product-grid-content">
                                     <div class="woocommerce-product-rating">
@@ -344,22 +374,8 @@
                                 <div class="box-img">
                                     <img src="assets/img/product/product_1_3.png" alt="menu Image">
                                     <div class="box-icon"><i class="fa-regular fa-heart"></i></div>
-                                    <div class="product-action">
-                                        <a href="wishlist.html"><span class="action-text">Add To Wishlist</span><span class="icon"><i class="fa-regular fa-heart"></i></span></a>
-                                        <a href="cart.html"><span class="action-text">Add To cart</span><span class="icon"><i class="fa-light fa-bag-shopping"></i></span></a>
-                                        <a href="cart.html"><span class="action-text">Compare</span><span class="icon"><i class="fa-sharp fa-light fa-shuffle"></i></span></a>
-
-                                        <a class="popup-content" href="#QuickView"><span class="action-text">Quick View</span><span class="icon"><i class="fa-light fa-magnifying-glass"></i></span></a>
-                                    </div>
-                                    <div class="beige-color">
-                                        <h4 class="beige-title">Select Color:</h4>
-                                        <a href="shop-details.html"><span></span></a>
-                                        <a href="shop-details.html"><span></span></a>
-                                        <a href="shop-details.html"><span></span></a>
-                                        <a href="shop-details.html"><span></span></a>
-                                        <a href="shop-details.html"><span></span></a>
-                                        <a href="shop-details.html"><span></span></a>
-                                    </div>
+                                 
+                                    
                                 </div>
                                 <div class="product-grid-content">
                                     <div class="woocommerce-product-rating">
@@ -382,22 +398,7 @@
                                     <img src="assets/img/product/product_1_4.png" alt="menu Image">
                                     <span class="product-tag">15%</span>
                                     <div class="box-icon"><i class="fa-regular fa-heart"></i></div>
-                                    <div class="product-action">
-                                        <a href="wishlist.html"><span class="action-text">Add To Wishlist</span><span class="icon"><i class="fa-regular fa-heart"></i></span></a>
-                                        <a href="cart.html"><span class="action-text">Add To cart</span><span class="icon"><i class="fa-light fa-bag-shopping"></i></span></a>
-                                        <a href="cart.html"><span class="action-text">Compare</span><span class="icon"><i class="fa-sharp fa-light fa-shuffle"></i></span></a>
-
-                                        <a class="popup-content" href="#QuickView"><span class="action-text">Quick View</span><span class="icon"><i class="fa-light fa-magnifying-glass"></i></span></a>
-                                    </div>
-                                    <div class="beige-color">
-                                        <h4 class="beige-title">Select Color:</h4>
-                                        <a href="shop-details.html"><span></span></a>
-                                        <a href="shop-details.html"><span></span></a>
-                                        <a href="shop-details.html"><span></span></a>
-                                        <a href="shop-details.html"><span></span></a>
-                                        <a href="shop-details.html"><span></span></a>
-                                        <a href="shop-details.html"><span></span></a>
-                                    </div>
+                         
                                 </div>
                                 <div class="product-grid-content">
                                     <div class="woocommerce-product-rating">
@@ -419,22 +420,7 @@
                                 <div class="box-img">
                                     <img src="assets/img/product/product_1_5.png" alt="menu Image">
                                     <div class="box-icon"><i class="fa-regular fa-heart"></i></div>
-                                    <div class="product-action">
-                                        <a href="wishlist.html"><span class="action-text">Add To Wishlist</span><span class="icon"><i class="fa-regular fa-heart"></i></span></a>
-                                        <a href="cart.html"><span class="action-text">Add To cart</span><span class="icon"><i class="fa-light fa-bag-shopping"></i></span></a>
-                                        <a href="cart.html"><span class="action-text">Compare</span><span class="icon"><i class="fa-sharp fa-light fa-shuffle"></i></span></a>
-
-                                        <a class="popup-content" href="#QuickView"><span class="action-text">Quick View</span><span class="icon"><i class="fa-light fa-magnifying-glass"></i></span></a>
-                                    </div>
-                                    <div class="beige-color">
-                                        <h4 class="beige-title">Select Color:</h4>
-                                        <a href="shop-details.html"><span></span></a>
-                                        <a href="shop-details.html"><span></span></a>
-                                        <a href="shop-details.html"><span></span></a>
-                                        <a href="shop-details.html"><span></span></a>
-                                        <a href="shop-details.html"><span></span></a>
-                                        <a href="shop-details.html"><span></span></a>
-                                    </div>
+                                  
                                 </div>
                                 <div class="product-grid-content">
                                     <div class="woocommerce-product-rating">
@@ -456,22 +442,7 @@
                                 <div class="box-img">
                                     <img src="assets/img/product/product_1_6.png" alt="menu Image">
                                     <div class="box-icon"><i class="fa-regular fa-heart"></i></div>
-                                    <div class="product-action">
-                                        <a href="wishlist.html"><span class="action-text">Add To Wishlist</span><span class="icon"><i class="fa-regular fa-heart"></i></span></a>
-                                        <a href="cart.html"><span class="action-text">Add To cart</span><span class="icon"><i class="fa-light fa-bag-shopping"></i></span></a>
-                                        <a href="cart.html"><span class="action-text">Compare</span><span class="icon"><i class="fa-sharp fa-light fa-shuffle"></i></span></a>
-
-                                        <a class="popup-content" href="#QuickView"><span class="action-text">Quick View</span><span class="icon"><i class="fa-light fa-magnifying-glass"></i></span></a>
-                                    </div>
-                                    <div class="beige-color">
-                                        <h4 class="beige-title">Select Color:</h4>
-                                        <a href="shop-details.html"><span></span></a>
-                                        <a href="shop-details.html"><span></span></a>
-                                        <a href="shop-details.html"><span></span></a>
-                                        <a href="shop-details.html"><span></span></a>
-                                        <a href="shop-details.html"><span></span></a>
-                                        <a href="shop-details.html"><span></span></a>
-                                    </div>
+                                  
                                 </div>
                                 <div class="product-grid-content">
                                     <div class="woocommerce-product-rating">
@@ -493,22 +464,7 @@
                                 <div class="box-img">
                                     <img src="assets/img/product/product_1_7.png" alt="menu Image">
                                     <div class="box-icon"><i class="fa-regular fa-heart"></i></div>
-                                    <div class="product-action">
-                                        <a href="wishlist.html"><span class="action-text">Add To Wishlist</span><span class="icon"><i class="fa-regular fa-heart"></i></span></a>
-                                        <a href="cart.html"><span class="action-text">Add To cart</span><span class="icon"><i class="fa-light fa-bag-shopping"></i></span></a>
-                                        <a href="cart.html"><span class="action-text">Compare</span><span class="icon"><i class="fa-sharp fa-light fa-shuffle"></i></span></a>
-
-                                        <a class="popup-content" href="#QuickView"><span class="action-text">Quick View</span><span class="icon"><i class="fa-light fa-magnifying-glass"></i></span></a>
-                                    </div>
-                                    <div class="beige-color">
-                                        <h4 class="beige-title">Select Color:</h4>
-                                        <a href="shop-details.html"><span></span></a>
-                                        <a href="shop-details.html"><span></span></a>
-                                        <a href="shop-details.html"><span></span></a>
-                                        <a href="shop-details.html"><span></span></a>
-                                        <a href="shop-details.html"><span></span></a>
-                                        <a href="shop-details.html"><span></span></a>
-                                    </div>
+                                   
                                 </div>
                                 <div class="product-grid-content">
                                     <div class="woocommerce-product-rating">
@@ -530,22 +486,7 @@
                                 <div class="box-img">
                                     <img src="assets/img/product/product_1_8.png" alt="menu Image">
                                     <div class="box-icon"><i class="fa-regular fa-heart"></i></div>
-                                    <div class="product-action">
-                                        <a href="wishlist.html"><span class="action-text">Add To Wishlist</span><span class="icon"><i class="fa-regular fa-heart"></i></span></a>
-                                        <a href="cart.html"><span class="action-text">Add To cart</span><span class="icon"><i class="fa-light fa-bag-shopping"></i></span></a>
-                                        <a href="cart.html"><span class="action-text">Compare</span><span class="icon"><i class="fa-sharp fa-light fa-shuffle"></i></span></a>
-
-                                        <a class="popup-content" href="#QuickView"><span class="action-text">Quick View</span><span class="icon"><i class="fa-light fa-magnifying-glass"></i></span></a>
-                                    </div>
-                                    <div class="beige-color">
-                                        <h4 class="beige-title">Select Color:</h4>
-                                        <a href="shop-details.html"><span></span></a>
-                                        <a href="shop-details.html"><span></span></a>
-                                        <a href="shop-details.html"><span></span></a>
-                                        <a href="shop-details.html"><span></span></a>
-                                        <a href="shop-details.html"><span></span></a>
-                                        <a href="shop-details.html"><span></span></a>
-                                    </div>
+                            
                                 </div>
                                 <div class="product-grid-content">
                                     <div class="woocommerce-product-rating">
