@@ -43,12 +43,6 @@ class Product extends Model {
         return $stmt->fetch();
     }
 
-    public function getProductsByCategory($categoryId) {
-        $stmt = $this->pdo->prepare("SELECT * FROM {$this->table} WHERE category_id = ?");
-        $stmt->execute([$categoryId]);
-        return $stmt->fetchAll();
-    }
-
     public function getRecentProducts($limit = 6) {
         $stmt = $this->pdo->query("SELECT p.*, c.nom as category_name 
             FROM {$this->table} p 
@@ -56,6 +50,27 @@ class Product extends Model {
             WHERE p.available = 1
             ORDER BY p.created_at DESC 
             LIMIT {$limit}");
+        return $stmt->fetchAll();
+    }
+
+    public function getBestSellers($limit = 8) {
+        $stmt = $this->pdo->query("SELECT p.*, c.nom as category_name 
+            FROM {$this->table} p 
+            LEFT JOIN category c ON p.category_id = c.id 
+            WHERE p.available = 1 AND p.quantity > 0
+            ORDER BY p.quantity DESC 
+            LIMIT {$limit}");
+        return $stmt->fetchAll();
+    }
+
+    public function getProductsByCategory($categoryId, $limit = 4) {
+        $stmt = $this->pdo->prepare("SELECT p.*, c.nom as category_name 
+            FROM {$this->table} p 
+            LEFT JOIN category c ON p.category_id = c.id 
+            WHERE p.category_id = ? AND p.available = 1
+            ORDER BY p.created_at DESC 
+            LIMIT {$limit}");
+        $stmt->execute([$categoryId]);
         return $stmt->fetchAll();
     }
 

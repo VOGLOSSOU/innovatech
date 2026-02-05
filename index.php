@@ -61,8 +61,11 @@
     // Connexion à la base de données
     require_once 'backend/config/database.php';
     require_once 'backend/models/Product.php';
+    require_once 'backend/models/Category.php';
     $productModel = new Product();
+    $categoryModel = new Category();
     $recentProducts = $productModel->getRecentProducts(6);
+    $categories = $categoryModel->getAllCategories();
     ?>
 
     <?php include 'include/header.php'; ?>
@@ -356,15 +359,29 @@ Product Area
                 </div>
                 <div class="col-lg-8">
                     <div class="nav tab-menu style2 indicator-active justify-content-lg-end justify-content-center mb-45" id="tab-menu1" role="tablist">
-                        <button class="tab-btn th-btn active" id="nav-one-tab" data-bs-toggle="tab" data-bs-target="#nav-one" type="button" role="tab" aria-controls="nav-one" aria-selected="true">Best Deals</button>
-                        <button class="tab-btn th-btn" id="nav-two-tab" data-bs-toggle="tab" data-bs-target="#nav-two" type="button" role="tab" aria-controls="nav-two" aria-selected="false">Phones & Tablets</button>
-                        <button class="tab-btn th-btn" id="nav-three-tab" data-bs-toggle="tab" data-bs-target="#nav-three" type="button" role="tab" aria-controls="nav-three" aria-selected="false">Laptops &
-                            Computers</button>
-                        <button class="tab-btn th-btn" id="nav-four-tab" data-bs-toggle="tab" data-bs-target="#nav-four" type="button" role="tab" aria-controls="nav-four" aria-selected="false">Video & Audios</button>
+                        <?php 
+                        $first = true;
+                        $displayCount = 0;
+                        foreach ($categories as $cat):
+                            if ($displayCount >= 5) break;
+                        ?>
+                        <button class="tab-btn th-btn <?php echo $first ? 'active' : ''; ?>" 
+                                id="nav-cat-<?php echo $cat['id']; ?>-tab" 
+                                data-bs-toggle="tab" 
+                                data-bs-target="#nav-cat-<?php echo $cat['id']; ?>" 
+                                type="button" 
+                                role="tab">
+                            <?php echo htmlspecialchars($cat['nom']); ?>
+                        </button>
+                        <?php 
+                            $first = false;
+                            $displayCount++;
+                        endforeach;
+                        ?>
+                        <a href="#" class="tab-btn th-btn" onclick="window.location.href='shop.php'; return false;">
+  More +
+</a>
 
-                        <button class="tab-btn th-btn" id="nav-five-tab" data-bs-toggle="tab" data-bs-target="#nav-five" type="button" role="tab" aria-controls="nav-five" aria-selected="false">Accessories</button>
-
-                        <button class="tab-btn th-btn" id="nav-six-tab" data-bs-toggle="tab" data-bs-target="#nav-six" type="button" role="tab" aria-controls="nav-six" aria-selected="false">Cameras</button>
                     </div>
                 </div>
             </div>
