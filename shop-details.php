@@ -26,6 +26,17 @@
         header('Location: error.php');
         exit;
     }
+    
+    // Récupérer les produits de la même catégorie (produits similaires)
+    $relatedProducts = [];
+    if (!empty($product['category_id'])) {
+        $relatedProducts = $productModel->getProductsByCategory($product['category_id'], 8);
+        // Exclure le produit actuel de la liste
+        $relatedProducts = array_filter($relatedProducts, function($p) use ($productId) {
+            return $p['id'] != $productId;
+        });
+        $relatedProducts = array_values($relatedProducts); // Réindexer le tableau
+    }
     ?>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -145,182 +156,31 @@
                 </div>
                 <div class="swiper th-slider has-shadow" id="productSlider1" data-slider-options='{"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"2"},"768":{"slidesPerView":"2"},"992":{"slidesPerView":"3"},"1200":{"slidesPerView":"4"}}}'>
                     <div class="swiper-wrapper">
-
+                        <?php if (!empty($relatedProducts)): ?>
+                        <?php foreach ($relatedProducts as $relatedProduct): ?>
                         <div class="swiper-slide">
                             <div class="product-grid style1">
                                 <div class="box-img">
-                                    <img src="assets/img/product/product_1_1.png" alt="menu Image">
-                                    <span class="product-tag">On Sale</span>
-                                    <div class="box-icon"><i class="fa-regular fa-heart"></i></div>
+                                    <img src="/<?php echo htmlspecialchars($relatedProduct['image'] ?: 'assets/img/placeholder.jpg'); ?>" alt="<?php echo htmlspecialchars($relatedProduct['nom']); ?>">
+                                    <?php if ($relatedProduct['quantity'] > 0): ?>
+                                    <span class="product-tag">En Stock</span>
+                                    <?php else: ?>
+                                    <span class="product-tag" style="background: #666;">Rupture</span>
+                                    <?php endif; ?>
                                 </div>
                                 <div class="product-grid-content">
-                                    <div class="woocommerce-product-rating">
-                                        <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
-                                            <span>Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span>
-                                                customer rating</span>
-                                        </div>
-                                    </div>
-                                    <h3 class="box-title"><a href="shop-details.html">Women’s shoes & bag</a></h3>
-                                    <span class="box-price"><del>$25.00 USD</del> $20.00 USD</span>
+                                    <h3 class="box-title"><a href="shop-details.php?id=<?php echo $relatedProduct['id']; ?>"><?php echo htmlspecialchars($relatedProduct['nom']); ?></a></h3>
+                                    <span class="box-price"><?php echo number_format($relatedProduct['prix'], 2, ',', ' '); ?> €</span>
                                 </div>
                             </div>
                         </div>
-
-
+                        <?php endforeach; ?>
+                        <?php else: ?>
                         <div class="swiper-slide">
-                            <div class="product-grid style1">
-                                <div class="box-img">
-                                    <img src="assets/img/product/product_1_2.png" alt="menu Image">
-                                    <div class="box-icon"><i class="fa-regular fa-heart"></i></div>
-                           
-                                </div>
-                                <div class="product-grid-content">
-                                    <div class="woocommerce-product-rating">
-                                        <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
-                                            <span>Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span>
-                                                customer rating</span>
-                                        </div>
-                                        <span class="count">(2 reviews)</span>
-                                    </div>
-                                    <h3 class="box-title"><a href="shop-details.html">Women’s fashion Bag</a></h3>
-                                    <span class="box-price"><del>$29.00 USD</del> $15.00 USD</span>
-                                </div>
-                            </div>
+                            <p class="text-center">Aucun produit similaire disponible.</p>
                         </div>
-
-
-                        <div class="swiper-slide">
-                            <div class="product-grid style1">
-                                <div class="box-img">
-                                    <img src="assets/img/product/product_1_3.png" alt="menu Image">
-                                    <div class="box-icon"><i class="fa-regular fa-heart"></i></div>
-                                 
-                                    
-                                </div>
-                                <div class="product-grid-content">
-                                    <div class="woocommerce-product-rating">
-                                        <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
-                                            <span>Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span>
-                                                customer rating</span>
-                                        </div>
-                                        <span class="count">(2 reviews)</span>
-                                    </div>
-                                    <h3 class="box-title"><a href="shop-details.html">Women’s shoes</a></h3>
-                                    <span class="box-price"><del>$30.00 USD</del> $25.00 USD</span>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="swiper-slide">
-                            <div class="product-grid style1">
-                                <div class="box-img">
-                                    <img src="assets/img/product/product_1_4.png" alt="menu Image">
-                                    <span class="product-tag">15%</span>
-                                    <div class="box-icon"><i class="fa-regular fa-heart"></i></div>
-                         
-                                </div>
-                                <div class="product-grid-content">
-                                    <div class="woocommerce-product-rating">
-                                        <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
-                                            <span>Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span>
-                                                customer rating</span>
-                                        </div>
-                                        <span class="count">(2 reviews)</span>
-                                    </div>
-                                    <h3 class="box-title"><a href="shop-details.html">Women’s fashion Bag</a></h3>
-                                    <span class="box-price"><del>$35.00 USD</del> $29.00 USD</span>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="swiper-slide">
-                            <div class="product-grid style1">
-                                <div class="box-img">
-                                    <img src="assets/img/product/product_1_5.png" alt="menu Image">
-                                    <div class="box-icon"><i class="fa-regular fa-heart"></i></div>
-                                  
-                                </div>
-                                <div class="product-grid-content">
-                                    <div class="woocommerce-product-rating">
-                                        <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
-                                            <span>Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span>
-                                                customer rating</span>
-                                        </div>
-                                        <span class="count">(2 reviews)</span>
-                                    </div>
-                                    <h3 class="box-title"><a href="shop-details.html">Women’s shoes</a></h3>
-                                    <span class="box-price"><del>$36.00 USD</del> $30.00 USD</span>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="swiper-slide">
-                            <div class="product-grid style1">
-                                <div class="box-img">
-                                    <img src="assets/img/product/product_1_6.png" alt="menu Image">
-                                    <div class="box-icon"><i class="fa-regular fa-heart"></i></div>
-                                  
-                                </div>
-                                <div class="product-grid-content">
-                                    <div class="woocommerce-product-rating">
-                                        <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
-                                            <span>Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span>
-                                                customer rating</span>
-                                        </div>
-                                        <span class="count">(2 reviews)</span>
-                                    </div>
-                                    <h3 class="box-title"><a href="shop-details.html">women's clothing</a></h3>
-                                    <span class="box-price"><del>$38.00 USD</del> $33.00 USD</span>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="swiper-slide">
-                            <div class="product-grid style1">
-                                <div class="box-img">
-                                    <img src="assets/img/product/product_1_7.png" alt="menu Image">
-                                    <div class="box-icon"><i class="fa-regular fa-heart"></i></div>
-                                   
-                                </div>
-                                <div class="product-grid-content">
-                                    <div class="woocommerce-product-rating">
-                                        <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
-                                            <span>Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span>
-                                                customer rating</span>
-                                        </div>
-                                        <span class="count">(2 reviews)</span>
-                                    </div>
-                                    <h3 class="box-title"><a href="shop-details.html">Women’s fashion Bag</a></h3>
-                                    <span class="box-price"><del>$40.00 USD</del> $35.00 USD</span>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="swiper-slide">
-                            <div class="product-grid style1">
-                                <div class="box-img">
-                                    <img src="assets/img/product/product_1_8.png" alt="menu Image">
-                                    <div class="box-icon"><i class="fa-regular fa-heart"></i></div>
-                            
-                                </div>
-                                <div class="product-grid-content">
-                                    <div class="woocommerce-product-rating">
-                                        <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
-                                            <span>Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span>
-                                                customer rating</span>
-                                        </div>
-                                        <span class="count">(2 reviews)</span>
-                                    </div>
-                                    <h3 class="box-title"><a href="shop-details.html">Women’s shoes</a></h3>
-                                    <span class="box-price"><del>$25.00 USD</del> $20.00 USD</span>
-                                </div>
-                            </div>
-                        </div>
+                        <?php endif; ?>
+                    </div>
 
                     </div>
                 </div>
