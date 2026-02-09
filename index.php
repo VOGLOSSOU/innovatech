@@ -313,7 +313,7 @@ Product Area
                                 </div>
                                 <div class="product-grid-content">
                                     <h3 class="box-title"><a href="shop-details.php?id=<?php echo $product['id']; ?>"><?php echo htmlspecialchars($product['nom']); ?></a></h3>
-                                    <span class="box-price"><?php echo number_format($product['prix'], 2, ',', ' '); ?>€</span>
+                                    <span class="box-price"><?php echo number_format($product['prix'], 2, ',', ' '); ?>FCFA</span>
                                     <span class="product-text"><i class="fa-light fa-check"></i><span class="stock">En stock</span><?php echo $product['quantity']; ?></span>
                                     <a href="https://wa.me/2290157400640" target="_blank" class="th-btn2 btn-fw">
                                         <span class="link-effect">
@@ -412,7 +412,7 @@ Product Area
                                             <?php echo htmlspecialchars($product['nom']); ?>
                                         </a>
                                     </h3>
-                                    <span class="box-price"><?php echo number_format($product['prix'], 2, ',', ' '); ?>€</span>
+                                    <span class="box-price"><?php echo number_format($product['prix'], 2, ',', ' '); ?>FCFA</span>
                                     <a href="https://wa.me/2290157400640" target="_blank" class="th-btn2 btn-fw">
                                         <span class="link-effect">
                                             <span class="effect-1">Contacter le vendeur</span>

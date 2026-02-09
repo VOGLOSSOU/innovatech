@@ -114,7 +114,7 @@
                                 avis)</a>
                         </div>
                         <h2 class="product-title"><?php echo htmlspecialchars($product['nom']); ?></h2>
-                        <p class="price"><?php echo number_format($product['prix'], 2, ',', ' '); ?> €</p>
+                        <p class="price"><?php echo number_format($product['prix'], 2, ',', ' '); ?>FCFA</p>
 
                                                  <p class="text"><?php echo nl2br(htmlspecialchars($product['description'] ?: 'Aucune description disponible.')); ?></p></p>
                         <div>
@@ -170,7 +170,7 @@
                                 </div>
                                 <div class="product-grid-content">
                                     <h3 class="box-title"><a href="shop-details.php?id=<?php echo $relatedProduct['id']; ?>"><?php echo htmlspecialchars($relatedProduct['nom']); ?></a></h3>
-                                    <span class="box-price"><?php echo number_format($relatedProduct['prix'], 2, ',', ' '); ?> €</span>
+                                    <span class="box-price"><?php echo number_format($relatedProduct['prix'], 2, ',', ' '); ?>FCFA</span>
                                 </div>
                             </div>
                         </div>

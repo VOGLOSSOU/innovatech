@@ -144,7 +144,7 @@
                                 <small class="text-muted">${prod.category_name}</small>
                             </td>
                             <td class="description-cell" title="${prod.description || 'Pas de description'}">${prod.description || 'Pas de description'}</td>
-                            <td>${prod.prix}€</td>
+                            <td>${prod.prix}FCFA</td>
                             <td>${prod.quantity}</td>
                             <td>${prod.available ? 'Disponible' : 'Indisponible'}</td>
                             <td>

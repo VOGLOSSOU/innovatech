@@ -127,7 +127,7 @@ Product Area
                                     <?php echo htmlspecialchars($product['nom']); ?>
                                 </a>
                             </h3>
-                            <span class="box-price"><?php echo number_format($product['prix'], 2, ',', ' '); ?>€</span>
+                            <span class="box-price"><?php echo number_format($product['prix'], 2, ',', ' '); ?>FCFA</span>
                             <a href="https://wa.me/2290157400640" target="_blank" class="th-btn2 btn-fw">
                                 Contacter le vendeur
                             </a>
