@@ -90,7 +90,7 @@ Product Area
             <div class="th-sort-bar">
                 <div class="row justify-content-between align-items-center">
                     <div class="col-md">
-                        <p class="woocommerce-result-count">Showing 1–<?php echo min(15, $totalProducts); ?> of <?php echo $totalProducts; ?> products</p>
+                        <p class="woocommerce-result-count"> 1–<?php echo min(15, $totalProducts); ?> sur <?php echo $totalProducts; ?> produits</p>
                     </div>
 
                     <div class="col-md-auto">
