@@ -104,14 +104,14 @@ Contact Area
                                 <div class="contact-item_icon"><i class=""><img src="assets/img/icon/address.svg" alt=""></i>
                                 </div>
                                 <div class="media-body">
-                                    <span class="contact-item_title">Address</span><span class="contact-item_text">Abomey - Calavi, Benin BJ</span>
+                                    <span class="contact-item_title">Addresse</span><span class="contact-item_text">Abomey - Calavi, Benin BJ</span>
                                 </div>
                             </div>
                             <div class="contact-item">
                                 <div class="contact-item_icon"><i class=""><img src="assets/img/icon/phone7.svg" alt=""></i>
                                 </div>
                                 <div class="media-body">
-                                    <span class="contact-item_title">Phone</span>
+                                    <span class="contact-item_title">Téléphone</span>
                                     <span class="contact-item_text"><a href="tel:+2290157400640">+229 01 57 40 06 40</a></span>
                                 </div>
                             </div>
