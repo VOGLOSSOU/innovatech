@@ -111,7 +111,7 @@
                         <div class="product-rating">
                             <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5"><span style="width:100%">Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span> customer rating</span></div>
                             <a href="shop-details.html" class="woocommerce-review-link">(<span class="count">2</span>
-                                reviews)</a>
+                                avis)</a>
                         </div>
                         <h2 class="product-title"><?php echo htmlspecialchars($product['nom']); ?></h2>
                         <p class="price"><?php echo number_format($product['prix'], 2, ',', ' '); ?> €</p>
@@ -140,7 +140,7 @@
             <div class="space-extra-top mb-30">
                 <div class="row justify-content-between align-items-center">
                     <div class="col-md-auto">
-                        <h2 class="sec-title text-center">Related Products</h2>
+                        <h2 class="sec-title text-center">Produits Similaires</h2>
                     </div>
                     <div class="col-md d-none d-sm-block">
                         <hr class="title-line">
