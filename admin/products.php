@@ -34,7 +34,7 @@
                         <select id="category_id" class="form-control mb-3" required>
                             <option value="">Sélectionner une catégorie</option>
                         </select>
-                        <input type="number" id="prix" class="form-control mb-3" placeholder="Prix" step="0.01" required>
+                        <input type="number" id="prix" class="form-control mb-3" placeholder="Prix (ex: 220000 pour 220 000 CFA)" step="0.01" required>
                         <input type="number" id="quantity" class="form-control mb-3" placeholder="Quantité" required>
                     </div>
                     <div class="col-md-6">
@@ -87,7 +87,7 @@
                             <div class="col-md-6">
                                 <input type="text" id="editNom" class="form-control mb-3" required>
                                 <select id="editCategoryId" class="form-control mb-3" required></select>
-                                <input type="number" id="editPrix" class="form-control mb-3" step="0.01" required>
+                                <input type="number" id="editPrix" class="form-control mb-3" step="0.01" required placeholder="Prix (ex: 220000 pour 220 000 CFA)">
                                 <input type="number" id="editQuantity" class="form-control mb-3" required>
                             </div>
                             <div class="col-md-6">
