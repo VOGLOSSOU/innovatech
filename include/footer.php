@@ -31,7 +31,7 @@
                     </div>
                     <div class="col-md-6 col-xl-auto">
                         <div class="widget widget_nav_menu footer-widget">
-                            <h3 class="widget_title">Customer Services</h3>
+                            <h3 class="widget_title">Service Clients</h3>
                             <div class="menu-all-pages-container">
                                 <ul class="menu">
                                     <li><a href="https://wa.me/2290157400640">Centre d' aides</a></li>

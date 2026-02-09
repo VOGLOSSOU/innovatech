@@ -46,11 +46,11 @@
             </div>
             <div class="th-mobile-menu">
                 <ul>
-                    <li><a href="index.php">Home</a></li>
-                    <li><a href="shop.php">Shop</a></li>
-                    <li><a href="about.php">About Us</a></li>
+                    <li><a href="index.php">Acceuil</a></li>
+                    <li><a href="shop.php">Boutique</a></li>
+                    <li><a href="about.php">A Propos</a></li>
                     <li><a href="maintenance.php">Maintenance</a></li>
-                    <li><a href="contact.php">Contact Us</a></li>
+                    <li><a href="contact.php">Contactez-Nous</a></li>
                 </ul>
             </div>
         </div>
@@ -115,12 +115,12 @@
                                  </div>
                                 <ul>
                                     <li>
-                                        <a href="index.php">Home</a>
+                                        <a href="index.php">Acceuil</a>
                                     </li>
-                                    <li><a href="shop.php">Shop</a></li>
-                                    <li><a href="about.php">About Us</a></li>
+                                    <li><a href="shop.php">Boutique</a></li>
+                                    <li><a href="about.php">A Propos</a></li>
                                     <li><a href="maintenance.php">Maintenance</a></li>
-                                    <li><a href="contact.php">Contact Us</a></li>
+                                    <li><a href="contact.php">Contactez-Nous</a></li>
                                 </ul>
                             </nav>
                         </div>

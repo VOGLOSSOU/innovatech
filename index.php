@@ -230,7 +230,7 @@ Category Area
         </div>
     </section>
     <!--==============================
-Cta Area  
+Cta Area  fFlash Sale Today
 ==============================-->
 
     <section class="space overflow-hidden">
@@ -239,12 +239,12 @@ Cta Area
                 <div class="row justify-content-lg-between justify-content-center align-items-center">
                     <div class="col-lg-3 col-xl-4">
                         <div class="cta-wrapp" data-bg-src="assets/img/shape/cta-shape1.png">
-                            <h4 class="box-title">Special <span>Gift Voucher</span></h4>
+                            <h4 class="box-title">Speciales <span>Offres</span></h4>
                         </div>
                     </div>
                     <div class="col-lg-6 col-xl-6">
                         <div class="cta-content" data-bg-src="assets/img/shape/cta-shape2.png">
-                            <p class="sec-text text-white"><span class="text-theme">ONLINE SHOPPING SALE:</span> 
+                            <p class="sec-text text-white"><span class="text-theme">Articles disponibles en ligne:</span> 
                                 Ordinateurs,
                                 Tablettes, Camera & accessoires
                                 chez Innovatech</p>
@@ -269,33 +269,33 @@ Product Area
             <div class="row justify-content-xl-between justify-content-center">
                 <div class="col-lg-auto">
                     <div class="title-area mb-20 text-xl-start text-center">
-                        <h2 class="sec-title style2">Flash Sale Today</h2>
+                        <h2 class="sec-title style2">Vente flash aujourd’hui</h2>
                     </div>
                 </div>
                 <div class="col-lg-auto">
                     <div class="product-right">
                         <div class="product-title-area">
-                            <h3 class="box-title"><img src="assets/img/icon/fire2.svg" alt="">Hurry up! Sale end in:</h3>
+                            <h3 class="box-title"><img src="assets/img/icon/fire2.svg" alt="">dépêchez-vous ! Fin vente dans:</h3>
                         </div>
                         <ul class="timer-counter counter-list style4" data-offer-date="12/12/2025">
                             <li>
                                 <div class="day count-number">00</div>
-                                <span class="count-name">Days</span>
+                                <span class="count-name">Jours</span>
                             </li>
                             <li>
                                 <div class="hour count-number">00</div>
-                                <span class="count-name">Hours</span>
+                                <span class="count-name">Heures</span>
                             </li>
                             <li>
                                 <div class="minute count-number">00</div>
-                                <span class="count-name">Mins</span>
+                                <span class="count-name">Minutes</span>
                             </li>
                             <li>
                                 <div class="seconds count-number">00</div>
-                                <span class="count-name">Secs</span>
+                                <span class="count-name">Secondes</span>
                             </li>
                         </ul>
-                        <a href="contact.php" class="line-btn style2">Explore All</a>
+                        <a href="contact.php" class="line-btn style2">Explorer</a>
                     </div>
                 </div>
             </div>
@@ -354,7 +354,7 @@ Product Area
             <div class="row justify-content-lg-between justify-content-center align-items-center">
                 <div class="col-auto">
                     <div class="title-area text-center text-lg-start mb-30">
-                        <h2 class="sec-title style2">best sellers</h2>
+                        <h2 class="sec-title style2">Meilleures ventes</h2>
                     </div>
                 </div>
                 <div class="col-lg-8">
@@ -449,7 +449,7 @@ Testimonial Area
                 </div>
                 <div class="col-lg-3">
                     <div class="product-btn pb-10 text-end">
-                        <a href="contact.php" class="line-btn style2">Explore All</a>
+                        <a href="contact.php" class="line-btn style2">Explorer</a>
                     </div>
                 </div>
             </div>
@@ -587,8 +587,8 @@ Feature Area
                                 <img src="assets/img/icon/feature_card_1.svg" alt="icon">
                             </div>
                             <div class="box-content">
-                                <h3 class="box-title">Free Shipping</h3>
-                                <p class="box-text">The Shipping for orders over $120</p>
+                                <h3 class="box-title">Livraison gratuite</h3>
+                                <p class="box-text">La livraison est offerte pour les commandes supérieures à partir d' un montant donné</p>
                             </div>
                         </div>
                     </div>
@@ -598,8 +598,8 @@ Feature Area
                                 <img src="assets/img/icon/feature_card_2.svg" alt="icon">
                             </div>
                             <div class="box-content">
-                                <h3 class="box-title">Money Back Guarantee</h3>
-                                <p class="box-text">Back guarantee in 7 days</p>
+                                <h3 class="box-title">Garantie de remboursement</h3>
+                                <p class="box-text">Remboursement garanti sous 7 jours</p>
                             </div>
                         </div>
                     </div>
@@ -609,8 +609,8 @@ Feature Area
                                 <img src="assets/img/icon/feature_card_3.svg" alt="icon">
                             </div>
                             <div class="box-content">
-                                <h3 class="box-title">Membership Offer</h3>
-                                <p class="box-text">Huge order over $150</p>
+                                <h3 class="box-title">Offre réservée aux membres</h3>
+                                <p class="box-text">Commande importante à partir d' un montant donné</p>
                             </div>
                         </div>
                     </div>
@@ -620,8 +620,8 @@ Feature Area
                                 <img src="assets/img/icon/feature_card_4.svg" alt="icon">
                             </div>
                             <div class="box-content">
-                                <h3 class="box-title">Online Support</h3>
-                                <p class="box-text">Support online 24 hours a day</p>
+                                <h3 class="box-title">Support en ligne</h3>
+                                <p class="box-text">Assistance en ligne 24h/24</p>
                             </div>
                         </div>
                     </div>
