@@ -331,7 +331,7 @@
                                         <img src="assets/img/icon/bag2.svg" alt=""><span class="badge">2</span>
                                     </div>
                                     <div><span class="header-info_label">Your Cart</span>
-                                        <a href="#" class="header-info_link">$00.00</a>
+                                        <a href="#" class="header-info_link">0,00</a>
                                         <div class="cart-dropdown-menu">
                                             <div class="widget woocommerce widget_shopping_cart style2">
                                                 <div class="widget_shopping_cart_content">
@@ -727,7 +727,7 @@
                                 <div class="box-icon"><img src="assets/img/icon/truck.svg" alt=""></div>
                                 <div class="media-body">
                                     <span class="box-label">Free Shipping</span>
-                                    <h3 class="box-link mb-0">Over Order $280</h3>
+                                    <h3 class="box-link mb-0">À partir de 100 000 CFA</h3>
                                 </div>
                             </div>
                             <button type="button" class="th-menu-toggle d-block d-lg-none"><i class="far fa-bars"></i></button>

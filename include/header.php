@@ -22,7 +22,7 @@
      Preloader
   ==============================-->
     <div class="preloader ">
-        <button class="th-btn preloaderCls">Cancel Preloader </button>
+        <button class="th-btn preloaderCls">Annuler </button>
         <div class="preloader-inner">
             <div class="loader">
                 <img src="assets/img/theme-img/shopping-loader.gif" alt="">

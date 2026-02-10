@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Innovatech - ome Electronics Shop</title>
+    <title>Innovatech - Votre Boutique d'Informatique au Bénin</title>
     <meta name="author" content="Erna">
     <meta name="description" content="Erna - Multi-Purpose Modern & Minimal WooCommerce Template">
     <meta name="keywords" content="Erna - Multi-Purpose Modern & Minimal WooCommerce Template">
@@ -110,7 +110,6 @@ Category Area
                                 <div class="box-img mega-hover">
                                     <img src="assets/img/category/category_1_1.png" alt="categories-item">
                                 </div>
-                                <h3 class="box-title"><a href="shop-details.php">Bluetooth Speaker</a></h3>
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -118,7 +117,6 @@ Category Area
                                 <div class="box-img mega-hover">
                                     <img src="assets/img/category/category_1_2.png" alt="categories-item">
                                 </div>
-                                <h3 class="box-title"><a href="shop-details.php">Headphone</a></h3>
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -126,7 +124,6 @@ Category Area
                                 <div class="box-img mega-hover">
                                     <img src="assets/img/category/category_1_3.png" alt="categories-item">
                                 </div>
-                                <h3 class="box-title"><a href="shop-details.php">Laptops</a></h3>
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -134,7 +131,6 @@ Category Area
                                 <div class="box-img mega-hover">
                                     <img src="assets/img/category/category_1_4.png" alt="categories-item">
                                 </div>
-                                <h3 class="box-title"><a href="shop-details.php">Smart TV</a></h3>
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -142,7 +138,6 @@ Category Area
                                 <div class="box-img mega-hover">
                                     <img src="assets/img/category/category_1_5.png" alt="categories-item">
                                 </div>
-                                <h3 class="box-title"><a href="shop-details.php">Camera</a></h3>
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -150,7 +145,6 @@ Category Area
                                 <div class="box-img mega-hover">
                                     <img src="assets/img/category/category_1_6.png" alt="categories-item">
                                 </div>
-                                <h3 class="box-title"><a href="shop-details.php">Smart Phone</a></h3>
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -158,7 +152,6 @@ Category Area
                                 <div class="box-img mega-hover">
                                     <img src="assets/img/category/category_1_7.png" alt="categories-item">
                                 </div>
-                                <h3 class="box-title"><a href="shop-details.php">Smart Watches</a></h3>
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -166,7 +159,6 @@ Category Area
                                 <div class="box-img mega-hover">
                                     <img src="assets/img/category/category_1_8.png" alt="categories-item">
                                 </div>
-                                <h3 class="box-title"><a href="shop-details.php">Accessories</a></h3>
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -174,7 +166,6 @@ Category Area
                                 <div class="box-img mega-hover">
                                     <img src="assets/img/category/category_1_1.png" alt="categories-item">
                                 </div>
-                                <h3 class="box-title"><a href="shop-details.php">Bluetooth Speaker</a></h3>
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -182,7 +173,6 @@ Category Area
                                 <div class="box-img mega-hover">
                                     <img src="assets/img/category/category_1_2.png" alt="categories-item">
                                 </div>
-                                <h3 class="box-title"><a href="shop-details.php">Headphone</a></h3>
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -190,7 +180,6 @@ Category Area
                                 <div class="box-img mega-hover">
                                     <img src="assets/img/category/category_1_3.png" alt="categories-item">
                                 </div>
-                                <h3 class="box-title"><a href="shop-details.php">Laptops</a></h3>
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -198,7 +187,6 @@ Category Area
                                 <div class="box-img mega-hover">
                                     <img src="assets/img/category/category_1_4.png" alt="categories-item">
                                 </div>
-                                <h3 class="box-title"><a href="shop-details.php">Smart TV</a></h3>
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -206,7 +194,6 @@ Category Area
                                 <div class="box-img mega-hover">
                                     <img src="assets/img/category/category_1_5.png" alt="categories-item">
                                 </div>
-                                <h3 class="box-title"><a href="shop-details.php">Camera</a></h3>
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -214,7 +201,6 @@ Category Area
                                 <div class="box-img mega-hover">
                                     <img src="assets/img/category/category_1_6.png" alt="categories-item">
                                 </div>
-                                <h3 class="box-title"><a href="shop-details.php">Smart Phone</a></h3>
                             </div>
                         </div>
 
@@ -309,7 +295,7 @@ Product Area
                             <div class="product-grid style2">
                                 <div class="box-img">
                                     <img src="<?php echo '/' . htmlspecialchars($product['image'] ?: 'assets/img/placeholder.jpg'); ?>" alt="<?php echo htmlspecialchars($product['nom']); ?>">
-                                    <span class="product-tag">NEW</span>
+                                    <span class="product-tag">NOUVEAU</span>
                                 </div>
                                 <div class="product-grid-content">
                                     <h3 class="box-title"><a href="shop-details.php?id=<?php echo $product['id']; ?>"><?php echo htmlspecialchars($product['nom']); ?></a></h3>
@@ -379,7 +365,7 @@ Product Area
                         endforeach;
                         ?>
                         <a href="#" class="tab-btn th-btn" onclick="window.location.href='shop.php'; return false;">
-  More +
+  Voir Plus +
 </a>
 
                     </div>

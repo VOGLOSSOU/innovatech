@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Innovatech - des PC performants, pensés pour vos besoins pros et perso, avec une expertise complète en maintenance et réparation de cartes mères. - About Us 1</title>
+    <title>Innovatech - des PC performants, pensés pour vos besoins pros et perso, avec une expertise complète en maintenance et réparation de cartes mères. - À Propos</title>
     <meta name="author" content="Nathan VOGLOSSOU , Innovatech">
     <meta name="description" content="Innovatech - des PC performants, pensés pour vos besoins pros et perso, avec une expertise complète en maintenance et réparation de cartes mères.">
     <meta name="keywords" content="innovatech, innovatech bénin, innovatech about us, pc performant, maintenance pc, réparation carte mère, solutions informatiques, matériel informatique, équipements informatiques, technologie informatique, cotonou, calavi, electronique">

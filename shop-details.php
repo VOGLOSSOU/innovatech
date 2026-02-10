@@ -40,7 +40,7 @@
     ?>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Erna - Multi-Purpose Modern & Minimal WooCommerce Template - Shop Details</title>
+    <title>Innovatech - Détails Produit</title>
     <meta name="author" content="Erna">
     <meta name="description" content="Erna - Multi-Purpose Modern & Minimal WooCommerce Template">
     <meta name="keywords" content="Erna - Multi-Purpose Modern & Minimal WooCommerce Template">
