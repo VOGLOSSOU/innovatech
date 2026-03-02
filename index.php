@@ -560,60 +560,6 @@ Testimonial Area
                 </div>
             </div>
         </div>
-    </section><!--==============================
-Feature Area  
-==============================-->
-    <section class="space">
-        <div class="feature-area">
-            <div class="container th-container">
-                <div class="row gy-4">
-                    <div class="col-md-6 col-xl-3 feature-card_wrapp">
-                        <div class="feature-card">
-                            <div class="box-icon">
-                                <img src="assets/img/icon/feature_card_1.svg" alt="icon">
-                            </div>
-                            <div class="box-content">
-                                <h3 class="box-title">Livraison gratuite</h3>
-                                <p class="box-text">La livraison est offerte pour les commandes supérieures à partir d' un montant donné</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-xl-3 feature-card_wrapp">
-                        <div class="feature-card">
-                            <div class="box-icon">
-                                <img src="assets/img/icon/feature_card_2.svg" alt="icon">
-                            </div>
-                            <div class="box-content">
-                                <h3 class="box-title">Garantie de remboursement</h3>
-                                <p class="box-text">Remboursement garanti sous 7 jours</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-xl-3 feature-card_wrapp">
-                        <div class="feature-card">
-                            <div class="box-icon">
-                                <img src="assets/img/icon/feature_card_3.svg" alt="icon">
-                            </div>
-                            <div class="box-content">
-                                <h3 class="box-title">Offre réservée aux membres</h3>
-                                <p class="box-text">Commande importante à partir d' un montant donné</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-xl-3 feature-card_wrapp">
-                        <div class="feature-card">
-                            <div class="box-icon">
-                                <img src="assets/img/icon/feature_card_4.svg" alt="icon">
-                            </div>
-                            <div class="box-content">
-                                <h3 class="box-title">Support en ligne</h3>
-                                <p class="box-text">Assistance en ligne 24h/24</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </section>
     <?php include 'include/footer.php'; ?>
 
